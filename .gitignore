@@ -1,6 +1,3 @@
-# Cleanup leftovers (delete this folder once you're happy)
-_to_delete/
-
 # Built zips - upload these to GitHub Releases instead
 Releases/**/*.zip
 
@@ -10,3 +7,6 @@ desktop.ini
 .DS_Store
 .vscode/
 .idea/
+
+# Local release zipper
+build.py
