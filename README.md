@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="final-station-banner.jpg" alt="The Final Station banner" width="100%">
+</p>
+
 # The Final Station
 
 Skripts, datapacks and the resource pack for **The Final Station** Minecraft SMP.
