@@ -1,0 +1,265 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": "Normal",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_1"
+        }
+      },
+      {
+        "when": "Bow",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_2"
+        }
+      },
+      {
+        "when": "Frog",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_3"
+        }
+      },
+      {
+        "when": "Blossom",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_4"
+        }
+      },
+      {
+        "when": "Azure",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_5"
+        }
+      },
+      {
+        "when": "Spooky",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_6"
+        }
+      },
+      {
+        "when": "Swoop",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_7"
+        }
+      },
+      {
+        "when": "Vintage",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_8"
+        }
+      },
+      {
+        "when": "Gust",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_9"
+        }
+      },
+      {
+        "when": "Leather",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_10"
+        }
+      },
+      {
+        "when": "Phoenix",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_11"
+        }
+      },
+      {
+        "when": "White",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_12"
+        }
+      },
+      {
+        "when": "Starlight",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_13"
+        }
+      },
+      {
+        "when": "Log",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_14"
+        }
+      },
+      {
+        "when": "Amethyst",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_15"
+        }
+      },
+      {
+        "when": "Mint",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_16"
+        }
+      },
+      {
+        "when": "Spiral",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_17"
+        }
+      },
+      {
+        "when": "Ghost",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_18"
+        }
+      },
+      {
+        "when": "Spirit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_19"
+        }
+      },
+      {
+        "when": "Mushroom",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_20"
+        }
+      },
+      {
+        "when": "Dusty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_21"
+        }
+      },
+      {
+        "when": "Cat",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_22"
+        }
+      },
+      {
+        "when": "Twilight",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_23"
+        }
+      },
+      {
+        "when": "Coggs",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_24"
+        }
+      },
+      {
+        "when": "Antlers",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_25"
+        }
+      },
+      {
+        "when": "Watcher",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_26"
+        }
+      },
+      {
+        "when": "Void",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_27"
+        }
+      },
+      {
+        "when": "Aqua",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_28"
+        }
+      },
+      {
+        "when": "Demon",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_29"
+        }
+      },
+      {
+        "when": "Dragonfruit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_30"
+        }
+      },
+      {
+        "when": "Solar",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_31"
+        }
+      },
+      {
+        "when": "Jolly",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_32"
+        }
+      },
+      {
+        "when": "Destroyed",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_33"
+        }
+      },
+      {
+        "when": "Cards",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_34"
+        }
+      },
+      {
+        "when": "Cake",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_35"
+        }
+      },
+      {
+        "when": "Jeweled",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/hat_36"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/carved_pumpkin"
+    }
+  }
+}

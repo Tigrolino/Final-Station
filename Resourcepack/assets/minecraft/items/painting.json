@@ -1,0 +1,37 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:painting/variant",
+    "cases": [
+      {
+        "when": [
+          "custompaintings:3d_1",
+          "custompaintings:3d_2",
+          "custompaintings:3d_3",
+          "custompaintings:bear",
+          "custompaintings:bees",
+          "custompaintings:bluke",
+          "custompaintings:len",
+          "custompaintings:monolith",
+          "custompaintings:moose",
+          "custompaintings:selboo",
+          "custompaintings:shopping_district",
+          "custompaintings:snuurpus",
+          "custompaintings:spudskie",
+          "custompaintings:steve",
+          "custompaintings:swamp",
+          "custompaintings:zeph"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "custompaintings:item/painting"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/painting"
+    }
+  }
+}

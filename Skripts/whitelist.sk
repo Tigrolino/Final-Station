@@ -1,0 +1,156 @@
+# ==========================================================
+# whitelist.sk
+#
+# Collect players in a batch list first, then whitelist them all at once.
+# Names starting with "." are Bedrock players (Floodgate).
+#
+# Commands:
+#   /wladd <name>     add to the batch list
+#   /wlremove <name>  remove from the batch list
+#   /wllist           show the batch lists
+#   /wlapply          whitelist everyone in the batch lists
+#   /wlclear          clear the batch lists
+#
+# Permissions:
+#   op
+#
+# Requires: Floodgate (fwhitelist) for Bedrock players
+# ==========================================================
+
+# ==========================================================
+# /WLADD
+# ==========================================================
+
+command /wladd <text>:
+    permission: op
+    trigger:
+        set {_input} to arg-1
+
+        # -------- Bedrock (dot prefix)
+        if {_input} starts with ".":
+            replace first "." in {_input} with ""
+
+            if {batchfwl::%{_input}%} is set:
+                send "&7[&6🚂&r&7]&r &e%{_input}% is already in the Bedrock batch whitelist."
+                stop
+
+            set {batchfwl::%{_input}%} to true
+            send "&7[&6🚂&r&7]&r &aAdded &f%{_input}% &ato the &bBedrock &abatch whitelist."
+            stop
+
+        if {batchwl::%{_input}%} is set:
+            send "&7[&6🚂&r&7]&r &e%{_input}% is already in the Java batch whitelist."
+            stop
+
+        set {batchwl::%{_input}%} to true
+        send "&7[&6🚂&r&7]&r &aAdded &f%{_input}% &ato the &eJava &abatch whitelist."
+
+
+# ==========================================================
+# /WLREMOVE
+# ==========================================================
+
+command /wlremove <text>:
+    permission: op
+    trigger:
+        set {_input} to arg-1
+
+        # -------- Bedrock
+        if {_input} starts with ".":
+            replace first "." in {_input} with ""
+
+            if {batchfwl::%{_input}%} is not set:
+                send "&7[&6🚂&r&7]&r &c%{_input}% is not in the Bedrock batch whitelist."
+                stop
+
+            delete {batchfwl::%{_input}%}
+            send "&7[&6🚂&r&7]&r &aRemoved &f%{_input}% &afrom the &bBedrock &abatch whitelist."
+            stop
+
+        if {batchwl::%{_input}%} is not set:
+            send "&7[&6🚂&r&7]&r &c%{_input}% is not in the Java batch whitelist."
+            stop
+
+        delete {batchwl::%{_input}%}
+        send "&7[&6🚂&r&7]&r &aRemoved &f%{_input}% &afrom the &eJava &abatch whitelist."
+
+
+# ==========================================================
+# /WLLIST
+# ==========================================================
+
+command /wllist:
+    permission: op
+    trigger:
+        set {_hasEntries} to false
+
+        if {batchwl::*} is not empty:
+            set {_hasEntries} to true
+            send "&7[&6🚂&r&7]&r &eJava Batch Whitelist:"
+            loop {batchwl::*}:
+                send "&7- %loop-index%"
+
+        if {batchfwl::*} is not empty:
+            set {_hasEntries} to true
+            send "&7[&6🚂&r&7]&r &bBedrock Batch Whitelist:"
+            loop {batchfwl::*}:
+                send "&7- .%loop-index%"
+
+        if {_hasEntries} is false:
+            send "&7[&6🚂&r&7]&r &7Both batch whitelists are empty."
+
+
+# ==========================================================
+# /WLAPPLY
+# ==========================================================
+
+command /wlapply:
+    permission: op
+    trigger:
+        set {_applied} to false
+
+        # -------- Java
+        loop {batchwl::*}:
+            execute console command "whitelist add %loop-index%"
+            set {_applied} to true
+
+        # -------- Bedrock
+        loop {batchfwl::*}:
+            execute console command "fwhitelist add %loop-index%"
+            set {_applied} to true
+
+        if {_applied} is false:
+            send "&cNo players to whitelist."
+            stop
+
+        send "&7[&6🚂&r&7]&r &aAll batch players have been applied to &eJava &aand &bBedrock &awhitelists."
+
+
+# ==========================================================
+# /WLCLEAR
+# ==========================================================
+
+command /wlclear:
+    permission: op
+    trigger:
+        delete {batchwl::*}
+        delete {batchfwl::*}
+        send "&7[&6🚂&r&7]&r &aBoth Java and Bedrock batch whitelists cleared."
+
+
+# ==========================================================
+# TAB COMPLETION
+# ==========================================================
+
+on tab complete of "/wlremove":
+    clear tab completions
+    loop {batchwl::*}:
+        add loop-index to tab completions
+    loop {batchfwl::*}:
+        add ".%loop-index%" to tab completions
+
+on tab complete of "/wladd":
+    clear tab completions
+    loop all players:
+        add loop-player's name to tab completions
+        add ".%loop-player's name%" to tab completions

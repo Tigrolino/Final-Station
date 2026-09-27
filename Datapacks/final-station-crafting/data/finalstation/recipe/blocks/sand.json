@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:sand",
+    "minecraft:dirt",
+    "minecraft:dirt",
+    "minecraft:sand"
+  ],
+  "result": {
+    "id": "minecraft:sand",
+    "count": 4
+  }
+}

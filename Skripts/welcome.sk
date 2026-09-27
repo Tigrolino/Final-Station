@@ -1,0 +1,174 @@
+# ==========================================================
+# welcome.sk
+#
+# Everything that happens when a player joins: join/quit messages,
+# first-join welcome, welcome-back animation and the server day counter.
+#
+# Commands:
+#   /togglesounds           mute / unmute the welcome-back sound
+#   /day                    show the current server day
+#   /resetfirstjoin <name>  make a player count as new again (op)
+#   /purgejoineddata        delete all first-join data (op)
+#
+# Permissions:
+#   op (admin commands only)
+#
+# ==========================================================
+
+# ==========================================================
+# JOIN / QUIT MESSAGES
+# ==========================================================
+
+on join:
+    set the join message to "&7[&a&l+&7] &r%player%"
+
+on quit:
+    set the quit message to "&7[&c&l-&7] &r%player%"
+
+
+# ==========================================================
+# REVOKE jodek:root ADVANCEMENT (once per player)
+# ==========================================================
+
+on join:
+    if {rootrevoked::%uuid of player%} is not set:
+        execute console command "advancement revoke %player% only jodek:root"
+        set {rootrevoked::%uuid of player%} to true
+
+
+# ==========================================================
+# SERVER START DATE (used for the day counter)
+# ==========================================================
+
+on load:
+    if {server.start} is not set:
+        set {server.start} to 1771691400
+
+
+function getServerDays() :: number:
+    set {_now} to unix timestamp of now
+    set {_start} to {server.start}
+    set {_diff} to {_now} - {_start}
+    return floor({_diff} / 86400)
+
+
+# ==========================================================
+# FIRST JOIN / WELCOME BACK
+# ==========================================================
+
+on join:
+    wait 1 tick
+
+    # Move old-style data ({joined.<name>}) into the list ({joined::<name>})
+    if {joined.%player's name%} is set:
+        set {joined::%player's name%} to true
+        delete {joined.%player's name%}
+
+    if {joined::%player's name%} is not set:
+        # First-time join
+        set {joined::%player's name%} to true
+
+        send title "Welcome!" to player
+        send subtitle "§7Enjoy your stay!" to player
+        play sound "minecraft:ui.button.click" with volume 1 and pitch 2 to player
+
+        if {game.started} is true:
+            give player 16 cooked_beef
+
+        wait 2 seconds
+        set {_days} to getServerDays()
+        send action bar "&rDay: %{_days}%" to player
+
+    else:
+        # Returning player animation
+        set {_msg::*} to "W", "e", "l", "c", "o", "m", "e", " ", "b", "a", "c", "k", "!"
+        set {_current} to ""
+
+        wait 2 seconds
+        loop {_msg::*}:
+            set {_current} to "%{_current}%%loop-value%"
+            send action bar "§f%{_current}%" to player
+
+            # Only play sound if player has not muted it
+            if {mutedwelcome.%player's name%} is not set:
+                play sound "minecraft:ui.button.click" with volume 1 and pitch 2 to player
+
+            wait 2 ticks
+
+        wait 2 seconds
+        set {_days} to getServerDays()
+        send action bar "&rDay: %{_days}%" to player
+
+
+# ==========================================================
+# /TOGGLESOUNDS
+# ==========================================================
+
+command /togglesounds:
+    trigger:
+        if {mutedwelcome.%player's name%} is set:
+            delete {mutedwelcome.%player's name%}
+            send "&7[&6🚂&r&7]&r &aWelcome-back sounds enabled!" to player
+        else:
+            set {mutedwelcome.%player's name%} to true
+            send "&7[&6🚂&r&7]&r &cWelcome-back sounds muted!" to player
+
+
+# ==========================================================
+# /DAY
+# ==========================================================
+
+command /day:
+    trigger:
+        set {_now} to unix timestamp of now
+        set {_start} to {server.start}
+
+        set {_seconds} to {_now} - {_start}
+
+        # days
+        set {_days} to floor({_seconds} / 86400)
+
+        # remainder without mod
+        set {_remainder} to {_seconds}
+        while {_remainder} >= 86400:
+            subtract 86400 from {_remainder}
+
+        # convert remainder to h/m/s
+        set {_hours} to floor({_remainder} / 3600)
+        set {_remainder2} to {_remainder} - ({_hours} * 3600)
+
+        set {_minutes} to floor({_remainder2} / 60)
+        set {_secondsLeft} to {_remainder2} - ({_minutes} * 60)
+
+        # time until next day
+        set {_next} to 86400 - {_remainder}
+
+        set {_nextHours} to floor({_next} / 3600)
+        set {_nextR} to {_next} - ({_nextHours} * 3600)
+
+        set {_nextMinutes} to floor({_nextR} / 60)
+        set {_nextSeconds} to {_nextR} - ({_nextMinutes} * 60)
+
+        send "&6--- DAYS ---" to player
+        send "&7Start: &rSaturday, 21 February 2026 17:30" to player
+        send "&7Current Day: &a%{_days}%" to player
+        send "&7Time passed today: &f%{_hours}%h %{_minutes}%m %{_secondsLeft}%s" to player
+        send "&7Next day in: &e%{_nextHours}%h %{_nextMinutes}%m %{_nextSeconds}%s" to player
+
+
+# ==========================================================
+# ADMIN: FIRST-JOIN DATA
+# ==========================================================
+
+command /resetfirstjoin <text>:
+    permission: op
+    trigger:
+        delete {joined::%arg-1%}
+        delete {joined.%arg-1%}
+        send "&7[&6🚂&r&7]&r &a%arg-1%'s first join has been reset!"
+
+command /purgejoineddata:
+    permission: op
+    trigger:
+        delete {joined::*}
+        send "&7[&6🚂&r&7]&r &aAll first-join data has been purged."

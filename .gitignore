@@ -1,0 +1,12 @@
+# Cleanup leftovers (delete this folder once you're happy)
+_to_delete/
+
+# Built zips - upload these to GitHub Releases instead
+Releases/**/*.zip
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

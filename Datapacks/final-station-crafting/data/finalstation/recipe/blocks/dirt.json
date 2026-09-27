@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:grass_block"
+  ],
+  "result": {
+    "id": "minecraft:dirt"
+  }
+}

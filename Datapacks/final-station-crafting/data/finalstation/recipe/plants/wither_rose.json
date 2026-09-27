@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#C"
+  ],
+  "key": {
+    "#": "minecraft:poppy",
+    "C": "minecraft:coal"
+  },
+  "result": {
+    "id": "minecraft:wither_rose",
+    "count": 1
+  }
+}

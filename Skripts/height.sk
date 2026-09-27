@@ -1,0 +1,108 @@
+# ==========================================================
+# height.sk
+#
+# Players can switch to their real-life height (scale = cm / 200).
+#
+# Commands:
+#   /height                 toggle your own height on / off
+#   /setheight <name> <cm>  set a height
+#   /removeheight <name>    remove a height
+#   /getheights             list all heights
+#   /purgeheights           delete all heights
+#
+# Permissions:
+#   height.admin (all commands except /height)
+#
+# ==========================================================
+
+# ==========================================================
+# ADMIN COMMANDS
+# ==========================================================
+
+command /setheight <text> <number>:
+    permission: height.admin
+    trigger:
+        set {_name} to lowercase arg-1
+        set {height::%{_name}%} to arg-2
+        send "&aSet &e%{_name}%&a's height to &e%arg-2% cm&a."
+
+command /removeheight <text>:
+    permission: height.admin
+    trigger:
+        set {_name} to lowercase arg-1
+
+        if {height::%{_name}%} is not set:
+            send "&cNo height is set for &e%{_name}%&c."
+            stop
+
+        delete {height::%{_name}%}
+        delete {heightenabled::%{_name}%}
+
+        execute console command "attribute %{_name}% scale base set 1"
+
+        send "&aRemoved &e%{_name}%&a's height."
+
+command /purgeheights:
+    permission: height.admin
+    trigger:
+        delete {height::*}
+        delete {heightenabled::*}
+        send "&aDeleted all stored height data."
+
+command /getheights:
+    permission: height.admin
+    trigger:
+        send "&6&lAssigned Heights"
+        send "&7------------------------"
+
+        if {height::*} is not set:
+            send "&cNo heights have been assigned."
+            stop
+
+        loop {height::*}:
+            send "&e%loop-index%&7: &f%loop-value% cm"
+
+        send "&7------------------------"
+
+
+# ==========================================================
+# /HEIGHT
+# ==========================================================
+
+command /height:
+    trigger:
+        set {_name} to lowercase player's name
+        set {_height} to {height::%{_name}%}
+
+        if {_height} is not set:
+            send "&cYou don't have a height assigned."
+            stop
+
+        if {heightenabled::%{_name}%} is set:
+            delete {heightenabled::%{_name}%}
+            execute console command "attribute %player% scale base set 1"
+            send "&aYou are now back to normal Minecraft height."
+            stop
+
+        set {_scale} to {_height} / 200
+        set {heightenabled::%{_name}%} to true
+
+        execute console command "attribute %player% scale base set %{_scale}%"
+        send "&aYour height has been set to &e%{_height}% cm&a."
+
+
+# ==========================================================
+# RE-APPLY HEIGHT ON JOIN
+# ==========================================================
+
+on join:
+    wait 5 ticks
+
+    set {_name} to lowercase player's name
+
+    if {heightenabled::%{_name}%} is set:
+        set {_height} to {height::%{_name}%}
+
+        if {_height} is set:
+            set {_scale} to {_height} / 200
+            execute console command "attribute %player% scale base set %{_scale}%"

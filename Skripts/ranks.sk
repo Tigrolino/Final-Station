@@ -1,0 +1,93 @@
+# ==========================================================
+# ranks.sk
+#
+# Give or remove LuckPerms groups with a short command.
+#
+# Commands:
+#   /builder <player>    add player to the "builder" group
+#   /unbuilder <player>  remove player from the "builder" group
+#   /elytra <player>     add player to the "elytra" group
+#   /unelytra <player>   remove player from the "elytra" group
+#
+# Permissions:
+#   finalstation.builder
+#   finalstation.elytra
+#
+# Requires: LuckPerms
+#
+# ==========================================================
+
+# ==========================================================
+# BUILDER RANK
+# ==========================================================
+
+command /builder <player>:
+    permission: finalstation.builder
+    trigger:
+
+        if arg-1 is not set:
+            send "&cUsage: /builder <player>"
+            stop
+
+        set {_n} to name of arg-1
+
+        execute console command "lp user %arg-1% parent add builder"
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &ftrying to give %{_n}% Builder rank..." to loop-player
+
+
+command /unbuilder <player>:
+    permission: finalstation.builder
+    trigger:
+
+        if arg-1 is not set:
+            send "&cUsage: /unbuilder <player>"
+            stop
+
+        set {_n} to name of arg-1
+
+        execute console command "lp user %arg-1% parent remove builder"
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &ftrying to remove %{_n}% from Builder rank..." to loop-player
+
+
+# ==========================================================
+# ELYTRA ACCESS
+# ==========================================================
+
+command /elytra <player>:
+    permission: finalstation.elytra
+    trigger:
+
+        if arg-1 is not set:
+            send "&cUsage: /elytra <player>"
+            stop
+
+        set {_n} to name of arg-1
+
+        execute console command "lp user %arg-1% parent add elytra"
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &ftrying to give %{_n}% Elytra access..." to loop-player
+
+
+command /unelytra <player>:
+    permission: finalstation.elytra
+    trigger:
+
+        if arg-1 is not set:
+            send "&cUsage: /unelytra <player>"
+            stop
+
+        set {_n} to name of arg-1
+
+        execute console command "lp user %arg-1% parent remove elytra"
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &ftrying to remove %{_n}% from Elytra access..." to loop-player

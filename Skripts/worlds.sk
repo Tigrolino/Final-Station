@@ -1,0 +1,318 @@
+# ==========================================================
+# worlds.sk
+#
+# Switching between the survival, creative and flat worlds,
+# gamemode shortcuts, /spawn and world restrictions.
+#
+# Commands:
+#   /creative [<player>]  go to the creative world
+#   /survival [<player>]  go back to where you left survival
+#   /flat [<player>]      go to the flat world
+#   /creativeinfo         list who is in which world
+#   /gmc /gms /gma /gmsp  gamemode shortcuts
+#   /spawn                creative / flat spawn only
+#
+# Permissions:
+#   finalstation.creative
+#   finalstation.survival
+#   finalstation.flat
+#   finalstation.creativeinfo
+#   finalstation.gmc
+#   finalstation.gms (also used by /gma)
+#   finalstation.gmsp
+#   finalstation.spawn
+#
+# Requires: worlds named "world", "creative" and "flat"
+#
+# ==========================================================
+
+# ==========================================================
+# CREATIVE / SURVIVAL COMMANDS
+# ==========================================================
+
+command /creative [<player>]:
+    permission: finalstation.creative
+    permission message: &cYou don't have permission to use this!
+    trigger:
+
+        if arg-1 is set:
+            if player is not op:
+                send "&cOnly operators can send other players!"
+                stop
+            set {_t} to arg-1
+        else:
+            set {_t} to player
+
+        if {_t} is not online:
+            send "&cThat player is not online!"
+            stop
+
+        if world of {_t} is world "creative":
+            send "&cAlready in creative!"
+            stop
+
+        # Only save return location if coming from overworld, nether, or end
+        if world of {_t} is world "world" or world "world_nether" or world "world_the_end":
+            set {return.%name of {_t}%} to location of {_t}
+
+        # LOG ENTER
+        add now to {creative.enter::%name of {_t}%::*}
+        set {creative.lastenter::%name of {_t}%} to now
+        add 1 to {creative.entercount::%name of {_t}%}
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &f&7%name of {_t}% entered creative." to loop-player
+
+        teleport {_t} to spawn of world "creative"
+        wait 1 ticks
+        set gamemode of {_t} to creative
+
+
+command /survival [<player>]:
+    permission: finalstation.survival
+    permission message: &cYou don't have permission to use this!
+    trigger:
+
+        if arg-1 is set:
+            if player is not op:
+                send "&cOnly operators can send other players!"
+                stop
+            set {_t} to arg-1
+        else:
+            set {_t} to player
+
+        if {_t} is not online:
+            send "&cThat player is not online!"
+            stop
+
+        if world of {_t} is world "world":
+            send "&cAlready in survival!"
+            stop
+
+        # LOG LEAVE (creative)
+        if world of {_t} is world "creative":
+            add now to {creative.leave::%name of {_t}%::*}
+            set {creative.lastleave::%name of {_t}%} to now
+            add 1 to {creative.leavecount::%name of {_t}%}
+            loop all players:
+                if loop-player is op:
+                    send "&7[&6🚂&r&7] &f&7%name of {_t}% left creative." to loop-player
+
+        # LOG LEAVE (flat)
+        if world of {_t} is world "flat":
+            add now to {flat.leave::%name of {_t}%::*}
+            set {flat.lastleave::%name of {_t}%} to now
+            add 1 to {flat.leavecount::%name of {_t}%}
+            loop all players:
+                if loop-player is op:
+                    send "&7[&6🚂&r&7] &f&7%name of {_t}% left flat world." to loop-player
+
+        if {return.%name of {_t}%} is set:
+            teleport {_t} to {return.%name of {_t}%}
+            delete {return.%name of {_t}%}
+        else:
+            teleport {_t} to spawn of world "world"
+        wait 1 ticks
+        set gamemode of {_t} to survival
+
+
+# ==========================================================
+# FLAT WORLD COMMANDS
+# ==========================================================
+
+command /flat [<player>]:
+    permission: finalstation.flat
+    permission message: &cYou don't have permission to use this!
+    trigger:
+
+        if arg-1 is set:
+            if player is not op:
+                send "&cOnly operators can send other players!"
+                stop
+            set {_t} to arg-1
+        else:
+            set {_t} to player
+
+        if {_t} is not online:
+            send "&cThat player is not online!"
+            stop
+
+        if world of {_t} is world "flat":
+            send "&cAlready in the flat world!"
+            stop
+
+        # Only save return location if coming from overworld, nether, or end
+        if world of {_t} is world "world" or world "world_nether" or world "world_the_end":
+            set {return.%name of {_t}%} to location of {_t}
+
+        # LOG ENTER
+        add now to {flat.enter::%name of {_t}%::*}
+        set {flat.lastenter::%name of {_t}%} to now
+        add 1 to {flat.entercount::%name of {_t}%}
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &f&7%name of {_t}% entered flat world." to loop-player
+
+        teleport {_t} to location(0.5, -60, 0.5, world "flat")
+        wait 1 ticks
+        set gamemode of {_t} to creative
+
+
+# ==========================================================
+# CREATIVE INFO
+# ==========================================================
+
+command /creativeinfo:
+    permission: finalstation.creativeinfo
+    trigger:
+
+        send "&7&m------------------------"
+        send "&6World Info"
+
+        # CREATIVE
+        set {_f} to false
+        loop all players:
+            if world of loop-player is world "creative":
+                if {_f} is false:
+                    send "&eCreative:"
+                    set {_f} to true
+                send "&7- &f%loop-player% (&f%x-coordinate of loop-player%, %y-coordinate of loop-player%, %z-coordinate of loop-player%)"
+
+        # FLAT
+        set {_f5} to false
+        loop all players:
+            if world of loop-player is world "flat":
+                if {_f5} is false:
+                    send "&bFlat:"
+                    set {_f5} to true
+                send "&7- &f%loop-player% (&f%x-coordinate of loop-player%, %y-coordinate of loop-player%, %z-coordinate of loop-player%)"
+
+        # SURVIVAL
+        set {_f2} to false
+        loop all players:
+            if world of loop-player is world "world":
+                if {_f2} is false:
+                    send "&aSurvival:"
+                    set {_f2} to true
+                send "&7- &f%loop-player% (&f%x-coordinate of loop-player%, %y-coordinate of loop-player%, %z-coordinate of loop-player%)"
+
+        # NETHER
+        set {_f3} to false
+        loop all players:
+            if world of loop-player is world "world_nether":
+                if {_f3} is false:
+                    send "&cNether:"
+                    set {_f3} to true
+                send "&7- &f%loop-player% (&f%x-coordinate of loop-player%, %y-coordinate of loop-player%, %z-coordinate of loop-player%)"
+
+        # END
+        set {_f4} to false
+        loop all players:
+            if world of loop-player is world "world_the_end":
+                if {_f4} is false:
+                    send "&5End:"
+                    set {_f4} to true
+                send "&7- &f%loop-player% (&f%x-coordinate of loop-player%, %y-coordinate of loop-player%, %z-coordinate of loop-player%)"
+
+        send "&7&m------------------------"
+
+
+# ==========================================================
+# GAMEMODE COMMANDS
+# ==========================================================
+
+command /gmc:
+    permission: finalstation.gmc
+    trigger:
+        set player's gamemode to creative
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &f&7%player% changed gamemode to Creative" to loop-player
+
+command /gms:
+    permission: finalstation.gms
+    trigger:
+        set player's gamemode to survival
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &f&7%player% changed gamemode to Survival" to loop-player
+
+command /gma:
+    permission: finalstation.gms
+    trigger:
+        set player's gamemode to adventure
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &f&7%player% changed gamemode to Adventure" to loop-player
+
+
+command /gmsp:
+    permission: finalstation.gmsp
+    trigger:
+        set player's gamemode to spectator
+
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7] &f&7%player% changed gamemode to Spectator" to loop-player
+
+
+# ==========================================================
+# BLOCK TELEPORTS & ADVANCEMENTS
+# ==========================================================
+
+on teleport:
+    if player is op:
+        stop
+
+    if gamemode of player is spectator:
+        if world of event-location is not world "creative":
+            if world of event-location is not world "flat":
+                cancel event
+                send "&cSpectator teleporting is only allowed in creative or flat world."
+
+on player advancement done:
+    if "%world of player%" is "creative":
+        if "%event-advancement%" starts with "minecraft:":
+            execute console command "advancement revoke %player% only %event-advancement%"
+    if "%world of player%" is "flat":
+        if "%event-advancement%" starts with "minecraft:":
+            execute console command "advancement revoke %player% only %event-advancement%"
+
+
+# ==========================================================
+# GAMEMODE ON JOIN
+# ==========================================================
+
+on join:
+    wait 1 second
+    if world of player is world "creative":
+        set gamemode of player to creative
+    if world of player is world "flat":
+        set gamemode of player to creative
+
+
+# ==========================================================
+# SPAWN COMMAND (creative/flat only)
+# ==========================================================
+
+command /spawn:
+    permission: finalstation.spawn
+    permission message: &cYou don't have permission to use this!
+    trigger:
+
+        if world of player is world "creative":
+            teleport player to spawn of world "creative"
+            send "&aTeleported to creative spawn."
+            stop
+
+        if world of player is world "flat":
+            teleport player to location(0.5, -60, 0.5, world "flat")
+            send "&aTeleported to flat spawn."
+            stop
+
+        send "&cYou can only use /spawn while in the creative or flat world!"

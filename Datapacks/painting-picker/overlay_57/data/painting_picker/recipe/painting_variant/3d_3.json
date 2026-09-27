@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:painting",
+  "result": {
+    "components": {
+      "minecraft:painting/variant": "custompaintings:3d_3"
+    },
+    "count": 1,
+    "id": "minecraft:painting"
+  }
+}

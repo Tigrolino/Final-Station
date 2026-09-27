@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 75,
+    "supported_formats": {
+      "min_inclusive": 75,
+      "max_inclusive": 99
+    },
+    "description": "Combined Pack: Staff Hats, Custom Paintings & Sonion Rings"
+  }
+}

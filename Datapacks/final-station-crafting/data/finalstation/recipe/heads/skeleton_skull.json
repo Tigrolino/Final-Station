@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#S#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:bone",
+    "S": "minecraft:stone"
+  },
+  "result": {
+    "id": "minecraft:skeleton_skull",
+    "count": 1
+  }
+}

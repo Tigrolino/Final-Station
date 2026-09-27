@@ -1,0 +1,49 @@
+# ==========================================================
+# spells.sk
+#
+# Custom items that are detected by their lore:
+# "&7Levitation Wand", "&7Magic Wand" and a mace with "kill hammer".
+# ==========================================================
+
+# ==========================================================
+# LEVITATION WAND (main hand) + MAGIC WAND (off hand)
+# ==========================================================
+
+on right click:
+    if lore of player's tool contains "&7Levitation Wand":
+        if lore of player's offhand tool contains "&7Magic Wand":
+            set {_ray} to ray trace from player with max distance 20
+
+            if hit entity of {_ray} is a living entity:
+                set {_target} to hit entity of {_ray}
+                apply levitation 1 to {_target} for 5 seconds
+                execute console command "particle minecraft:poof %x-coordinate of {_target}% %y-coordinate of {_target}% %z-coordinate of {_target}% 0.5 0.5 0.5 0.3 25 normal"
+
+
+# ==========================================================
+# KILL HAMMER: kills all mobs of the same type nearby
+# ==========================================================
+
+on death:
+    if attacker is an entity:
+        if attacker's tool is a mace:
+            if lore of attacker's tool contains "kill hammer":
+                set {_type} to type of victim
+                set {_mobname} to "%type of victim%"
+                replace all "_" with " " in {_mobname}
+                set {_killed} to 0
+
+                loop all living entities in radius 100 around victim:
+                    if type of loop-entity is {_type}:
+                        if loop-entity is not victim:
+                            set {killhammer::%uuid of loop-entity%} to true
+                            kill loop-entity
+                            add 1 to {_killed}
+
+                add 1 to {_killed}
+                send "&aKilled %{_killed}% %{_mobname}%s." to attacker
+
+on death:
+    if {killhammer::%uuid of victim%} is true:
+        clear drops
+        delete {killhammer::%uuid of victim%}

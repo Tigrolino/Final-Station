@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:short_grass",
+    "minecraft:bone_meal"
+  ],
+  "result": {
+    "id": "minecraft:short_grass",
+    "count": 2
+  }
+}

@@ -1,0 +1,158 @@
+# ==========================================================
+# server-start.sk
+#
+# Planned server start: countdown, title sequence, world border
+# and a reset back to the pre-start state.
+#
+# Commands:
+#   /start [<minutes>]  start the countdown (op)
+#   /startnow           start immediately
+#   /reset              go back to the pre-start state (op)
+#
+# Permissions:
+#   op (checked inside the commands)
+#
+# ==========================================================
+
+# ==========================================================
+# JOIN: SATURATION UNTIL THE SERVER STARTS
+# ==========================================================
+
+on join:
+    if {game.started} is not true:
+        execute console command "effect give %player% minecraft:saturation 999999 255 true"
+        execute console command "time set day"
+
+
+# ==========================================================
+# /START
+# ==========================================================
+
+command /start [<number>]:
+    trigger:
+        if player is not op:
+            send "&7[&6🚂&r&7]&r &cOnly ops can run this command."
+            stop
+
+        if {game.started} is true:
+            send "&7[&6🚂&r&7]&r &cThe Server has already started."
+            stop
+
+        if {start.running} is true:
+            send "&7[&6🚂&r&7]&r &cA countdown is already running! Reset it first."
+            stop
+
+        set {start.running} to true
+
+        # Minutes argument
+        if arg is set:
+            if arg is a number:
+                set {_mins} to arg
+            else:
+                send "&7[&6🚂&r&7]&r &cInvalid number of minutes. Use /start <minutes>"
+                delete {start.running}
+                stop
+        else:
+            set {_mins} to 0
+
+        # OP-only countdown start message
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7]&r &aCountdown started: Server will begin in %{_mins}% minutes."
+
+        loop {_mins} times:
+            wait 60 seconds
+            subtract 1 from {_mins}
+            if {_mins} > 0:
+                broadcast "&7[&6🚂&r&7]&r &eServer starting in %{_mins}% minutes..."
+
+        # START SEQUENCE (3-2-1-0)
+
+        loop all players:
+            remove saturation from loop-player
+
+        # Intro Title
+        loop all players:
+            play sound "entity.player.toast" at loop-player
+            send title "&6&lTHE FINAL STATION" with subtitle "&7Preparing to depart..." to loop-player
+        wait 4 seconds
+
+        # Countdown 3, 2, 1, 0
+        loop 4 times:
+            set {_num} to 4 - loop-number
+            loop all players:
+                play sound "block.note_block.pling" at loop-player
+                if {_num} = 3:
+                    send title "&c&l3" with subtitle "&7Prepare yourself..." to loop-player
+                else if {_num} = 2:
+                    send title "&e&l2" with subtitle "&7Almost there..." to loop-player
+                else if {_num} = 1:
+                    send title "&6&l1" with subtitle "&7Get ready..." to loop-player
+                else if {_num} = 0:
+                    send title "&6&lThe Final Station" with subtitle "&7Begins!" to loop-player
+                    play sound "ui.toast.challenge_complete" at loop-player
+            wait 1 second
+
+        loop all players:
+            apply speed 2 to loop-player for 10 seconds
+
+        give all players 16 cooked_beef
+        execute console command "worldborder set 10000"
+        execute console command "gamerule doDaylightCycle true"
+
+        # Broadcast start
+        broadcast ""
+        broadcast "&8━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        broadcast "&6&lTHE FINAL STATION &7has officially begun!"
+        broadcast "&eThere is no turning back."
+        broadcast "&8━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        broadcast ""
+
+        delete {start.running}
+        set {game.started} to true
+
+
+# ==========================================================
+# /STARTNOW
+# ==========================================================
+
+command /startnow:
+    trigger:
+        if {game.started} is true:
+            stop
+
+        # Start immediately using /start 0
+        execute player command "/start 0"
+
+
+# ==========================================================
+# /RESET
+# ==========================================================
+
+command /reset:
+    trigger:
+        if player is not op:
+            send "&7[&6🚂&r&7]&r &cOnly ops can run this command."
+            stop
+
+        delete {start.running}
+        delete {game.started}
+
+        # Reset player speeds
+        loop all players:
+            set walk speed of loop-player to 0.2
+            set fly speed of loop-player to 0.1
+            remove speed from loop-player
+            remove jump boost from loop-player
+
+        # Reset worldborder
+        execute console command "worldborder set 81"
+
+        # Reapply saturation to all players
+        execute console command "effect give @a minecraft:saturation 999999 255 true"
+        execute console command "gamerule doDaylightCycle false"
+
+        # Inform OPs
+        loop all players:
+            if loop-player is op:
+                send "&7[&6🚂&r&7]&r &aThe Server has been reset. /start can be used again."

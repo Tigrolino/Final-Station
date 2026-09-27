@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:fern",
+    "minecraft:bone_meal"
+  ],
+  "result": {
+    "id": "minecraft:fern",
+    "count": 2
+  }
+}

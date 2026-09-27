@@ -1,0 +1,102 @@
+# ==========================================================
+# restart-broadcast.sk
+#
+# Restart countdown and coloured server-wide announcements.
+#
+# Commands:
+#   /serverrestart               restart with a 60 second countdown (op)
+#   /broadcast <gold|red> <msg>  big announcement (op)
+#
+# Permissions:
+#   op (checked inside the commands)
+# ==========================================================
+
+# ==========================================================
+# /SERVERRESTART
+# ==========================================================
+
+command /serverrestart:
+    trigger:
+        if player is not op:
+            send "&7[&6🚂&r&7]&r &cOnly ops can run this command."
+            stop
+
+        broadcast ""
+        broadcast "&7━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        broadcast "&6Server restarting in 1 minute..."
+        broadcast "&7━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        broadcast ""
+
+        wait 50 seconds
+
+        broadcast ""
+        broadcast "&7━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        broadcast "&6Server restarting in 10 seconds..."
+        broadcast "&7━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        broadcast ""
+
+        # Countdown 10 → 1
+        loop 10 times:
+            set {_num} to 11 - loop-number
+
+            broadcast "&7[&6🚂&r&7]&r &6Server restarting in &e%{_num}%&6..."
+
+            # Sound only for last 3 seconds
+            if {_num} <= 3:
+                loop all players:
+                    play sound "entity.experience_orb.pickup" at loop-player with pitch 1.2
+
+            wait 1 second
+
+        # Final restart message
+        loop all players:
+            send title "&6&lRESTARTING" with subtitle "&7Please reconnect shortly" to loop-player
+
+        wait 1 second
+
+        execute console command "restart"
+
+
+# ==========================================================
+# /BROADCAST
+# Usage:
+# /broadcast gold Hello everyone
+# /broadcast red Emergency restart now
+# ==========================================================
+
+command /broadcast <text> [<text>]:
+    trigger:
+        if player is not op:
+            send "&7[&6🚂&r&7]&r &cOnly ops can run this command."
+            stop
+
+        set {_color} to arg-1
+        set {_message} to arg-2
+
+        # GOLD BROADCAST
+        if {_color} is "gold":
+
+            broadcast ""
+            broadcast "&7━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+            broadcast "&6%{_message}%"
+            broadcast "&7━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+            broadcast ""
+
+            loop all players:
+                play sound "entity.experience_orb.pickup" at loop-player
+
+        # RED BROADCAST
+        else if {_color} is "red":
+
+            broadcast ""
+            broadcast "&7━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+            broadcast "&c%{_message}%"
+            broadcast "&7━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+            broadcast ""
+
+            loop all players:
+                play sound "block.note_block.bass" at loop-player with pitch 0.1
+
+        # INVALID COLOR
+        else:
+            send "&7[&6🚂&r&7]&r &cUsage: /broadcast <gold/red> <message>"

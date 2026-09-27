@@ -1,0 +1,37 @@
+# ==========================================================
+# ban.sk
+#
+# Soft-ban: sends "lucabobox" to the world "test" whenever they join
+# and shows a one-time welcome title.
+#
+# Commands:
+#   /resettp [<player>]  reset the one-time welcome title (default: yourself)
+#
+# Permissions:
+#   op
+#
+# Requires: Multiverse-Core (mv tp)
+# ==========================================================
+
+# ==========================================================
+# SEND LUCABOBOX TO THE TEST WORLD ON JOIN
+# ==========================================================
+
+on join:
+    if player's name is "lucabobox":
+        execute console command "mv tp lucabobox test"
+        if {tpdone::%uuid of player%} is not set:
+            set {tpdone::%uuid of player%} to true
+            send title "Welcome To Pending." with subtitle "Enjoy Your Stay!" to player for 3 seconds
+
+
+# ==========================================================
+# /RESETTP
+# ==========================================================
+
+command /resettp [<offline player>]:
+    permission: op
+    trigger:
+        set {_p} to arg-1 ? player
+        delete {tpdone::%uuid of {_p}%}
+        send "&a%{_p}%'s teleport status has been reset!"

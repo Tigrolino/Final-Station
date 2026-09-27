@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:weeping_vines",
+    "minecraft:bone_meal"
+  ],
+  "result": {
+    "id": "minecraft:weeping_vines",
+    "count": 2
+  }
+}

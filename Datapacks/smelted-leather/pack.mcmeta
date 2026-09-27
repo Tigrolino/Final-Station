@@ -1,0 +1,19 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "Smelted Leather",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "min_format": [
+      88,
+      0
+    ],
+    "max_format": [
+      999999999,
+      0
+    ]
+  }
+}
