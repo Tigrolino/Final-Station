@@ -34,11 +34,11 @@ Final Station/
 
 | Folder | What it does | Made by |
 | --- | --- | --- |
-| `final-station-crafting` | All our custom crafting recipes (see below) | us, via [TheDestruc7i0n's Crafting Generator](https://crafting.thedestruc7i0n.ca) |
-| `custom-paintings` | Adds our own paintings (textures are in the resource pack) | us |
-| `painting-picker` | Pick any painting (incl. ours) with a stonecutter | [Vanilla Tweaks](https://vanillatweaks.net), edited |
-| `smelted-leather` | Rotten flesh → leather in a furnace, smoker or campfire | us |
-| `all-achievements` | "Completionist" advancement for getting every vanilla advancement | us |
+| `final-station-crafting` | All our custom crafting recipes (see below) | Tigrolino, via [TheDestruc7i0n's Crafting Generator](https://crafting.thedestruc7i0n.ca) |
+| `custom-paintings` | Adds our own paintings (textures are in the resource pack) | Tigrolino |
+| `painting-picker` | Pick any painting (incl. ours) with a stonecutter | [Vanilla Tweaks](https://vanillatweaks.net), edited by Tigrolino |
+| `smelted-leather` | Rotten flesh → leather in a furnace, smoker or campfire | The3dGamerz |
+| `all-achievements` | "Completionist" advancement for getting every vanilla advancement | Tigrolino |
 
 <details>
 <summary>Custom recipes in <code>final-station-crafting</code></summary>
