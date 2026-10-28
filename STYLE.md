@@ -70,6 +70,7 @@ The rules every file in this repo follows. The `.editorconfig` file makes most e
 - One active project per `Plugins/<Name>-source/` folder, without version numbers in folder names.
 - Java uses 4 spaces and google-java-format's AOSP style. YAML uses 2 spaces.
 - Keep source, build files, tests and a README in the project. Build output belongs in `target/`.
-- Each README covers purpose, requirements, installation, commands, configuration and building.
+- Each README covers purpose, requirements, commands, configuration and building.
+- Keep server deployment, upgrade and migration instructions in private notes rather than public READMEs.
 - Preserve upstream attribution and licenses in modified third-party projects.
 - Publish JARs and source bundles through GitHub Releases, not Git.

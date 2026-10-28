@@ -2,11 +2,9 @@
 
 Places collectible items as stationary decorations using Minecraft's cushion placement rules. The default config includes 20 Pikmin variants. The [hat example](examples/config-with-hats.yml) adds the 37 named hats from the resource pack.
 
-## Install
+## Requirements
 
-Requires Paper 26.3, Java 25 and the resource pack containing the configured models. Keep SpawnGuard installed for spawn protection.
-
-Copy `PlaceableDecor-1.1.0.jar` into the server's `plugins` folder and restart. Remove any old PikminDecor JAR first. On the first run, the plugin imports an existing `plugins/PikminDecor/config.yml` if its new config does not exist. Existing placed items keep working.
+Paper 26.3, Java 25 and the resource pack containing the configured models. Spawn protection integrates with SpawnGuard.
 
 ## Use
 
@@ -55,5 +53,3 @@ mvn package
 ```
 
 The JAR is written to `target/`. Native cushion access is isolated in `NativeCushions`; check compatibility when changing Minecraft versions.
-
-The integration harness in `tests/` is for a disposable server only. It creates test objects and shuts the server down. Visual appearance and sound still need an in-game check with the resource pack.

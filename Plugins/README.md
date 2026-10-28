@@ -9,4 +9,4 @@ These are the maintained plugin sources for The Final Station. All target Paper 
 | [PlaceableDecor](PlaceableDecor-source/README.md) | PlaceableDecor | `PlaceableDecor-1.1.0.jar` |
 | [Final Station Map](FinalStationMap-source/README.md) | Pl3xMap | `Pl3xMap-26.3-555-finalstation-3.jar` |
 
-See each project's README for installation, configuration and build instructions.
+See each project's README for commands, configuration and build instructions.

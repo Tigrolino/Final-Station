@@ -2,11 +2,11 @@
 
 A Paper 26.3 port of Pl3xMap 26.2-555 with Final Station web branding. This is a modified upstream build, not a separate map plugin.
 
-## Install
+## Requirements
 
-Requires Paper 26.3 and Java 25. Replace the old map JAR with `Pl3xMap-26.3-555-finalstation-3.jar` and restart. Keep only one Pl3xMap JAR installed.
+Paper 26.3 and Java 25.
 
-The plugin name, `/map` commands, permissions and `plugins/Pl3xMap` data folder stay unchanged. Existing map tiles and add-ons remain in that folder.
+Uses Pl3xMap's `/map` commands and permissions. Configuration, map tiles and add-ons are stored under `plugins/Pl3xMap/`.
 
 ## Changes
 

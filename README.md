@@ -13,7 +13,7 @@ Custom plugin sources, datapacks, Skripts and the resource pack for The Final St
 | `Plugins/` | Active custom plugin projects; see [Plugins/README.md](Plugins/README.md) |
 | `Datapacks/` | Maintained unpacked datapacks |
 | `Resourcepack/` | Server resource pack |
-| `Skripts/` | Server scripts, installed under `plugins/Skript/scripts/` |
+| `Skripts/` | Server scripts |
 
 ## Custom plugins
 

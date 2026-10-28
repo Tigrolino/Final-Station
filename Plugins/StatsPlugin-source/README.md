@@ -4,9 +4,9 @@ Player statistics menus, leaderboards and AFK, recording and live status tags. T
 
 Original plugin by StarMaster, maintained here for The Final Station.
 
-## Install
+## Requirements
 
-Requires Paper 26.3 and Java 25. Copy `StatisticsViewer-1.8.jar` into `plugins` and restart. PlaceholderAPI is optional and enables the status placeholders below.
+Paper 26.3 and Java 25. PlaceholderAPI is optional and enables the status placeholders below.
 
 ## Commands
 
