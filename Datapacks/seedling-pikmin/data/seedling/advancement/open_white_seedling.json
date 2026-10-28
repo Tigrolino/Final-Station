@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use_seedling": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:flint",
+          "components": {
+            "minecraft:custom_data": {
+              "seedling_white_box": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "seedling:open_white"
+  }
+}

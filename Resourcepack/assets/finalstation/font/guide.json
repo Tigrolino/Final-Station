@@ -1,0 +1,1439 @@
+{
+  "providers": [
+    {
+      "type": "space",
+      "advances": {
+        "": 1,
+        "": 2,
+        "": 3,
+        "": 4,
+        "": 5,
+        "": 6,
+        "": 7,
+        "": 8
+      }
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/cover_banner.png",
+      "ascent": 7,
+      "height": 60,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_welcome.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_minecart.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rule.png",
+      "ascent": 4,
+      "height": 4,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_spawn.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_compass.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_life.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_clock.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_player_head.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_elytra.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_nether_star.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_gentle.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_bone_meal.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_creeper_head.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_vine.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_shulker_shell.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_diamond_pickaxe.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_anvil.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_recipes.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_crafting_table.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_grass_block.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_dirt.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_rooted_dirt.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_sand.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_calcite.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_tuff.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_fern.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_large_fern.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_tall_grass.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_fern.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_short_grass.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_vine.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_twisting_vines.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_weeping_vines.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_wither_rose.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_skeleton_skull.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_skeleton_skull.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_zombie_head.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_creeper_head.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_piglin_head.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_conduit.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_conduit.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_iron_horse_armor.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_horse_iron.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_item_frame.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_iframe.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_leather.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_leather.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_polished_andesite.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_unpolish.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_music_disc_cat.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_flint.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_disc_generic.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_dried_kelp.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_gold_ingot.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_copper_ingot.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_emerald.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_redstone.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_slime_ball.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_popped_chorus_fruit.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_amethyst_shard.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_turtle_scute.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_coal.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_iron_ingot.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_lapis_lazuli.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_ender_eye.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_music_disc_precipice.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_music_disc_relic.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_music_disc_tears.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_music_disc_lava_chicken.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_music_disc_creator.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_music_disc_creator_music_box.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_music_disc_pigstep.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_music_disc_bounce.png",
+      "ascent": 7,
+      "height": 54,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_cutter.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_stonecutter.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_oak_log.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_cobblestone.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_deepslate.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_glass.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_amethyst_block.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_copper_block.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/cut_wood.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/cut_glass.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/cut_copper.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_painting.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_wonders.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_pink_dye.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rec_bp.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_red_sand.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_basalt.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_birch_sapling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_cherry_sapling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_seagrass.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_snowball.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_crimson_fungus.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_dark_oak_sapling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_sand.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_oak_sapling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_ice.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_jungle_sapling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_mangrove_propagule.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_spruce_sapling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_netherrack.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_pale_oak_sapling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_short_grass.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_acacia_sapling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_soul_sand.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_lily_pad.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_sea_pickle.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_warped_fungus.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_water_bucket.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_light_blue_concrete_powder.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_dirt.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_mud.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/cauldron.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_armor_stand.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_writable_book.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/statues_book.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_lead.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/leash.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_gallery.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_steve.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_shopping_district.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_swamp.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_bluke.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_3d_2.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_3d_1.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_bees.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_moose.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_3d_3.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_len.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_selboo.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_spudskie.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_zeph.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_bear.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_monolith.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/ptg_snuurpus.png",
+      "ascent": 7,
+      "height": 44,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_carved_pumpkin.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_golden_apple.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/rename.png",
+      "ascent": 7,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/hats_0.png",
+      "ascent": 7,
+      "height": 103,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/hats_1.png",
+      "ascent": 7,
+      "height": 103,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/hats_2.png",
+      "ascent": 7,
+      "height": 103,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/hats_3.png",
+      "ascent": 7,
+      "height": 103,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/hats_4.png",
+      "ascent": 7,
+      "height": 103,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/hats_5.png",
+      "ascent": 7,
+      "height": 103,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/staffs.png",
+      "ascent": 7,
+      "height": 70,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/snacks.png",
+      "ascent": 7,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_builders.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_bricks.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_media.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_jukebox.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_music_disc_13.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_filled_map.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/i_map.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/chap_beyond.png",
+      "ascent": 7,
+      "height": 24,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "finalstation:font/guide/credits_rule.png",
+      "ascent": 4,
+      "height": 4,
+      "chars": [
+        ""
+      ]
+    }
+  ]
+}

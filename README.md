@@ -4,92 +4,57 @@
 
 # The Final Station
 
-Skripts, datapacks and the resource pack for **The Final Station** Minecraft SMP.
+Custom plugin sources, datapacks, Skripts and the resource pack for The Final Station Minecraft server. The current server runs Paper 26.3 with Java 25.
 
----
+## Layout
 
-## Folder layout
-
-```
-Final Station/
-├── Datapacks/        → one folder per datapack (goes in world/datapacks/)
-├── Resourcepack/     → the server resource pack
-├── Skripts/          → Skript files (goes in plugins/Skript/scripts/)
-├── Releases/         → zipped builds (not uploaded to git, use GitHub Releases)
-├── README.md
-└── STYLE.md          → how files in this repo are named and formatted
-```
-
-## Requirements
-
-| What | Used for |
+| Folder | Contents |
 | --- | --- |
-| Minecraft **1.21.10** | Datapacks support pack formats 88 – 121 |
-| [Skript](https://github.com/SkriptLang/Skript) | everything in `Skripts/` |
-| [LuckPerms](https://luckperms.net) | `ranks.sk` (builder / elytra groups) |
-| [Multiverse-Core](https://github.com/Multiverse/Multiverse-Core) | `ban.sk`, the creative / flat worlds |
-| [Geyser](https://geysermc.org) + Floodgate | Bedrock players in `whitelist.sk` |
+| `Plugins/` | Active custom plugin projects; see [Plugins/README.md](Plugins/README.md) |
+| `Datapacks/` | Maintained unpacked datapacks |
+| `Resourcepack/` | Server resource pack |
+| `Skripts/` | Server scripts, installed under `plugins/Skript/scripts/` |
+| `Tools/` | Custom plugin build tooling |
+| `Docs/` | Server comparison and release notes |
+
+Server configuration (`Config/`), server copies, third-party plugin JARs, old versions, Discord assets, worlds, reference resources, scratch tests and release output are local-only. They are excluded through `.gitignore`.
+
+## Custom plugins
+
+| Plugin | Purpose |
+| --- | --- |
+| [SpawnGuard](Plugins/SpawnGuard-source/README.md) | Spawn protection, vine growth and mob block-damage rules |
+| [StatsPlugin](Plugins/StatsPlugin-source/README.md) | Statistics menus, leaderboards and player status tags |
+| [PlaceableDecor](Plugins/PlaceableDecor-source/README.md) | Configurable collectible decorations, including Pikmin and hats |
+| [Final Station Map](Plugins/FinalStationMap-source/README.md) | Pl3xMap port and web branding |
+
+Build instructions are in [Tools/README.md](Tools/README.md). JARs and source bundles are attached to GitHub Releases rather than committed to the repository.
 
 ## Datapacks
 
-| Folder | What it does | Made by |
-| --- | --- | --- |
-| `final-station-crafting` | All our custom crafting recipes (see below) | Tigrolino, via [TheDestruc7i0n's Crafting Generator](https://crafting.thedestruc7i0n.ca) |
-| `custom-paintings` | Adds our own paintings (textures are in the resource pack) | Tigrolino |
-| `painting-picker` | Pick any painting (incl. ours) with a stonecutter | [Vanilla Tweaks](https://vanillatweaks.net), edited by Tigrolino |
-| `smelted-leather` | Rotten flesh → leather in a furnace, smoker or campfire | The3dGamerz |
-| `all-achievements` | "Completionist" advancement for getting every vanilla advancement | Tigrolino |
-
-<details>
-<summary>Custom recipes in <code>final-station-crafting</code></summary>
-
-| Recipe | Result |
+| Folder | Purpose |
 | --- | --- |
-| Dirt + Hanging Roots | Rooted Dirt |
-| 2 Sand + 2 Dirt | 4 Sand |
-| Grass Block | Dirt |
-| Cobblestone + Bone Meal | Calcite |
-| Cobblestone + Basalt | 2 Tuff |
-| 2 Ferns | Large Fern |
-| 2 Short Grass | Tall Grass |
-| Fern + Bone Meal | 2 Ferns |
-| Short Grass + Bone Meal | 2 Short Grass |
-| Vine / Twisting Vines / Weeping Vines + Bone Meal | 2 of the same vine |
-| Poppy + Coal | Wither Rose |
-| Skeleton Skull surrounded by Gunpowder | Creeper Head |
-| Skeleton Skull surrounded by Gold Ingots | Piglin Head |
-| Stone surrounded by Bones | Skeleton Skull |
-| Skeleton Skull surrounded by Rotten Flesh | Zombie Head |
-| Conduit surrounded by 8 Nautilus Shells | 2 Conduits |
+| `all-achievements` | Completionist advancement |
+| `custom-paintings` | Custom paintings used by the resource pack |
+| [final-station-crafting](Datapacks/final-station-crafting/README.md) | Custom recipes |
+| `final-station-guide` | Traveller's Guide book and updates |
+| [murder-mystery](Datapacks/murder-mystery/README.md) | Murder mystery event |
+| `painting-picker` | Painting selection through a stonecutter |
+| `seedling-pikmin` | Seedlings, Pikmin rewards and cauldron recipes |
+| `smelted-leather` | Rotten flesh to leather recipes |
 
-</details>
+Third-party archive collections are kept locally. The [server comparison](Docs/server-comparison-2026-10-28.md) lists differences and overlapping deployed packs.
 
-## Skripts
+## Skripts and resource pack
 
-| File | What it does | Who it's for |
-| --- | --- | --- |
-| `ban.sk` | Soft ban: sends a specific player to the `test` world on join | Banned players |
-| `height.sk` | `/height` – play at your real-life height | Everyone (`/height`), admins (the rest) |
-| `ranks.sk` | `/builder`, `/elytra` (+ `/un...`) – LuckPerms group shortcuts | Admins only |
-| `restart-broadcast.sk` | `/serverrestart` countdown and `/broadcast <gold/red>` | Admins only |
-| `server-start.sk` | `/start`, `/startnow`, `/reset` – the big server-start event | Admins only |
-| `spells.sk` | Experimental items | Admins only |
-| `welcome.sk` | Join/quit messages, first-join welcome, `/day` counter | Everyone |
-| `whitelist.sk` | `/wladd`, `/wlapply`, ... – batch whitelist for Java + Bedrock | Admins only |
-| `worlds.sk` | `/creative`, `/survival`, `/flat`, `/gmc`, `/spawn`, ... | Builders |
+Skript files start with their commands, permissions and dependencies. They cover ranks, worlds, whitelist management, height, announcements and server events. Some require LuckPerms, Multiverse, Geyser or Floodgate.
 
-Every Skript file starts with a header listing its commands and permissions.
+The resource pack contains custom hats, staffs, railings, paintings, guide-book artwork and Seedling/Pikmin models. Images used by the pack remain under `Resourcepack/assets/`; the separate `Resources/` folder contains local reference originals.
 
-## Resource pack
+## Style and credits
 
-Contains the staff hats (`hat_1` – `hat_36`), the staffs (bread / forest / void), sonion rings and
-the custom paintings.
+See [STYLE.md](STYLE.md) for formatting and project layout. Keep generated files and private server data out of commits.
 
-## Credits
+Final Station work by Tigrolino and The3dGamerz. StatsPlugin originated with StarMaster. Pl3xMap and the included parser retain their upstream attribution. Third-party datapacks retain their authors' metadata.
 
-- Tigrolino
-- The3dGamerz
-
-## License
-
-MIT – see [LICENSE](LICENSE).
+The repository's own work is covered by [LICENSE](LICENSE). Upstream components retain their own licenses.

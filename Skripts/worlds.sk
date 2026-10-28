@@ -32,7 +32,6 @@
 
 command /creative [<player>]:
     permission: finalstation.creative
-    permission message: &cYou don't have permission to use this!
     trigger:
 
         if arg-1 is set:
@@ -71,7 +70,6 @@ command /creative [<player>]:
 
 command /survival [<player>]:
     permission: finalstation.survival
-    permission message: &cYou don't have permission to use this!
     trigger:
 
         if arg-1 is set:
@@ -123,7 +121,6 @@ command /survival [<player>]:
 
 command /flat [<player>]:
     permission: finalstation.flat
-    permission message: &cYou don't have permission to use this!
     trigger:
 
         if arg-1 is set:
@@ -302,7 +299,6 @@ on join:
 
 command /spawn:
     permission: finalstation.spawn
-    permission message: &cYou don't have permission to use this!
     trigger:
 
         if world of player is world "creative":

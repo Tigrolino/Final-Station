@@ -1,0 +1,36 @@
+Final Station Map
+=================
+
+This jar is Pl3xMap 26.2-555 (https://modrinth.com/plugin/pl3xmap, MIT licence,
+by granny, BillyGalbreath and JLyne) with a small set of changes so it runs on
+Paper 26.3, plus Final Station branding on the web page. It is not an official
+Pl3xMap build. Only the Paper/Bukkit side was ported; the Fabric side is untouched.
+
+Changes for Minecraft 26.3
+  net/pl3x/map/core/world/BlockStateDeserializer   reads the new chunk block palette format
+  net/pl3x/map/bukkit/Pl3xMapImpl                  RedstoneWireBlock rename, new world-gen feature classes
+  net/pl3x/map/core/world/Blocks                   the 90 blocks added in 26.3
+  org/incendo/cloud/bukkit/parser/ItemStackParser* taken from cloud-bukkit 2.0.1 (official fix for 26.3)
+  web/lang/en_us.json                              block and biome names up to 26.3
+
+Fixes (build -2)
+  net/pl3x/map/core/world/Region                   one unreadable chunk no longer blanks its whole region;
+                                                   only that chunk is skipped and the console names it
+  net/pl3x/map/core/world/ChunkLoader              reads oversized chunks the server keeps in c.X.Z.mcc files
+
+Branding
+  web/index.html                                   title, description and link-preview image
+  web/images/final-station-banner.jpg              the banner used for link previews
+  web/favicon.ico                                  the browser tab icon
+  net/pl3x/map/core/configuration/Lang             default map title "Final Station Map"
+  plugin.yml                                       version 26.3-555-finalstation-3
+
+The plugin is still called "Pl3xMap" inside the server, so its commands, permissions,
+config folder and add-ons keep working. The source of the changed classes is kept in
+the Final Station repository under Plugins/FinalStationMap-source.
+
+Fixes (build -3)
+  net/pl3x/map/core/world/BlockStateDeserializer   a block saved as just its name (26.3 does this for default
+                                                   states) gets age/moisture/power 0 instead of -1; unpowered
+                                                   redstone dust crashed the whole region before
+  net/pl3x/map/bukkit/Pl3xMapImpl                  redstone power is kept within 0..15

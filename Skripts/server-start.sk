@@ -98,7 +98,7 @@ command /start [<number>]:
 
         give all players 16 cooked_beef
         execute console command "worldborder set 10000"
-        execute console command "gamerule doDaylightCycle true"
+        execute console command "gamerule advance_time true"
 
         # Broadcast start
         broadcast ""
@@ -150,7 +150,7 @@ command /reset:
 
         # Reapply saturation to all players
         execute console command "effect give @a minecraft:saturation 999999 255 true"
-        execute console command "gamerule doDaylightCycle false"
+        execute console command "gamerule advance_time false"
 
         # Inform OPs
         loop all players:

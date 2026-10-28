@@ -255,6 +255,13 @@
           "type": "minecraft:model",
           "model": "minecraft:block/hat_36"
         }
+      },
+      {
+        "when": "Bicorn",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/lukepoopbeardhat"
+        }
       }
     ],
     "fallback": {

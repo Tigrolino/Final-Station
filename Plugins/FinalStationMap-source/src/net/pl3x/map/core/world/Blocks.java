@@ -1,0 +1,2425 @@
+package net.pl3x.map.core.world;
+
+import net.pl3x.map.core.Pl3xMap;
+
+import org.jspecify.annotations.NullMarked;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@NullMarked
+public class Blocks {
+    private static final Map<String, Block> blocks = new HashMap<>();
+    public static final Block ACACIA_BUTTON = register(new Block(0, "minecraft:acacia_button", 0));
+    public static final Block ACACIA_DOOR =
+            register(new Block(1, "minecraft:acacia_door", 14188339));
+    public static final Block ACACIA_FENCE =
+            register(new Block(2, "minecraft:acacia_fence", 14188339));
+    public static final Block ACACIA_FENCE_GATE =
+            register(new Block(3, "minecraft:acacia_fence_gate", 14188339));
+    public static final Block ACACIA_HANGING_SIGN =
+            register(new Block(4, "minecraft:acacia_hanging_sign", 14188339));
+    public static final Block ACACIA_LEAVES =
+            register(new Block(5, "minecraft:acacia_leaves", 31744));
+    public static final Block ACACIA_LOG = register(new Block(6, "minecraft:acacia_log", 14188339));
+    public static final Block ACACIA_PLANKS =
+            register(new Block(7, "minecraft:acacia_planks", 14188339));
+    public static final Block ACACIA_PRESSURE_PLATE =
+            register(new Block(8, "minecraft:acacia_pressure_plate", 14188339));
+    public static final Block ACACIA_SAPLING =
+            register(new Block(9, "minecraft:acacia_sapling", 31744));
+    public static final Block ACACIA_SIGN =
+            register(new Block(10, "minecraft:acacia_sign", 14188339));
+    public static final Block ACACIA_SLAB =
+            register(new Block(11, "minecraft:acacia_slab", 14188339));
+    public static final Block ACACIA_STAIRS =
+            register(new Block(12, "minecraft:acacia_stairs", 14188339));
+    public static final Block ACACIA_TRAPDOOR =
+            register(new Block(13, "minecraft:acacia_trapdoor", 14188339));
+    public static final Block ACACIA_WALL_HANGING_SIGN =
+            register(new Block(14, "minecraft:acacia_wall_hanging_sign", 14188339));
+    public static final Block ACACIA_WALL_SIGN =
+            register(new Block(15, "minecraft:acacia_wall_sign", 14188339));
+    public static final Block ACACIA_WOOD =
+            register(new Block(16, "minecraft:acacia_wood", 5000268));
+    public static final Block ACTIVATOR_RAIL =
+            register(new Block(17, "minecraft:activator_rail", 0));
+    public static final Block AIR = register(new Block(18, "minecraft:air", 0));
+    public static final Block ALLIUM = register(new Block(19, "minecraft:allium", 31744));
+    public static final Block AMETHYST_BLOCK =
+            register(new Block(20, "minecraft:amethyst_block", 8339378));
+    public static final Block AMETHYST_CLUSTER =
+            register(new Block(21, "minecraft:amethyst_cluster", 8339378));
+    public static final Block ANCIENT_DEBRIS =
+            register(new Block(22, "minecraft:ancient_debris", 1644825));
+    public static final Block ANDESITE = register(new Block(23, "minecraft:andesite", 7368816));
+    public static final Block ANDESITE_SLAB =
+            register(new Block(24, "minecraft:andesite_slab", 7368816));
+    public static final Block ANDESITE_STAIRS =
+            register(new Block(25, "minecraft:andesite_stairs", 7368816));
+    public static final Block ANDESITE_WALL =
+            register(new Block(26, "minecraft:andesite_wall", 7368816));
+    public static final Block ANVIL = register(new Block(27, "minecraft:anvil", 10987431));
+    public static final Block ATTACHED_MELON_STEM =
+            register(new Block(28, "minecraft:attached_melon_stem", 31744));
+    public static final Block ATTACHED_PUMPKIN_STEM =
+            register(new Block(29, "minecraft:attached_pumpkin_stem", 31744));
+    public static final Block AZALEA = register(new Block(30, "minecraft:azalea", 31744));
+    public static final Block AZALEA_LEAVES =
+            register(new Block(31, "minecraft:azalea_leaves", 31744));
+    public static final Block AZURE_BLUET = register(new Block(32, "minecraft:azure_bluet", 31744));
+    public static final Block BAMBOO = register(new Block(33, "minecraft:bamboo", 31744));
+    public static final Block BAMBOO_BLOCK =
+            register(new Block(34, "minecraft:bamboo_block", 15066419));
+    public static final Block BAMBOO_BUTTON = register(new Block(35, "minecraft:bamboo_button", 0));
+    public static final Block BAMBOO_DOOR =
+            register(new Block(36, "minecraft:bamboo_door", 15066419));
+    public static final Block BAMBOO_FENCE =
+            register(new Block(37, "minecraft:bamboo_fence", 15066419));
+    public static final Block BAMBOO_FENCE_GATE =
+            register(new Block(38, "minecraft:bamboo_fence_gate", 15066419));
+    public static final Block BAMBOO_HANGING_SIGN =
+            register(new Block(39, "minecraft:bamboo_hanging_sign", 15066419));
+    public static final Block BAMBOO_MOSAIC =
+            register(new Block(40, "minecraft:bamboo_mosaic", 15066419));
+    public static final Block BAMBOO_MOSAIC_SLAB =
+            register(new Block(41, "minecraft:bamboo_mosaic_slab", 15066419));
+    public static final Block BAMBOO_MOSAIC_STAIRS =
+            register(new Block(42, "minecraft:bamboo_mosaic_stairs", 15066419));
+    public static final Block BAMBOO_PLANKS =
+            register(new Block(43, "minecraft:bamboo_planks", 15066419));
+    public static final Block BAMBOO_PRESSURE_PLATE =
+            register(new Block(44, "minecraft:bamboo_pressure_plate", 15066419));
+    public static final Block BAMBOO_SAPLING =
+            register(new Block(45, "minecraft:bamboo_sapling", 9402184));
+    public static final Block BAMBOO_SIGN =
+            register(new Block(46, "minecraft:bamboo_sign", 15066419));
+    public static final Block BAMBOO_SLAB =
+            register(new Block(47, "minecraft:bamboo_slab", 15066419));
+    public static final Block BAMBOO_STAIRS =
+            register(new Block(48, "minecraft:bamboo_stairs", 15066419));
+    public static final Block BAMBOO_TRAPDOOR =
+            register(new Block(49, "minecraft:bamboo_trapdoor", 15066419));
+    public static final Block BAMBOO_WALL_HANGING_SIGN =
+            register(new Block(50, "minecraft:bamboo_wall_hanging_sign", 15066419));
+    public static final Block BAMBOO_WALL_SIGN =
+            register(new Block(51, "minecraft:bamboo_wall_sign", 15066419));
+    public static final Block BARREL = register(new Block(52, "minecraft:barrel", 9402184));
+    public static final Block BARRIER = register(new Block(53, "minecraft:barrier", 0));
+    public static final Block BASALT = register(new Block(54, "minecraft:basalt", 1644825));
+    public static final Block BEACON = register(new Block(55, "minecraft:beacon", 6085589));
+    public static final Block BEDROCK = register(new Block(56, "minecraft:bedrock", 7368816));
+    public static final Block BEE_NEST = register(new Block(57, "minecraft:bee_nest", 15066419));
+    public static final Block BEEHIVE = register(new Block(58, "minecraft:beehive", 9402184));
+    public static final Block BEETROOTS = register(new Block(59, "minecraft:beetroots", 31744));
+    public static final Block BELL = register(new Block(60, "minecraft:bell", 16445005));
+    public static final Block BIG_DRIPLEAF =
+            register(new Block(61, "minecraft:big_dripleaf", 31744));
+    public static final Block BIG_DRIPLEAF_STEM =
+            register(new Block(62, "minecraft:big_dripleaf_stem", 31744));
+    public static final Block BIRCH_BUTTON = register(new Block(63, "minecraft:birch_button", 0));
+    public static final Block BIRCH_DOOR =
+            register(new Block(64, "minecraft:birch_door", 16247203));
+    public static final Block BIRCH_FENCE =
+            register(new Block(65, "minecraft:birch_fence", 16247203));
+    public static final Block BIRCH_FENCE_GATE =
+            register(new Block(66, "minecraft:birch_fence_gate", 16247203));
+    public static final Block BIRCH_HANGING_SIGN =
+            register(new Block(67, "minecraft:birch_hanging_sign", 16247203));
+    public static final Block BIRCH_LEAVES =
+            register(new Block(68, "minecraft:birch_leaves", 31744));
+    public static final Block BIRCH_LOG = register(new Block(69, "minecraft:birch_log", 16247203));
+    public static final Block BIRCH_PLANKS =
+            register(new Block(70, "minecraft:birch_planks", 16247203));
+    public static final Block BIRCH_PRESSURE_PLATE =
+            register(new Block(71, "minecraft:birch_pressure_plate", 16247203));
+    public static final Block BIRCH_SAPLING =
+            register(new Block(72, "minecraft:birch_sapling", 31744));
+    public static final Block BIRCH_SIGN =
+            register(new Block(73, "minecraft:birch_sign", 16247203));
+    public static final Block BIRCH_SLAB =
+            register(new Block(74, "minecraft:birch_slab", 16247203));
+    public static final Block BIRCH_STAIRS =
+            register(new Block(75, "minecraft:birch_stairs", 16247203));
+    public static final Block BIRCH_TRAPDOOR =
+            register(new Block(76, "minecraft:birch_trapdoor", 16247203));
+    public static final Block BIRCH_WALL_HANGING_SIGN =
+            register(new Block(77, "minecraft:birch_wall_hanging_sign", 16247203));
+    public static final Block BIRCH_WALL_SIGN =
+            register(new Block(78, "minecraft:birch_wall_sign", 16247203));
+    public static final Block BIRCH_WOOD =
+            register(new Block(79, "minecraft:birch_wood", 16247203));
+    public static final Block BLACK_BANNER =
+            register(new Block(80, "minecraft:black_banner", 9402184));
+    public static final Block BLACK_BED = register(new Block(81, "minecraft:black_bed", 1644825));
+    public static final Block BLACK_CANDLE =
+            register(new Block(82, "minecraft:black_candle", 1644825));
+    public static final Block BLACK_CANDLE_CAKE =
+            register(new Block(83, "minecraft:black_candle_cake", 0));
+    public static final Block BLACK_CARPET =
+            register(new Block(84, "minecraft:black_carpet", 1644825));
+    public static final Block BLACK_CONCRETE =
+            register(new Block(85, "minecraft:black_concrete", 1644825));
+    public static final Block BLACK_CONCRETE_POWDER =
+            register(new Block(86, "minecraft:black_concrete_powder", 1644825));
+    public static final Block BLACK_GLAZED_TERRACOTTA =
+            register(new Block(87, "minecraft:black_glazed_terracotta", 1644825));
+    public static final Block BLACK_SHULKER_BOX =
+            register(new Block(88, "minecraft:black_shulker_box", 1644825));
+    public static final Block BLACK_STAINED_GLASS =
+            register(new Block(89, "minecraft:black_stained_glass", 1644825));
+    public static final Block BLACK_STAINED_GLASS_PANE =
+            register(new Block(90, "minecraft:black_stained_glass_pane", 0));
+    public static final Block BLACK_TERRACOTTA =
+            register(new Block(91, "minecraft:black_terracotta", 2430480));
+    public static final Block BLACK_WALL_BANNER =
+            register(new Block(92, "minecraft:black_wall_banner", 9402184));
+    public static final Block BLACK_WOOL = register(new Block(93, "minecraft:black_wool", 1644825));
+    public static final Block BLACKSTONE = register(new Block(94, "minecraft:blackstone", 1644825));
+    public static final Block BLACKSTONE_SLAB =
+            register(new Block(95, "minecraft:blackstone_slab", 1644825));
+    public static final Block BLACKSTONE_STAIRS =
+            register(new Block(96, "minecraft:blackstone_stairs", 1644825));
+    public static final Block BLACKSTONE_WALL =
+            register(new Block(97, "minecraft:blackstone_wall", 1644825));
+    public static final Block BLAST_FURNACE =
+            register(new Block(98, "minecraft:blast_furnace", 7368816));
+    public static final Block BLUE_BANNER =
+            register(new Block(99, "minecraft:blue_banner", 9402184));
+    public static final Block BLUE_BED = register(new Block(100, "minecraft:blue_bed", 3361970));
+    public static final Block BLUE_CANDLE =
+            register(new Block(101, "minecraft:blue_candle", 3361970));
+    public static final Block BLUE_CANDLE_CAKE =
+            register(new Block(102, "minecraft:blue_candle_cake", 0));
+    public static final Block BLUE_CARPET =
+            register(new Block(103, "minecraft:blue_carpet", 3361970));
+    public static final Block BLUE_CONCRETE =
+            register(new Block(104, "minecraft:blue_concrete", 3361970));
+    public static final Block BLUE_CONCRETE_POWDER =
+            register(new Block(105, "minecraft:blue_concrete_powder", 3361970));
+    public static final Block BLUE_GLAZED_TERRACOTTA =
+            register(new Block(106, "minecraft:blue_glazed_terracotta", 3361970));
+    public static final Block BLUE_ICE = register(new Block(107, "minecraft:blue_ice", 10526975));
+    public static final Block BLUE_ORCHID =
+            register(new Block(108, "minecraft:blue_orchid", 31744));
+    public static final Block BLUE_SHULKER_BOX =
+            register(new Block(109, "minecraft:blue_shulker_box", 3361970));
+    public static final Block BLUE_STAINED_GLASS =
+            register(new Block(110, "minecraft:blue_stained_glass", 3361970));
+    public static final Block BLUE_STAINED_GLASS_PANE =
+            register(new Block(111, "minecraft:blue_stained_glass_pane", 0));
+    public static final Block BLUE_TERRACOTTA =
+            register(new Block(112, "minecraft:blue_terracotta", 4996700));
+    public static final Block BLUE_WALL_BANNER =
+            register(new Block(113, "minecraft:blue_wall_banner", 9402184));
+    public static final Block BLUE_WOOL = register(new Block(114, "minecraft:blue_wool", 3361970));
+    public static final Block BONE_BLOCK =
+            register(new Block(115, "minecraft:bone_block", 16247203));
+    public static final Block BOOKSHELF = register(new Block(116, "minecraft:bookshelf", 9402184));
+    public static final Block BRAIN_CORAL =
+            register(new Block(117, "minecraft:brain_coral", 15892389));
+    public static final Block BRAIN_CORAL_BLOCK =
+            register(new Block(118, "minecraft:brain_coral_block", 15892389));
+    public static final Block BRAIN_CORAL_FAN =
+            register(new Block(119, "minecraft:brain_coral_fan", 15892389));
+    public static final Block BRAIN_CORAL_WALL_FAN =
+            register(new Block(120, "minecraft:brain_coral_wall_fan", 15892389));
+    public static final Block BREWING_STAND =
+            register(new Block(121, "minecraft:brewing_stand", 10987431));
+    public static final Block BRICK_SLAB =
+            register(new Block(122, "minecraft:brick_slab", 10040115));
+    public static final Block BRICK_STAIRS =
+            register(new Block(123, "minecraft:brick_stairs", 10040115));
+    public static final Block BRICK_WALL =
+            register(new Block(124, "minecraft:brick_wall", 10040115));
+    public static final Block BRICKS = register(new Block(125, "minecraft:bricks", 10040115));
+    public static final Block BROWN_BANNER =
+            register(new Block(126, "minecraft:brown_banner", 9402184));
+    public static final Block BROWN_BED = register(new Block(127, "minecraft:brown_bed", 6704179));
+    public static final Block BROWN_CANDLE =
+            register(new Block(128, "minecraft:brown_candle", 6704179));
+    public static final Block BROWN_CANDLE_CAKE =
+            register(new Block(129, "minecraft:brown_candle_cake", 0));
+    public static final Block BROWN_CARPET =
+            register(new Block(130, "minecraft:brown_carpet", 6704179));
+    public static final Block BROWN_CONCRETE =
+            register(new Block(131, "minecraft:brown_concrete", 6704179));
+    public static final Block BROWN_CONCRETE_POWDER =
+            register(new Block(132, "minecraft:brown_concrete_powder", 6704179));
+    public static final Block BROWN_GLAZED_TERRACOTTA =
+            register(new Block(133, "minecraft:brown_glazed_terracotta", 6704179));
+    public static final Block BROWN_MUSHROOM =
+            register(new Block(134, "minecraft:brown_mushroom", 6704179));
+    public static final Block BROWN_MUSHROOM_BLOCK =
+            register(new Block(135, "minecraft:brown_mushroom_block", 9923917));
+    public static final Block BROWN_SHULKER_BOX =
+            register(new Block(136, "minecraft:brown_shulker_box", 6704179));
+    public static final Block BROWN_STAINED_GLASS =
+            register(new Block(137, "minecraft:brown_stained_glass", 6704179));
+    public static final Block BROWN_STAINED_GLASS_PANE =
+            register(new Block(138, "minecraft:brown_stained_glass_pane", 0));
+    public static final Block BROWN_TERRACOTTA =
+            register(new Block(139, "minecraft:brown_terracotta", 4993571));
+    public static final Block BROWN_WALL_BANNER =
+            register(new Block(140, "minecraft:brown_wall_banner", 9402184));
+    public static final Block BROWN_WOOL =
+            register(new Block(141, "minecraft:brown_wool", 6704179));
+    public static final Block BUBBLE_COLUMN =
+            register(new Block(142, "minecraft:bubble_column", 4210943));
+    public static final Block BUBBLE_CORAL =
+            register(new Block(143, "minecraft:bubble_coral", 8339378));
+    public static final Block BUBBLE_CORAL_BLOCK =
+            register(new Block(144, "minecraft:bubble_coral_block", 8339378));
+    public static final Block BUBBLE_CORAL_FAN =
+            register(new Block(145, "minecraft:bubble_coral_fan", 8339378));
+    public static final Block BUBBLE_CORAL_WALL_FAN =
+            register(new Block(146, "minecraft:bubble_coral_wall_fan", 8339378));
+    public static final Block BUDDING_AMETHYST =
+            register(new Block(147, "minecraft:budding_amethyst", 8339378));
+    public static final Block CACTUS = register(new Block(148, "minecraft:cactus", 31744));
+    public static final Block CAKE = register(new Block(149, "minecraft:cake", 0));
+    public static final Block CALCITE = register(new Block(150, "minecraft:calcite", 13742497));
+    public static final Block CAMPFIRE = register(new Block(151, "minecraft:campfire", 8476209));
+    public static final Block CANDLE = register(new Block(152, "minecraft:candle", 16247203));
+    public static final Block CANDLE_CAKE = register(new Block(153, "minecraft:candle_cake", 0));
+    public static final Block CARROTS = register(new Block(154, "minecraft:carrots", 31744));
+    public static final Block CARTOGRAPHY_TABLE =
+            register(new Block(155, "minecraft:cartography_table", 9402184));
+    public static final Block CARVED_PUMPKIN =
+            register(new Block(156, "minecraft:carved_pumpkin", 14188339));
+    public static final Block CAULDRON = register(new Block(157, "minecraft:cauldron", 7368816));
+    public static final Block CAVE_AIR = register(new Block(158, "minecraft:cave_air", 0));
+    public static final Block CAVE_VINES = register(new Block(159, "minecraft:cave_vines", 31744));
+    public static final Block CAVE_VINES_PLANT =
+            register(new Block(160, "minecraft:cave_vines_plant", 31744));
+    public static final Block CHAIN = register(new Block(161, "minecraft:chain", 0));
+    public static final Block CHAIN_COMMAND_BLOCK =
+            register(new Block(162, "minecraft:chain_command_block", 6717235));
+    public static final Block CHERRY_BUTTON =
+            register(new Block(163, "minecraft:cherry_button", 0));
+    public static final Block CHERRY_DOOR =
+            register(new Block(164, "minecraft:cherry_door", 13742497));
+    public static final Block CHERRY_FENCE =
+            register(new Block(165, "minecraft:cherry_fence", 13742497));
+    public static final Block CHERRY_FENCE_GATE =
+            register(new Block(166, "minecraft:cherry_fence_gate", 13742497));
+    public static final Block CHERRY_HANGING_SIGN =
+            register(new Block(167, "minecraft:cherry_hanging_sign", 10505550));
+    public static final Block CHERRY_LEAVES =
+            register(new Block(168, "minecraft:cherry_leaves", 15892389));
+    public static final Block CHERRY_LOG =
+            register(new Block(169, "minecraft:cherry_log", 13742497));
+    public static final Block CHERRY_PLANKS =
+            register(new Block(170, "minecraft:cherry_planks", 13742497));
+    public static final Block CHERRY_PRESSURE_PLATE =
+            register(new Block(171, "minecraft:cherry_pressure_plate", 13742497));
+    public static final Block CHERRY_SAPLING =
+            register(new Block(172, "minecraft:cherry_sapling", 15892389));
+    public static final Block CHERRY_SIGN =
+            register(new Block(173, "minecraft:cherry_sign", 13742497));
+    public static final Block CHERRY_SLAB =
+            register(new Block(174, "minecraft:cherry_slab", 13742497));
+    public static final Block CHERRY_STAIRS =
+            register(new Block(175, "minecraft:cherry_stairs", 13742497));
+    public static final Block CHERRY_TRAPDOOR =
+            register(new Block(176, "minecraft:cherry_trapdoor", 13742497));
+    public static final Block CHERRY_WALL_HANGING_SIGN =
+            register(new Block(177, "minecraft:cherry_wall_hanging_sign", 10505550));
+    public static final Block CHERRY_WALL_SIGN =
+            register(new Block(178, "minecraft:cherry_wall_sign", 13742497));
+    public static final Block CHERRY_WOOD =
+            register(new Block(179, "minecraft:cherry_wood", 3746083));
+    public static final Block CHEST = register(new Block(180, "minecraft:chest", 9402184));
+    public static final Block CHIPPED_ANVIL =
+            register(new Block(181, "minecraft:chipped_anvil", 10987431));
+    public static final Block CHISELED_BOOKSHELF =
+            register(new Block(182, "minecraft:chiseled_bookshelf", 9402184));
+    public static final Block CHISELED_DEEPSLATE =
+            register(new Block(183, "minecraft:chiseled_deepslate", 6579300));
+    public static final Block CHISELED_NETHER_BRICKS =
+            register(new Block(184, "minecraft:chiseled_nether_bricks", 7340544));
+    public static final Block CHISELED_POLISHED_BLACKSTONE =
+            register(new Block(185, "minecraft:chiseled_polished_blackstone", 1644825));
+    public static final Block CHISELED_QUARTZ_BLOCK =
+            register(new Block(186, "minecraft:chiseled_quartz_block", 16776437));
+    public static final Block CHISELED_RED_SANDSTONE =
+            register(new Block(187, "minecraft:chiseled_red_sandstone", 14188339));
+    public static final Block CHISELED_SANDSTONE =
+            register(new Block(188, "minecraft:chiseled_sandstone", 16247203));
+    public static final Block CHISELED_STONE_BRICKS =
+            register(new Block(189, "minecraft:chiseled_stone_bricks", 7368816));
+    public static final Block CHORUS_FLOWER =
+            register(new Block(190, "minecraft:chorus_flower", 8339378));
+    public static final Block CHORUS_PLANT =
+            register(new Block(191, "minecraft:chorus_plant", 8339378));
+    public static final Block CLAY = register(new Block(192, "minecraft:clay", 10791096));
+    public static final Block COAL_BLOCK =
+            register(new Block(193, "minecraft:coal_block", 1644825));
+    public static final Block COAL_ORE = register(new Block(194, "minecraft:coal_ore", 7368816));
+    public static final Block COARSE_DIRT =
+            register(new Block(195, "minecraft:coarse_dirt", 9923917));
+    public static final Block COBBLED_DEEPSLATE =
+            register(new Block(196, "minecraft:cobbled_deepslate", 6579300));
+    public static final Block COBBLED_DEEPSLATE_SLAB =
+            register(new Block(197, "minecraft:cobbled_deepslate_slab", 6579300));
+    public static final Block COBBLED_DEEPSLATE_STAIRS =
+            register(new Block(198, "minecraft:cobbled_deepslate_stairs", 6579300));
+    public static final Block COBBLED_DEEPSLATE_WALL =
+            register(new Block(199, "minecraft:cobbled_deepslate_wall", 6579300));
+    public static final Block COBBLESTONE =
+            register(new Block(200, "minecraft:cobblestone", 7368816));
+    public static final Block COBBLESTONE_SLAB =
+            register(new Block(201, "minecraft:cobblestone_slab", 7368816));
+    public static final Block COBBLESTONE_STAIRS =
+            register(new Block(202, "minecraft:cobblestone_stairs", 7368816));
+    public static final Block COBBLESTONE_WALL =
+            register(new Block(203, "minecraft:cobblestone_wall", 7368816));
+    public static final Block COBWEB = register(new Block(204, "minecraft:cobweb", 13092807));
+    public static final Block COCOA = register(new Block(205, "minecraft:cocoa", 31744));
+    public static final Block COMMAND_BLOCK =
+            register(new Block(206, "minecraft:command_block", 6704179));
+    public static final Block COMPARATOR = register(new Block(207, "minecraft:comparator", 0));
+    public static final Block COMPOSTER = register(new Block(208, "minecraft:composter", 9402184));
+    public static final Block CONDUIT = register(new Block(209, "minecraft:conduit", 6085589));
+    public static final Block COPPER_BLOCK =
+            register(new Block(210, "minecraft:copper_block", 14188339));
+    public static final Block COPPER_ORE =
+            register(new Block(211, "minecraft:copper_ore", 7368816));
+    public static final Block CORNFLOWER = register(new Block(212, "minecraft:cornflower", 31744));
+    public static final Block CRACKED_DEEPSLATE_BRICKS =
+            register(new Block(213, "minecraft:cracked_deepslate_bricks", 6579300));
+    public static final Block CRACKED_DEEPSLATE_TILES =
+            register(new Block(214, "minecraft:cracked_deepslate_tiles", 6579300));
+    public static final Block CRACKED_NETHER_BRICKS =
+            register(new Block(215, "minecraft:cracked_nether_bricks", 7340544));
+    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICKS =
+            register(new Block(216, "minecraft:cracked_polished_blackstone_bricks", 1644825));
+    public static final Block CRACKED_STONE_BRICKS =
+            register(new Block(217, "minecraft:cracked_stone_bricks", 7368816));
+    public static final Block CRAFTING_TABLE =
+            register(new Block(218, "minecraft:crafting_table", 9402184));
+    public static final Block CREEPER_HEAD = register(new Block(219, "minecraft:creeper_head", 0));
+    public static final Block CREEPER_WALL_HEAD =
+            register(new Block(220, "minecraft:creeper_wall_head", 0));
+    public static final Block CRIMSON_BUTTON =
+            register(new Block(221, "minecraft:crimson_button", 0));
+    public static final Block CRIMSON_DOOR =
+            register(new Block(222, "minecraft:crimson_door", 9715553));
+    public static final Block CRIMSON_FENCE =
+            register(new Block(223, "minecraft:crimson_fence", 9715553));
+    public static final Block CRIMSON_FENCE_GATE =
+            register(new Block(224, "minecraft:crimson_fence_gate", 9715553));
+    public static final Block CRIMSON_FUNGUS =
+            register(new Block(225, "minecraft:crimson_fungus", 7340544));
+    public static final Block CRIMSON_HANGING_SIGN =
+            register(new Block(226, "minecraft:crimson_hanging_sign", 9715553));
+    public static final Block CRIMSON_HYPHAE =
+            register(new Block(227, "minecraft:crimson_hyphae", 6035741));
+    public static final Block CRIMSON_NYLIUM =
+            register(new Block(228, "minecraft:crimson_nylium", 12398641));
+    public static final Block CRIMSON_PLANKS =
+            register(new Block(229, "minecraft:crimson_planks", 9715553));
+    public static final Block CRIMSON_PRESSURE_PLATE =
+            register(new Block(230, "minecraft:crimson_pressure_plate", 9715553));
+    public static final Block CRIMSON_ROOTS =
+            register(new Block(231, "minecraft:crimson_roots", 7340544));
+    public static final Block CRIMSON_SIGN =
+            register(new Block(232, "minecraft:crimson_sign", 9715553));
+    public static final Block CRIMSON_SLAB =
+            register(new Block(233, "minecraft:crimson_slab", 9715553));
+    public static final Block CRIMSON_STAIRS =
+            register(new Block(234, "minecraft:crimson_stairs", 9715553));
+    public static final Block CRIMSON_STEM =
+            register(new Block(235, "minecraft:crimson_stem", 9715553));
+    public static final Block CRIMSON_TRAPDOOR =
+            register(new Block(236, "minecraft:crimson_trapdoor", 9715553));
+    public static final Block CRIMSON_WALL_HANGING_SIGN =
+            register(new Block(237, "minecraft:crimson_wall_hanging_sign", 9715553));
+    public static final Block CRIMSON_WALL_SIGN =
+            register(new Block(238, "minecraft:crimson_wall_sign", 9715553));
+    public static final Block CRYING_OBSIDIAN =
+            register(new Block(239, "minecraft:crying_obsidian", 1644825));
+    public static final Block CUT_COPPER =
+            register(new Block(240, "minecraft:cut_copper", 14188339));
+    public static final Block CUT_COPPER_SLAB =
+            register(new Block(241, "minecraft:cut_copper_slab", 14188339));
+    public static final Block CUT_COPPER_STAIRS =
+            register(new Block(242, "minecraft:cut_copper_stairs", 14188339));
+    public static final Block CUT_RED_SANDSTONE =
+            register(new Block(243, "minecraft:cut_red_sandstone", 14188339));
+    public static final Block CUT_RED_SANDSTONE_SLAB =
+            register(new Block(244, "minecraft:cut_red_sandstone_slab", 14188339));
+    public static final Block CUT_SANDSTONE =
+            register(new Block(245, "minecraft:cut_sandstone", 16247203));
+    public static final Block CUT_SANDSTONE_SLAB =
+            register(new Block(246, "minecraft:cut_sandstone_slab", 16247203));
+    public static final Block CYAN_BANNER =
+            register(new Block(247, "minecraft:cyan_banner", 9402184));
+    public static final Block CYAN_BED = register(new Block(248, "minecraft:cyan_bed", 5013401));
+    public static final Block CYAN_CANDLE =
+            register(new Block(249, "minecraft:cyan_candle", 5013401));
+    public static final Block CYAN_CANDLE_CAKE =
+            register(new Block(250, "minecraft:cyan_candle_cake", 0));
+    public static final Block CYAN_CARPET =
+            register(new Block(251, "minecraft:cyan_carpet", 5013401));
+    public static final Block CYAN_CONCRETE =
+            register(new Block(252, "minecraft:cyan_concrete", 5013401));
+    public static final Block CYAN_CONCRETE_POWDER =
+            register(new Block(253, "minecraft:cyan_concrete_powder", 5013401));
+    public static final Block CYAN_GLAZED_TERRACOTTA =
+            register(new Block(254, "minecraft:cyan_glazed_terracotta", 5013401));
+    public static final Block CYAN_SHULKER_BOX =
+            register(new Block(255, "minecraft:cyan_shulker_box", 5013401));
+    public static final Block CYAN_STAINED_GLASS =
+            register(new Block(256, "minecraft:cyan_stained_glass", 5013401));
+    public static final Block CYAN_STAINED_GLASS_PANE =
+            register(new Block(257, "minecraft:cyan_stained_glass_pane", 0));
+    public static final Block CYAN_TERRACOTTA =
+            register(new Block(258, "minecraft:cyan_terracotta", 5725276));
+    public static final Block CYAN_WALL_BANNER =
+            register(new Block(259, "minecraft:cyan_wall_banner", 9402184));
+    public static final Block CYAN_WOOL = register(new Block(260, "minecraft:cyan_wool", 5013401));
+    public static final Block DAMAGED_ANVIL =
+            register(new Block(261, "minecraft:damaged_anvil", 10987431));
+    public static final Block DANDELION = register(new Block(262, "minecraft:dandelion", 31744));
+    public static final Block DARK_OAK_BUTTON =
+            register(new Block(263, "minecraft:dark_oak_button", 0));
+    public static final Block DARK_OAK_DOOR =
+            register(new Block(264, "minecraft:dark_oak_door", 6704179));
+    public static final Block DARK_OAK_FENCE =
+            register(new Block(265, "minecraft:dark_oak_fence", 6704179));
+    public static final Block DARK_OAK_FENCE_GATE =
+            register(new Block(266, "minecraft:dark_oak_fence_gate", 6704179));
+    public static final Block DARK_OAK_HANGING_SIGN =
+            register(new Block(267, "minecraft:dark_oak_hanging_sign", 6704179));
+    public static final Block DARK_OAK_LEAVES =
+            register(new Block(268, "minecraft:dark_oak_leaves", 31744));
+    public static final Block DARK_OAK_LOG =
+            register(new Block(269, "minecraft:dark_oak_log", 6704179));
+    public static final Block DARK_OAK_PLANKS =
+            register(new Block(270, "minecraft:dark_oak_planks", 6704179));
+    public static final Block DARK_OAK_PRESSURE_PLATE =
+            register(new Block(271, "minecraft:dark_oak_pressure_plate", 6704179));
+    public static final Block DARK_OAK_SAPLING =
+            register(new Block(272, "minecraft:dark_oak_sapling", 31744));
+    public static final Block DARK_OAK_SIGN =
+            register(new Block(273, "minecraft:dark_oak_sign", 6704179));
+    public static final Block DARK_OAK_SLAB =
+            register(new Block(274, "minecraft:dark_oak_slab", 6704179));
+    public static final Block DARK_OAK_STAIRS =
+            register(new Block(275, "minecraft:dark_oak_stairs", 6704179));
+    public static final Block DARK_OAK_TRAPDOOR =
+            register(new Block(276, "minecraft:dark_oak_trapdoor", 6704179));
+    public static final Block DARK_OAK_WALL_HANGING_SIGN =
+            register(new Block(277, "minecraft:dark_oak_wall_hanging_sign", 6704179));
+    public static final Block DARK_OAK_WALL_SIGN =
+            register(new Block(278, "minecraft:dark_oak_wall_sign", 6704179));
+    public static final Block DARK_OAK_WOOD =
+            register(new Block(279, "minecraft:dark_oak_wood", 6704179));
+    public static final Block DARK_PRISMARINE =
+            register(new Block(280, "minecraft:dark_prismarine", 6085589));
+    public static final Block DARK_PRISMARINE_SLAB =
+            register(new Block(281, "minecraft:dark_prismarine_slab", 6085589));
+    public static final Block DARK_PRISMARINE_STAIRS =
+            register(new Block(282, "minecraft:dark_prismarine_stairs", 6085589));
+    public static final Block DAYLIGHT_DETECTOR =
+            register(new Block(283, "minecraft:daylight_detector", 9402184));
+    public static final Block DEAD_BRAIN_CORAL =
+            register(new Block(284, "minecraft:dead_brain_coral", 5000268));
+    public static final Block DEAD_BRAIN_CORAL_BLOCK =
+            register(new Block(285, "minecraft:dead_brain_coral_block", 5000268));
+    public static final Block DEAD_BRAIN_CORAL_FAN =
+            register(new Block(286, "minecraft:dead_brain_coral_fan", 5000268));
+    public static final Block DEAD_BRAIN_CORAL_WALL_FAN =
+            register(new Block(287, "minecraft:dead_brain_coral_wall_fan", 5000268));
+    public static final Block DEAD_BUBBLE_CORAL =
+            register(new Block(288, "minecraft:dead_bubble_coral", 5000268));
+    public static final Block DEAD_BUBBLE_CORAL_BLOCK =
+            register(new Block(289, "minecraft:dead_bubble_coral_block", 5000268));
+    public static final Block DEAD_BUBBLE_CORAL_FAN =
+            register(new Block(290, "minecraft:dead_bubble_coral_fan", 5000268));
+    public static final Block DEAD_BUBBLE_CORAL_WALL_FAN =
+            register(new Block(291, "minecraft:dead_bubble_coral_wall_fan", 5000268));
+    public static final Block DEAD_BUSH = register(new Block(292, "minecraft:dead_bush", 9402184));
+    public static final Block DEAD_FIRE_CORAL =
+            register(new Block(293, "minecraft:dead_fire_coral", 5000268));
+    public static final Block DEAD_FIRE_CORAL_BLOCK =
+            register(new Block(294, "minecraft:dead_fire_coral_block", 5000268));
+    public static final Block DEAD_FIRE_CORAL_FAN =
+            register(new Block(295, "minecraft:dead_fire_coral_fan", 5000268));
+    public static final Block DEAD_FIRE_CORAL_WALL_FAN =
+            register(new Block(296, "minecraft:dead_fire_coral_wall_fan", 5000268));
+    public static final Block DEAD_HORN_CORAL =
+            register(new Block(297, "minecraft:dead_horn_coral", 5000268));
+    public static final Block DEAD_HORN_CORAL_BLOCK =
+            register(new Block(298, "minecraft:dead_horn_coral_block", 5000268));
+    public static final Block DEAD_HORN_CORAL_FAN =
+            register(new Block(299, "minecraft:dead_horn_coral_fan", 5000268));
+    public static final Block DEAD_HORN_CORAL_WALL_FAN =
+            register(new Block(300, "minecraft:dead_horn_coral_wall_fan", 5000268));
+    public static final Block DEAD_TUBE_CORAL =
+            register(new Block(301, "minecraft:dead_tube_coral", 5000268));
+    public static final Block DEAD_TUBE_CORAL_BLOCK =
+            register(new Block(302, "minecraft:dead_tube_coral_block", 5000268));
+    public static final Block DEAD_TUBE_CORAL_FAN =
+            register(new Block(303, "minecraft:dead_tube_coral_fan", 5000268));
+    public static final Block DEAD_TUBE_CORAL_WALL_FAN =
+            register(new Block(304, "minecraft:dead_tube_coral_wall_fan", 5000268));
+    public static final Block DECORATED_POT =
+            register(new Block(305, "minecraft:decorated_pot", 9321518));
+    public static final Block DEEPSLATE = register(new Block(306, "minecraft:deepslate", 6579300));
+    public static final Block DEEPSLATE_BRICK_SLAB =
+            register(new Block(307, "minecraft:deepslate_brick_slab", 6579300));
+    public static final Block DEEPSLATE_BRICK_STAIRS =
+            register(new Block(308, "minecraft:deepslate_brick_stairs", 6579300));
+    public static final Block DEEPSLATE_BRICK_WALL =
+            register(new Block(309, "minecraft:deepslate_brick_wall", 6579300));
+    public static final Block DEEPSLATE_BRICKS =
+            register(new Block(310, "minecraft:deepslate_bricks", 6579300));
+    public static final Block DEEPSLATE_COAL_ORE =
+            register(new Block(311, "minecraft:deepslate_coal_ore", 6579300));
+    public static final Block DEEPSLATE_COPPER_ORE =
+            register(new Block(312, "minecraft:deepslate_copper_ore", 6579300));
+    public static final Block DEEPSLATE_DIAMOND_ORE =
+            register(new Block(313, "minecraft:deepslate_diamond_ore", 6579300));
+    public static final Block DEEPSLATE_EMERALD_ORE =
+            register(new Block(314, "minecraft:deepslate_emerald_ore", 6579300));
+    public static final Block DEEPSLATE_GOLD_ORE =
+            register(new Block(315, "minecraft:deepslate_gold_ore", 6579300));
+    public static final Block DEEPSLATE_IRON_ORE =
+            register(new Block(316, "minecraft:deepslate_iron_ore", 6579300));
+    public static final Block DEEPSLATE_LAPIS_ORE =
+            register(new Block(317, "minecraft:deepslate_lapis_ore", 6579300));
+    public static final Block DEEPSLATE_REDSTONE_ORE =
+            register(new Block(318, "minecraft:deepslate_redstone_ore", 6579300));
+    public static final Block DEEPSLATE_TILE_SLAB =
+            register(new Block(319, "minecraft:deepslate_tile_slab", 6579300));
+    public static final Block DEEPSLATE_TILE_STAIRS =
+            register(new Block(320, "minecraft:deepslate_tile_stairs", 6579300));
+    public static final Block DEEPSLATE_TILE_WALL =
+            register(new Block(321, "minecraft:deepslate_tile_wall", 6579300));
+    public static final Block DEEPSLATE_TILES =
+            register(new Block(322, "minecraft:deepslate_tiles", 6579300));
+    public static final Block DETECTOR_RAIL =
+            register(new Block(323, "minecraft:detector_rail", 0));
+    public static final Block DIAMOND_BLOCK =
+            register(new Block(324, "minecraft:diamond_block", 6085589));
+    public static final Block DIAMOND_ORE =
+            register(new Block(325, "minecraft:diamond_ore", 7368816));
+    public static final Block DIORITE = register(new Block(326, "minecraft:diorite", 16776437));
+    public static final Block DIORITE_SLAB =
+            register(new Block(327, "minecraft:diorite_slab", 16776437));
+    public static final Block DIORITE_STAIRS =
+            register(new Block(328, "minecraft:diorite_stairs", 16776437));
+    public static final Block DIORITE_WALL =
+            register(new Block(329, "minecraft:diorite_wall", 16776437));
+    public static final Block DIRT = register(new Block(330, "minecraft:dirt", 9923917));
+    public static final Block DIRT_PATH = register(new Block(331, "minecraft:dirt_path", 9923917));
+    public static final Block DISPENSER = register(new Block(332, "minecraft:dispenser", 7368816));
+    public static final Block DRAGON_EGG =
+            register(new Block(333, "minecraft:dragon_egg", 1644825));
+    public static final Block DRAGON_HEAD = register(new Block(334, "minecraft:dragon_head", 0));
+    public static final Block DRAGON_WALL_HEAD =
+            register(new Block(335, "minecraft:dragon_wall_head", 0));
+    public static final Block DRIED_KELP_BLOCK =
+            register(new Block(336, "minecraft:dried_kelp_block", 6717235));
+    public static final Block DRIPSTONE_BLOCK =
+            register(new Block(337, "minecraft:dripstone_block", 4993571));
+    public static final Block DROPPER = register(new Block(338, "minecraft:dropper", 7368816));
+    public static final Block EMERALD_BLOCK =
+            register(new Block(339, "minecraft:emerald_block", 55610));
+    public static final Block EMERALD_ORE =
+            register(new Block(340, "minecraft:emerald_ore", 7368816));
+    public static final Block ENCHANTING_TABLE =
+            register(new Block(341, "minecraft:enchanting_table", 10040115));
+    public static final Block END_GATEWAY =
+            register(new Block(342, "minecraft:end_gateway", 1644825));
+    public static final Block END_PORTAL =
+            register(new Block(343, "minecraft:end_portal", 1644825));
+    public static final Block END_PORTAL_FRAME =
+            register(new Block(344, "minecraft:end_portal_frame", 6717235));
+    public static final Block END_ROD = register(new Block(345, "minecraft:end_rod", 0));
+    public static final Block END_STONE = register(new Block(346, "minecraft:end_stone", 16247203));
+    public static final Block END_STONE_BRICK_SLAB =
+            register(new Block(347, "minecraft:end_stone_brick_slab", 16247203));
+    public static final Block END_STONE_BRICK_STAIRS =
+            register(new Block(348, "minecraft:end_stone_brick_stairs", 16247203));
+    public static final Block END_STONE_BRICK_WALL =
+            register(new Block(349, "minecraft:end_stone_brick_wall", 16247203));
+    public static final Block END_STONE_BRICKS =
+            register(new Block(350, "minecraft:end_stone_bricks", 16247203));
+    public static final Block ENDER_CHEST =
+            register(new Block(351, "minecraft:ender_chest", 7368816));
+    public static final Block EXPOSED_COPPER =
+            register(new Block(352, "minecraft:exposed_copper", 8874850));
+    public static final Block EXPOSED_CUT_COPPER =
+            register(new Block(353, "minecraft:exposed_cut_copper", 8874850));
+    public static final Block EXPOSED_CUT_COPPER_SLAB =
+            register(new Block(354, "minecraft:exposed_cut_copper_slab", 8874850));
+    public static final Block EXPOSED_CUT_COPPER_STAIRS =
+            register(new Block(355, "minecraft:exposed_cut_copper_stairs", 8874850));
+    public static final Block FARMLAND = register(new Block(356, "minecraft:farmland", 9923917));
+    public static final Block FERN = register(new Block(357, "minecraft:fern", 31744));
+    public static final Block FIRE = register(new Block(358, "minecraft:fire", 16711680));
+    public static final Block FIRE_CORAL =
+            register(new Block(359, "minecraft:fire_coral", 10040115));
+    public static final Block FIRE_CORAL_BLOCK =
+            register(new Block(360, "minecraft:fire_coral_block", 10040115));
+    public static final Block FIRE_CORAL_FAN =
+            register(new Block(361, "minecraft:fire_coral_fan", 10040115));
+    public static final Block FIRE_CORAL_WALL_FAN =
+            register(new Block(362, "minecraft:fire_coral_wall_fan", 10040115));
+    public static final Block FLETCHING_TABLE =
+            register(new Block(363, "minecraft:fletching_table", 9402184));
+    public static final Block FLOWER_POT = register(new Block(364, "minecraft:flower_pot", 0));
+    public static final Block FLOWERING_AZALEA =
+            register(new Block(365, "minecraft:flowering_azalea", 31744));
+    public static final Block FLOWERING_AZALEA_LEAVES =
+            register(new Block(366, "minecraft:flowering_azalea_leaves", 31744));
+    public static final Block FROGSPAWN = register(new Block(367, "minecraft:frogspawn", 4210943));
+    public static final Block FROSTED_ICE =
+            register(new Block(368, "minecraft:frosted_ice", 10526975));
+    public static final Block FURNACE = register(new Block(369, "minecraft:furnace", 7368816));
+    public static final Block GILDED_BLACKSTONE =
+            register(new Block(370, "minecraft:gilded_blackstone", 1644825));
+    public static final Block GLASS = register(new Block(371, "minecraft:glass", 0));
+    public static final Block GLASS_PANE = register(new Block(372, "minecraft:glass_pane", 0));
+    public static final Block GLOW_LICHEN =
+            register(new Block(373, "minecraft:glow_lichen", 8365974));
+    public static final Block GLOWSTONE = register(new Block(374, "minecraft:glowstone", 16247203));
+    public static final Block GOLD_BLOCK =
+            register(new Block(375, "minecraft:gold_block", 16445005));
+    public static final Block GOLD_ORE = register(new Block(376, "minecraft:gold_ore", 7368816));
+    public static final Block GRANITE = register(new Block(377, "minecraft:granite", 9923917));
+    public static final Block GRANITE_SLAB =
+            register(new Block(378, "minecraft:granite_slab", 9923917));
+    public static final Block GRANITE_STAIRS =
+            register(new Block(379, "minecraft:granite_stairs", 9923917));
+    public static final Block GRANITE_WALL =
+            register(new Block(380, "minecraft:granite_wall", 9923917));
+    public static final Block GRASS = register(new Block(381, "minecraft:grass", 31744));
+    public static final Block GRASS_BLOCK =
+            register(new Block(382, "minecraft:grass_block", 8368696));
+    public static final Block GRAVEL = register(new Block(383, "minecraft:gravel", 7368816));
+    public static final Block GRAY_BANNER =
+            register(new Block(384, "minecraft:gray_banner", 9402184));
+    public static final Block GRAY_BED = register(new Block(385, "minecraft:gray_bed", 5000268));
+    public static final Block GRAY_CANDLE =
+            register(new Block(386, "minecraft:gray_candle", 5000268));
+    public static final Block GRAY_CANDLE_CAKE =
+            register(new Block(387, "minecraft:gray_candle_cake", 0));
+    public static final Block GRAY_CARPET =
+            register(new Block(388, "minecraft:gray_carpet", 5000268));
+    public static final Block GRAY_CONCRETE =
+            register(new Block(389, "minecraft:gray_concrete", 5000268));
+    public static final Block GRAY_CONCRETE_POWDER =
+            register(new Block(390, "minecraft:gray_concrete_powder", 5000268));
+    public static final Block GRAY_GLAZED_TERRACOTTA =
+            register(new Block(391, "minecraft:gray_glazed_terracotta", 5000268));
+    public static final Block GRAY_SHULKER_BOX =
+            register(new Block(392, "minecraft:gray_shulker_box", 5000268));
+    public static final Block GRAY_STAINED_GLASS =
+            register(new Block(393, "minecraft:gray_stained_glass", 5000268));
+    public static final Block GRAY_STAINED_GLASS_PANE =
+            register(new Block(394, "minecraft:gray_stained_glass_pane", 0));
+    public static final Block GRAY_TERRACOTTA =
+            register(new Block(395, "minecraft:gray_terracotta", 3746083));
+    public static final Block GRAY_WALL_BANNER =
+            register(new Block(396, "minecraft:gray_wall_banner", 9402184));
+    public static final Block GRAY_WOOL = register(new Block(397, "minecraft:gray_wool", 5000268));
+    public static final Block GREEN_BANNER =
+            register(new Block(398, "minecraft:green_banner", 9402184));
+    public static final Block GREEN_BED = register(new Block(399, "minecraft:green_bed", 6717235));
+    public static final Block GREEN_CANDLE =
+            register(new Block(400, "minecraft:green_candle", 6717235));
+    public static final Block GREEN_CANDLE_CAKE =
+            register(new Block(401, "minecraft:green_candle_cake", 0));
+    public static final Block GREEN_CARPET =
+            register(new Block(402, "minecraft:green_carpet", 6717235));
+    public static final Block GREEN_CONCRETE =
+            register(new Block(403, "minecraft:green_concrete", 6717235));
+    public static final Block GREEN_CONCRETE_POWDER =
+            register(new Block(404, "minecraft:green_concrete_powder", 6717235));
+    public static final Block GREEN_GLAZED_TERRACOTTA =
+            register(new Block(405, "minecraft:green_glazed_terracotta", 6717235));
+    public static final Block GREEN_SHULKER_BOX =
+            register(new Block(406, "minecraft:green_shulker_box", 6717235));
+    public static final Block GREEN_STAINED_GLASS =
+            register(new Block(407, "minecraft:green_stained_glass", 6717235));
+    public static final Block GREEN_STAINED_GLASS_PANE =
+            register(new Block(408, "minecraft:green_stained_glass_pane", 0));
+    public static final Block GREEN_TERRACOTTA =
+            register(new Block(409, "minecraft:green_terracotta", 5001770));
+    public static final Block GREEN_WALL_BANNER =
+            register(new Block(410, "minecraft:green_wall_banner", 9402184));
+    public static final Block GREEN_WOOL =
+            register(new Block(411, "minecraft:green_wool", 6717235));
+    public static final Block GRINDSTONE =
+            register(new Block(412, "minecraft:grindstone", 10987431));
+    public static final Block HANGING_ROOTS =
+            register(new Block(413, "minecraft:hanging_roots", 9923917));
+    public static final Block HAY_BLOCK = register(new Block(414, "minecraft:hay_block", 15066419));
+    public static final Block HEAVY_WEIGHTED_PRESSURE_PLATE =
+            register(new Block(415, "minecraft:heavy_weighted_pressure_plate", 10987431));
+    public static final Block HONEY_BLOCK =
+            register(new Block(416, "minecraft:honey_block", 14188339));
+    public static final Block HONEYCOMB_BLOCK =
+            register(new Block(417, "minecraft:honeycomb_block", 14188339));
+    public static final Block HOPPER = register(new Block(418, "minecraft:hopper", 7368816));
+    public static final Block HORN_CORAL =
+            register(new Block(419, "minecraft:horn_coral", 15066419));
+    public static final Block HORN_CORAL_BLOCK =
+            register(new Block(420, "minecraft:horn_coral_block", 15066419));
+    public static final Block HORN_CORAL_FAN =
+            register(new Block(421, "minecraft:horn_coral_fan", 15066419));
+    public static final Block HORN_CORAL_WALL_FAN =
+            register(new Block(422, "minecraft:horn_coral_wall_fan", 15066419));
+    public static final Block ICE = register(new Block(423, "minecraft:ice", 10526975));
+    public static final Block INFESTED_CHISELED_STONE_BRICKS =
+            register(new Block(424, "minecraft:infested_chiseled_stone_bricks", 10791096));
+    public static final Block INFESTED_COBBLESTONE =
+            register(new Block(425, "minecraft:infested_cobblestone", 10791096));
+    public static final Block INFESTED_CRACKED_STONE_BRICKS =
+            register(new Block(426, "minecraft:infested_cracked_stone_bricks", 10791096));
+    public static final Block INFESTED_DEEPSLATE =
+            register(new Block(427, "minecraft:infested_deepslate", 6579300));
+    public static final Block INFESTED_MOSSY_STONE_BRICKS =
+            register(new Block(428, "minecraft:infested_mossy_stone_bricks", 10791096));
+    public static final Block INFESTED_STONE =
+            register(new Block(429, "minecraft:infested_stone", 10791096));
+    public static final Block INFESTED_STONE_BRICKS =
+            register(new Block(430, "minecraft:infested_stone_bricks", 10791096));
+    public static final Block IRON_BARS = register(new Block(431, "minecraft:iron_bars", 0));
+    public static final Block IRON_BLOCK =
+            register(new Block(432, "minecraft:iron_block", 10987431));
+    public static final Block IRON_DOOR = register(new Block(433, "minecraft:iron_door", 10987431));
+    public static final Block IRON_ORE = register(new Block(434, "minecraft:iron_ore", 7368816));
+    public static final Block IRON_TRAPDOOR =
+            register(new Block(435, "minecraft:iron_trapdoor", 10987431));
+    public static final Block JACK_O_LANTERN =
+            register(new Block(436, "minecraft:jack_o_lantern", 14188339));
+    public static final Block JIGSAW = register(new Block(437, "minecraft:jigsaw", 10066329));
+    public static final Block JUKEBOX = register(new Block(438, "minecraft:jukebox", 9923917));
+    public static final Block JUNGLE_BUTTON =
+            register(new Block(439, "minecraft:jungle_button", 0));
+    public static final Block JUNGLE_DOOR =
+            register(new Block(440, "minecraft:jungle_door", 9923917));
+    public static final Block JUNGLE_FENCE =
+            register(new Block(441, "minecraft:jungle_fence", 9923917));
+    public static final Block JUNGLE_FENCE_GATE =
+            register(new Block(442, "minecraft:jungle_fence_gate", 9923917));
+    public static final Block JUNGLE_HANGING_SIGN =
+            register(new Block(443, "minecraft:jungle_hanging_sign", 9923917));
+    public static final Block JUNGLE_LEAVES =
+            register(new Block(444, "minecraft:jungle_leaves", 31744));
+    public static final Block JUNGLE_LOG =
+            register(new Block(445, "minecraft:jungle_log", 9923917));
+    public static final Block JUNGLE_PLANKS =
+            register(new Block(446, "minecraft:jungle_planks", 9923917));
+    public static final Block JUNGLE_PRESSURE_PLATE =
+            register(new Block(447, "minecraft:jungle_pressure_plate", 9923917));
+    public static final Block JUNGLE_SAPLING =
+            register(new Block(448, "minecraft:jungle_sapling", 31744));
+    public static final Block JUNGLE_SIGN =
+            register(new Block(449, "minecraft:jungle_sign", 9923917));
+    public static final Block JUNGLE_SLAB =
+            register(new Block(450, "minecraft:jungle_slab", 9923917));
+    public static final Block JUNGLE_STAIRS =
+            register(new Block(451, "minecraft:jungle_stairs", 9923917));
+    public static final Block JUNGLE_TRAPDOOR =
+            register(new Block(452, "minecraft:jungle_trapdoor", 9923917));
+    public static final Block JUNGLE_WALL_HANGING_SIGN =
+            register(new Block(453, "minecraft:jungle_wall_hanging_sign", 9923917));
+    public static final Block JUNGLE_WALL_SIGN =
+            register(new Block(454, "minecraft:jungle_wall_sign", 9923917));
+    public static final Block JUNGLE_WOOD =
+            register(new Block(455, "minecraft:jungle_wood", 9923917));
+    public static final Block KELP = register(new Block(456, "minecraft:kelp", 4210943));
+    public static final Block KELP_PLANT =
+            register(new Block(457, "minecraft:kelp_plant", 4210943));
+    public static final Block LADDER = register(new Block(458, "minecraft:ladder", 0));
+    public static final Block LANTERN = register(new Block(459, "minecraft:lantern", 10987431));
+    public static final Block LAPIS_BLOCK =
+            register(new Block(460, "minecraft:lapis_block", 4882687));
+    public static final Block LAPIS_ORE = register(new Block(461, "minecraft:lapis_ore", 7368816));
+    public static final Block LARGE_AMETHYST_BUD =
+            register(new Block(462, "minecraft:large_amethyst_bud", 8339378));
+    public static final Block LARGE_FERN = register(new Block(463, "minecraft:large_fern", 31744));
+    public static final Block LAVA = register(new Block(464, "minecraft:lava", 16711680));
+    public static final Block LAVA_CAULDRON =
+            register(new Block(465, "minecraft:lava_cauldron", 7368816));
+    public static final Block LECTERN = register(new Block(466, "minecraft:lectern", 9402184));
+    public static final Block LEVER = register(new Block(467, "minecraft:lever", 0));
+    public static final Block LIGHT = register(new Block(468, "minecraft:light", 0));
+    public static final Block LIGHT_BLUE_BANNER =
+            register(new Block(469, "minecraft:light_blue_banner", 9402184));
+    public static final Block LIGHT_BLUE_BED =
+            register(new Block(470, "minecraft:light_blue_bed", 6724056));
+    public static final Block LIGHT_BLUE_CANDLE =
+            register(new Block(471, "minecraft:light_blue_candle", 6724056));
+    public static final Block LIGHT_BLUE_CANDLE_CAKE =
+            register(new Block(472, "minecraft:light_blue_candle_cake", 0));
+    public static final Block LIGHT_BLUE_CARPET =
+            register(new Block(473, "minecraft:light_blue_carpet", 6724056));
+    public static final Block LIGHT_BLUE_CONCRETE =
+            register(new Block(474, "minecraft:light_blue_concrete", 6724056));
+    public static final Block LIGHT_BLUE_CONCRETE_POWDER =
+            register(new Block(475, "minecraft:light_blue_concrete_powder", 6724056));
+    public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA =
+            register(new Block(476, "minecraft:light_blue_glazed_terracotta", 6724056));
+    public static final Block LIGHT_BLUE_SHULKER_BOX =
+            register(new Block(477, "minecraft:light_blue_shulker_box", 6724056));
+    public static final Block LIGHT_BLUE_STAINED_GLASS =
+            register(new Block(478, "minecraft:light_blue_stained_glass", 6724056));
+    public static final Block LIGHT_BLUE_STAINED_GLASS_PANE =
+            register(new Block(479, "minecraft:light_blue_stained_glass_pane", 0));
+    public static final Block LIGHT_BLUE_TERRACOTTA =
+            register(new Block(480, "minecraft:light_blue_terracotta", 7367818));
+    public static final Block LIGHT_BLUE_WALL_BANNER =
+            register(new Block(481, "minecraft:light_blue_wall_banner", 9402184));
+    public static final Block LIGHT_BLUE_WOOL =
+            register(new Block(482, "minecraft:light_blue_wool", 6724056));
+    public static final Block LIGHT_GRAY_BANNER =
+            register(new Block(483, "minecraft:light_gray_banner", 9402184));
+    public static final Block LIGHT_GRAY_BED =
+            register(new Block(484, "minecraft:light_gray_bed", 10066329));
+    public static final Block LIGHT_GRAY_CANDLE =
+            register(new Block(485, "minecraft:light_gray_candle", 10066329));
+    public static final Block LIGHT_GRAY_CANDLE_CAKE =
+            register(new Block(486, "minecraft:light_gray_candle_cake", 0));
+    public static final Block LIGHT_GRAY_CARPET =
+            register(new Block(487, "minecraft:light_gray_carpet", 10066329));
+    public static final Block LIGHT_GRAY_CONCRETE =
+            register(new Block(488, "minecraft:light_gray_concrete", 10066329));
+    public static final Block LIGHT_GRAY_CONCRETE_POWDER =
+            register(new Block(489, "minecraft:light_gray_concrete_powder", 10066329));
+    public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA =
+            register(new Block(490, "minecraft:light_gray_glazed_terracotta", 10066329));
+    public static final Block LIGHT_GRAY_SHULKER_BOX =
+            register(new Block(491, "minecraft:light_gray_shulker_box", 10066329));
+    public static final Block LIGHT_GRAY_STAINED_GLASS =
+            register(new Block(492, "minecraft:light_gray_stained_glass", 10066329));
+    public static final Block LIGHT_GRAY_STAINED_GLASS_PANE =
+            register(new Block(493, "minecraft:light_gray_stained_glass_pane", 0));
+    public static final Block LIGHT_GRAY_TERRACOTTA =
+            register(new Block(494, "minecraft:light_gray_terracotta", 8874850));
+    public static final Block LIGHT_GRAY_WALL_BANNER =
+            register(new Block(495, "minecraft:light_gray_wall_banner", 9402184));
+    public static final Block LIGHT_GRAY_WOOL =
+            register(new Block(496, "minecraft:light_gray_wool", 10066329));
+    public static final Block LIGHT_WEIGHTED_PRESSURE_PLATE =
+            register(new Block(497, "minecraft:light_weighted_pressure_plate", 16445005));
+    public static final Block LIGHTNING_ROD =
+            register(new Block(498, "minecraft:lightning_rod", 14188339));
+    public static final Block LILAC = register(new Block(499, "minecraft:lilac", 31744));
+    public static final Block LILY_OF_THE_VALLEY =
+            register(new Block(500, "minecraft:lily_of_the_valley", 31744));
+    public static final Block LILY_PAD = register(new Block(501, "minecraft:lily_pad", 31744));
+    public static final Block LIME_BANNER =
+            register(new Block(502, "minecraft:lime_banner", 9402184));
+    public static final Block LIME_BED = register(new Block(503, "minecraft:lime_bed", 8375321));
+    public static final Block LIME_CANDLE =
+            register(new Block(504, "minecraft:lime_candle", 8375321));
+    public static final Block LIME_CANDLE_CAKE =
+            register(new Block(505, "minecraft:lime_candle_cake", 0));
+    public static final Block LIME_CARPET =
+            register(new Block(506, "minecraft:lime_carpet", 8375321));
+    public static final Block LIME_CONCRETE =
+            register(new Block(507, "minecraft:lime_concrete", 8375321));
+    public static final Block LIME_CONCRETE_POWDER =
+            register(new Block(508, "minecraft:lime_concrete_powder", 8375321));
+    public static final Block LIME_GLAZED_TERRACOTTA =
+            register(new Block(509, "minecraft:lime_glazed_terracotta", 8375321));
+    public static final Block LIME_SHULKER_BOX =
+            register(new Block(510, "minecraft:lime_shulker_box", 8375321));
+    public static final Block LIME_STAINED_GLASS =
+            register(new Block(511, "minecraft:lime_stained_glass", 8375321));
+    public static final Block LIME_STAINED_GLASS_PANE =
+            register(new Block(512, "minecraft:lime_stained_glass_pane", 0));
+    public static final Block LIME_TERRACOTTA =
+            register(new Block(513, "minecraft:lime_terracotta", 6780213));
+    public static final Block LIME_WALL_BANNER =
+            register(new Block(514, "minecraft:lime_wall_banner", 9402184));
+    public static final Block LIME_WOOL = register(new Block(515, "minecraft:lime_wool", 8375321));
+    public static final Block LODESTONE = register(new Block(516, "minecraft:lodestone", 10987431));
+    public static final Block LOOM = register(new Block(517, "minecraft:loom", 9402184));
+    public static final Block MAGENTA_BANNER =
+            register(new Block(518, "minecraft:magenta_banner", 9402184));
+    public static final Block MAGENTA_BED =
+            register(new Block(519, "minecraft:magenta_bed", 11685080));
+    public static final Block MAGENTA_CANDLE =
+            register(new Block(520, "minecraft:magenta_candle", 11685080));
+    public static final Block MAGENTA_CANDLE_CAKE =
+            register(new Block(521, "minecraft:magenta_candle_cake", 0));
+    public static final Block MAGENTA_CARPET =
+            register(new Block(522, "minecraft:magenta_carpet", 11685080));
+    public static final Block MAGENTA_CONCRETE =
+            register(new Block(523, "minecraft:magenta_concrete", 11685080));
+    public static final Block MAGENTA_CONCRETE_POWDER =
+            register(new Block(524, "minecraft:magenta_concrete_powder", 11685080));
+    public static final Block MAGENTA_GLAZED_TERRACOTTA =
+            register(new Block(525, "minecraft:magenta_glazed_terracotta", 11685080));
+    public static final Block MAGENTA_SHULKER_BOX =
+            register(new Block(526, "minecraft:magenta_shulker_box", 11685080));
+    public static final Block MAGENTA_STAINED_GLASS =
+            register(new Block(527, "minecraft:magenta_stained_glass", 11685080));
+    public static final Block MAGENTA_STAINED_GLASS_PANE =
+            register(new Block(528, "minecraft:magenta_stained_glass_pane", 0));
+    public static final Block MAGENTA_TERRACOTTA =
+            register(new Block(529, "minecraft:magenta_terracotta", 9787244));
+    public static final Block MAGENTA_WALL_BANNER =
+            register(new Block(530, "minecraft:magenta_wall_banner", 9402184));
+    public static final Block MAGENTA_WOOL =
+            register(new Block(531, "minecraft:magenta_wool", 11685080));
+    public static final Block MAGMA_BLOCK =
+            register(new Block(532, "minecraft:magma_block", 7340544));
+    public static final Block MANGROVE_BUTTON =
+            register(new Block(533, "minecraft:mangrove_button", 0));
+    public static final Block MANGROVE_DOOR =
+            register(new Block(534, "minecraft:mangrove_door", 10040115));
+    public static final Block MANGROVE_FENCE =
+            register(new Block(535, "minecraft:mangrove_fence", 10040115));
+    public static final Block MANGROVE_FENCE_GATE =
+            register(new Block(536, "minecraft:mangrove_fence_gate", 10040115));
+    public static final Block MANGROVE_HANGING_SIGN =
+            register(new Block(537, "minecraft:mangrove_hanging_sign", 10040115));
+    public static final Block MANGROVE_LEAVES =
+            register(new Block(538, "minecraft:mangrove_leaves", 31744));
+    public static final Block MANGROVE_LOG =
+            register(new Block(539, "minecraft:mangrove_log", 10040115));
+    public static final Block MANGROVE_PLANKS =
+            register(new Block(540, "minecraft:mangrove_planks", 10040115));
+    public static final Block MANGROVE_PRESSURE_PLATE =
+            register(new Block(541, "minecraft:mangrove_pressure_plate", 10040115));
+    public static final Block MANGROVE_PROPAGULE =
+            register(new Block(542, "minecraft:mangrove_propagule", 31744));
+    public static final Block MANGROVE_ROOTS =
+            register(new Block(543, "minecraft:mangrove_roots", 8476209));
+    public static final Block MANGROVE_SIGN =
+            register(new Block(544, "minecraft:mangrove_sign", 10040115));
+    public static final Block MANGROVE_SLAB =
+            register(new Block(545, "minecraft:mangrove_slab", 10040115));
+    public static final Block MANGROVE_STAIRS =
+            register(new Block(546, "minecraft:mangrove_stairs", 10040115));
+    public static final Block MANGROVE_TRAPDOOR =
+            register(new Block(547, "minecraft:mangrove_trapdoor", 10040115));
+    public static final Block MANGROVE_WALL_HANGING_SIGN =
+            register(new Block(548, "minecraft:mangrove_wall_hanging_sign", 10040115));
+    public static final Block MANGROVE_WALL_SIGN =
+            register(new Block(549, "minecraft:mangrove_wall_sign", 10040115));
+    public static final Block MANGROVE_WOOD =
+            register(new Block(550, "minecraft:mangrove_wood", 10040115));
+    public static final Block MEDIUM_AMETHYST_BUD =
+            register(new Block(551, "minecraft:medium_amethyst_bud", 8339378));
+    public static final Block MELON = register(new Block(552, "minecraft:melon", 8375321));
+    public static final Block MELON_STEM = register(new Block(553, "minecraft:melon_stem", 31744));
+    public static final Block MOSS_BLOCK =
+            register(new Block(554, "minecraft:moss_block", 6717235));
+    public static final Block MOSS_CARPET =
+            register(new Block(555, "minecraft:moss_carpet", 6717235));
+    public static final Block MOSSY_COBBLESTONE =
+            register(new Block(556, "minecraft:mossy_cobblestone", 7368816));
+    public static final Block MOSSY_COBBLESTONE_SLAB =
+            register(new Block(557, "minecraft:mossy_cobblestone_slab", 7368816));
+    public static final Block MOSSY_COBBLESTONE_STAIRS =
+            register(new Block(558, "minecraft:mossy_cobblestone_stairs", 7368816));
+    public static final Block MOSSY_COBBLESTONE_WALL =
+            register(new Block(559, "minecraft:mossy_cobblestone_wall", 7368816));
+    public static final Block MOSSY_STONE_BRICK_SLAB =
+            register(new Block(560, "minecraft:mossy_stone_brick_slab", 7368816));
+    public static final Block MOSSY_STONE_BRICK_STAIRS =
+            register(new Block(561, "minecraft:mossy_stone_brick_stairs", 7368816));
+    public static final Block MOSSY_STONE_BRICK_WALL =
+            register(new Block(562, "minecraft:mossy_stone_brick_wall", 7368816));
+    public static final Block MOSSY_STONE_BRICKS =
+            register(new Block(563, "minecraft:mossy_stone_bricks", 7368816));
+    public static final Block MOVING_PISTON =
+            register(new Block(564, "minecraft:moving_piston", 7368816));
+    public static final Block MUD = register(new Block(565, "minecraft:mud", 5725276));
+    public static final Block MUD_BRICK_SLAB =
+            register(new Block(566, "minecraft:mud_brick_slab", 8874850));
+    public static final Block MUD_BRICK_STAIRS =
+            register(new Block(567, "minecraft:mud_brick_stairs", 8874850));
+    public static final Block MUD_BRICK_WALL =
+            register(new Block(568, "minecraft:mud_brick_wall", 8874850));
+    public static final Block MUD_BRICKS =
+            register(new Block(569, "minecraft:mud_bricks", 8874850));
+    public static final Block MUDDY_MANGROVE_ROOTS =
+            register(new Block(570, "minecraft:muddy_mangrove_roots", 8476209));
+    public static final Block MUSHROOM_STEM =
+            register(new Block(571, "minecraft:mushroom_stem", 13092807));
+    public static final Block MYCELIUM = register(new Block(572, "minecraft:mycelium", 8339378));
+    public static final Block NETHER_BRICK_FENCE =
+            register(new Block(573, "minecraft:nether_brick_fence", 7340544));
+    public static final Block NETHER_BRICK_SLAB =
+            register(new Block(574, "minecraft:nether_brick_slab", 7340544));
+    public static final Block NETHER_BRICK_STAIRS =
+            register(new Block(575, "minecraft:nether_brick_stairs", 7340544));
+    public static final Block NETHER_BRICK_WALL =
+            register(new Block(576, "minecraft:nether_brick_wall", 7340544));
+    public static final Block NETHER_BRICKS =
+            register(new Block(577, "minecraft:nether_bricks", 7340544));
+    public static final Block NETHER_GOLD_ORE =
+            register(new Block(578, "minecraft:nether_gold_ore", 7340544));
+    public static final Block NETHER_PORTAL =
+            register(new Block(579, "minecraft:nether_portal", 0));
+    public static final Block NETHER_QUARTZ_ORE =
+            register(new Block(580, "minecraft:nether_quartz_ore", 7340544));
+    public static final Block NETHER_SPROUTS =
+            register(new Block(581, "minecraft:nether_sprouts", 5013401));
+    public static final Block NETHER_WART =
+            register(new Block(582, "minecraft:nether_wart", 10040115));
+    public static final Block NETHER_WART_BLOCK =
+            register(new Block(583, "minecraft:nether_wart_block", 10040115));
+    public static final Block NETHERITE_BLOCK =
+            register(new Block(584, "minecraft:netherite_block", 1644825));
+    public static final Block NETHERRACK =
+            register(new Block(585, "minecraft:netherrack", 7340544));
+    public static final Block NOTE_BLOCK =
+            register(new Block(586, "minecraft:note_block", 9402184));
+    public static final Block OAK_BUTTON = register(new Block(587, "minecraft:oak_button", 0));
+    public static final Block OAK_DOOR = register(new Block(588, "minecraft:oak_door", 9402184));
+    public static final Block OAK_FENCE = register(new Block(589, "minecraft:oak_fence", 9402184));
+    public static final Block OAK_FENCE_GATE =
+            register(new Block(590, "minecraft:oak_fence_gate", 9402184));
+    public static final Block OAK_HANGING_SIGN =
+            register(new Block(591, "minecraft:oak_hanging_sign", 9402184));
+    public static final Block OAK_LEAVES = register(new Block(592, "minecraft:oak_leaves", 31744));
+    public static final Block OAK_LOG = register(new Block(593, "minecraft:oak_log", 9402184));
+    public static final Block OAK_PLANKS =
+            register(new Block(594, "minecraft:oak_planks", 9402184));
+    public static final Block OAK_PRESSURE_PLATE =
+            register(new Block(595, "minecraft:oak_pressure_plate", 9402184));
+    public static final Block OAK_SAPLING =
+            register(new Block(596, "minecraft:oak_sapling", 31744));
+    public static final Block OAK_SIGN = register(new Block(597, "minecraft:oak_sign", 9402184));
+    public static final Block OAK_SLAB = register(new Block(598, "minecraft:oak_slab", 9402184));
+    public static final Block OAK_STAIRS =
+            register(new Block(599, "minecraft:oak_stairs", 9402184));
+    public static final Block OAK_TRAPDOOR =
+            register(new Block(600, "minecraft:oak_trapdoor", 9402184));
+    public static final Block OAK_WALL_HANGING_SIGN =
+            register(new Block(601, "minecraft:oak_wall_hanging_sign", 9402184));
+    public static final Block OAK_WALL_SIGN =
+            register(new Block(602, "minecraft:oak_wall_sign", 9402184));
+    public static final Block OAK_WOOD = register(new Block(603, "minecraft:oak_wood", 9402184));
+    public static final Block OBSERVER = register(new Block(604, "minecraft:observer", 7368816));
+    public static final Block OBSIDIAN = register(new Block(605, "minecraft:obsidian", 1644825));
+    public static final Block OCHRE_FROGLIGHT =
+            register(new Block(606, "minecraft:ochre_froglight", 16247203));
+    public static final Block ORANGE_BANNER =
+            register(new Block(607, "minecraft:orange_banner", 9402184));
+    public static final Block ORANGE_BED =
+            register(new Block(608, "minecraft:orange_bed", 14188339));
+    public static final Block ORANGE_CANDLE =
+            register(new Block(609, "minecraft:orange_candle", 14188339));
+    public static final Block ORANGE_CANDLE_CAKE =
+            register(new Block(610, "minecraft:orange_candle_cake", 0));
+    public static final Block ORANGE_CARPET =
+            register(new Block(611, "minecraft:orange_carpet", 14188339));
+    public static final Block ORANGE_CONCRETE =
+            register(new Block(612, "minecraft:orange_concrete", 14188339));
+    public static final Block ORANGE_CONCRETE_POWDER =
+            register(new Block(613, "minecraft:orange_concrete_powder", 14188339));
+    public static final Block ORANGE_GLAZED_TERRACOTTA =
+            register(new Block(614, "minecraft:orange_glazed_terracotta", 14188339));
+    public static final Block ORANGE_SHULKER_BOX =
+            register(new Block(615, "minecraft:orange_shulker_box", 14188339));
+    public static final Block ORANGE_STAINED_GLASS =
+            register(new Block(616, "minecraft:orange_stained_glass", 14188339));
+    public static final Block ORANGE_STAINED_GLASS_PANE =
+            register(new Block(617, "minecraft:orange_stained_glass_pane", 0));
+    public static final Block ORANGE_TERRACOTTA =
+            register(new Block(618, "minecraft:orange_terracotta", 10441252));
+    public static final Block ORANGE_TULIP =
+            register(new Block(619, "minecraft:orange_tulip", 31744));
+    public static final Block ORANGE_WALL_BANNER =
+            register(new Block(620, "minecraft:orange_wall_banner", 9402184));
+    public static final Block ORANGE_WOOL =
+            register(new Block(621, "minecraft:orange_wool", 14188339));
+    public static final Block OXEYE_DAISY =
+            register(new Block(622, "minecraft:oxeye_daisy", 31744));
+    public static final Block OXIDIZED_COPPER =
+            register(new Block(623, "minecraft:oxidized_copper", 1474182));
+    public static final Block OXIDIZED_CUT_COPPER =
+            register(new Block(624, "minecraft:oxidized_cut_copper", 1474182));
+    public static final Block OXIDIZED_CUT_COPPER_SLAB =
+            register(new Block(625, "minecraft:oxidized_cut_copper_slab", 1474182));
+    public static final Block OXIDIZED_CUT_COPPER_STAIRS =
+            register(new Block(626, "minecraft:oxidized_cut_copper_stairs", 1474182));
+    public static final Block PACKED_ICE =
+            register(new Block(627, "minecraft:packed_ice", 10526975));
+    public static final Block PACKED_MUD =
+            register(new Block(628, "minecraft:packed_mud", 9923917));
+    public static final Block PEARLESCENT_FROGLIGHT =
+            register(new Block(629, "minecraft:pearlescent_froglight", 15892389));
+    public static final Block PEONY = register(new Block(630, "minecraft:peony", 31744));
+    public static final Block PETRIFIED_OAK_SLAB =
+            register(new Block(631, "minecraft:petrified_oak_slab", 9402184));
+    public static final Block PIGLIN_HEAD = register(new Block(632, "minecraft:piglin_head", 0));
+    public static final Block PIGLIN_WALL_HEAD =
+            register(new Block(633, "minecraft:piglin_wall_head", 0));
+    public static final Block PINK_BANNER =
+            register(new Block(634, "minecraft:pink_banner", 9402184));
+    public static final Block PINK_BED = register(new Block(635, "minecraft:pink_bed", 15892389));
+    public static final Block PINK_CANDLE =
+            register(new Block(636, "minecraft:pink_candle", 15892389));
+    public static final Block PINK_CANDLE_CAKE =
+            register(new Block(637, "minecraft:pink_candle_cake", 0));
+    public static final Block PINK_CARPET =
+            register(new Block(638, "minecraft:pink_carpet", 15892389));
+    public static final Block PINK_CONCRETE =
+            register(new Block(639, "minecraft:pink_concrete", 15892389));
+    public static final Block PINK_CONCRETE_POWDER =
+            register(new Block(640, "minecraft:pink_concrete_powder", 15892389));
+    public static final Block PINK_GLAZED_TERRACOTTA =
+            register(new Block(641, "minecraft:pink_glazed_terracotta", 15892389));
+    public static final Block PINK_PETALS =
+            register(new Block(642, "minecraft:pink_petals", 31744));
+    public static final Block PINK_SHULKER_BOX =
+            register(new Block(643, "minecraft:pink_shulker_box", 15892389));
+    public static final Block PINK_STAINED_GLASS =
+            register(new Block(644, "minecraft:pink_stained_glass", 15892389));
+    public static final Block PINK_STAINED_GLASS_PANE =
+            register(new Block(645, "minecraft:pink_stained_glass_pane", 0));
+    public static final Block PINK_TERRACOTTA =
+            register(new Block(646, "minecraft:pink_terracotta", 10505550));
+    public static final Block PINK_TULIP = register(new Block(647, "minecraft:pink_tulip", 31744));
+    public static final Block PINK_WALL_BANNER =
+            register(new Block(648, "minecraft:pink_wall_banner", 9402184));
+    public static final Block PINK_WOOL = register(new Block(649, "minecraft:pink_wool", 15892389));
+    public static final Block PISTON = register(new Block(650, "minecraft:piston", 7368816));
+    public static final Block PISTON_HEAD =
+            register(new Block(651, "minecraft:piston_head", 7368816));
+    public static final Block PLAYER_HEAD = register(new Block(652, "minecraft:player_head", 0));
+    public static final Block PLAYER_WALL_HEAD =
+            register(new Block(653, "minecraft:player_wall_head", 0));
+    public static final Block PODZOL = register(new Block(654, "minecraft:podzol", 8476209));
+    public static final Block POINTED_DRIPSTONE =
+            register(new Block(655, "minecraft:pointed_dripstone", 4993571));
+    public static final Block POLISHED_ANDESITE =
+            register(new Block(656, "minecraft:polished_andesite", 7368816));
+    public static final Block POLISHED_ANDESITE_SLAB =
+            register(new Block(657, "minecraft:polished_andesite_slab", 7368816));
+    public static final Block POLISHED_ANDESITE_STAIRS =
+            register(new Block(658, "minecraft:polished_andesite_stairs", 7368816));
+    public static final Block POLISHED_BASALT =
+            register(new Block(659, "minecraft:polished_basalt", 1644825));
+    public static final Block POLISHED_BLACKSTONE =
+            register(new Block(660, "minecraft:polished_blackstone", 1644825));
+    public static final Block POLISHED_BLACKSTONE_BRICK_SLAB =
+            register(new Block(661, "minecraft:polished_blackstone_brick_slab", 1644825));
+    public static final Block POLISHED_BLACKSTONE_BRICK_STAIRS =
+            register(new Block(662, "minecraft:polished_blackstone_brick_stairs", 1644825));
+    public static final Block POLISHED_BLACKSTONE_BRICK_WALL =
+            register(new Block(663, "minecraft:polished_blackstone_brick_wall", 1644825));
+    public static final Block POLISHED_BLACKSTONE_BRICKS =
+            register(new Block(664, "minecraft:polished_blackstone_bricks", 1644825));
+    public static final Block POLISHED_BLACKSTONE_BUTTON =
+            register(new Block(665, "minecraft:polished_blackstone_button", 0));
+    public static final Block POLISHED_BLACKSTONE_PRESSURE_PLATE =
+            register(new Block(666, "minecraft:polished_blackstone_pressure_plate", 1644825));
+    public static final Block POLISHED_BLACKSTONE_SLAB =
+            register(new Block(667, "minecraft:polished_blackstone_slab", 1644825));
+    public static final Block POLISHED_BLACKSTONE_STAIRS =
+            register(new Block(668, "minecraft:polished_blackstone_stairs", 1644825));
+    public static final Block POLISHED_BLACKSTONE_WALL =
+            register(new Block(669, "minecraft:polished_blackstone_wall", 1644825));
+    public static final Block POLISHED_DEEPSLATE =
+            register(new Block(670, "minecraft:polished_deepslate", 6579300));
+    public static final Block POLISHED_DEEPSLATE_SLAB =
+            register(new Block(671, "minecraft:polished_deepslate_slab", 6579300));
+    public static final Block POLISHED_DEEPSLATE_STAIRS =
+            register(new Block(672, "minecraft:polished_deepslate_stairs", 6579300));
+    public static final Block POLISHED_DEEPSLATE_WALL =
+            register(new Block(673, "minecraft:polished_deepslate_wall", 6579300));
+    public static final Block POLISHED_DIORITE =
+            register(new Block(674, "minecraft:polished_diorite", 16776437));
+    public static final Block POLISHED_DIORITE_SLAB =
+            register(new Block(675, "minecraft:polished_diorite_slab", 16776437));
+    public static final Block POLISHED_DIORITE_STAIRS =
+            register(new Block(676, "minecraft:polished_diorite_stairs", 16776437));
+    public static final Block POLISHED_GRANITE =
+            register(new Block(677, "minecraft:polished_granite", 9923917));
+    public static final Block POLISHED_GRANITE_SLAB =
+            register(new Block(678, "minecraft:polished_granite_slab", 9923917));
+    public static final Block POLISHED_GRANITE_STAIRS =
+            register(new Block(679, "minecraft:polished_granite_stairs", 9923917));
+    public static final Block POPPY = register(new Block(680, "minecraft:poppy", 31744));
+    public static final Block POTATOES = register(new Block(681, "minecraft:potatoes", 31744));
+    public static final Block POTTED_ACACIA_SAPLING =
+            register(new Block(682, "minecraft:potted_acacia_sapling", 0));
+    public static final Block POTTED_ALLIUM =
+            register(new Block(683, "minecraft:potted_allium", 0));
+    public static final Block POTTED_AZALEA_BUSH =
+            register(new Block(684, "minecraft:potted_azalea_bush", 0));
+    public static final Block POTTED_AZURE_BLUET =
+            register(new Block(685, "minecraft:potted_azure_bluet", 0));
+    public static final Block POTTED_BAMBOO =
+            register(new Block(686, "minecraft:potted_bamboo", 0));
+    public static final Block POTTED_BIRCH_SAPLING =
+            register(new Block(687, "minecraft:potted_birch_sapling", 0));
+    public static final Block POTTED_BLUE_ORCHID =
+            register(new Block(688, "minecraft:potted_blue_orchid", 0));
+    public static final Block POTTED_BROWN_MUSHROOM =
+            register(new Block(689, "minecraft:potted_brown_mushroom", 0));
+    public static final Block POTTED_CACTUS =
+            register(new Block(690, "minecraft:potted_cactus", 0));
+    public static final Block POTTED_CHERRY_SAPLING =
+            register(new Block(691, "minecraft:potted_cherry_sapling", 0));
+    public static final Block POTTED_CORNFLOWER =
+            register(new Block(692, "minecraft:potted_cornflower", 0));
+    public static final Block POTTED_CRIMSON_FUNGUS =
+            register(new Block(693, "minecraft:potted_crimson_fungus", 0));
+    public static final Block POTTED_CRIMSON_ROOTS =
+            register(new Block(694, "minecraft:potted_crimson_roots", 0));
+    public static final Block POTTED_DANDELION =
+            register(new Block(695, "minecraft:potted_dandelion", 0));
+    public static final Block POTTED_DARK_OAK_SAPLING =
+            register(new Block(696, "minecraft:potted_dark_oak_sapling", 0));
+    public static final Block POTTED_DEAD_BUSH =
+            register(new Block(697, "minecraft:potted_dead_bush", 0));
+    public static final Block POTTED_FERN = register(new Block(698, "minecraft:potted_fern", 0));
+    public static final Block POTTED_FLOWERING_AZALEA_BUSH =
+            register(new Block(699, "minecraft:potted_flowering_azalea_bush", 0));
+    public static final Block POTTED_JUNGLE_SAPLING =
+            register(new Block(700, "minecraft:potted_jungle_sapling", 0));
+    public static final Block POTTED_LILY_OF_THE_VALLEY =
+            register(new Block(701, "minecraft:potted_lily_of_the_valley", 0));
+    public static final Block POTTED_MANGROVE_PROPAGULE =
+            register(new Block(702, "minecraft:potted_mangrove_propagule", 0));
+    public static final Block POTTED_OAK_SAPLING =
+            register(new Block(703, "minecraft:potted_oak_sapling", 0));
+    public static final Block POTTED_ORANGE_TULIP =
+            register(new Block(704, "minecraft:potted_orange_tulip", 0));
+    public static final Block POTTED_OXEYE_DAISY =
+            register(new Block(705, "minecraft:potted_oxeye_daisy", 0));
+    public static final Block POTTED_PINK_TULIP =
+            register(new Block(706, "minecraft:potted_pink_tulip", 0));
+    public static final Block POTTED_POPPY = register(new Block(707, "minecraft:potted_poppy", 0));
+    public static final Block POTTED_RED_MUSHROOM =
+            register(new Block(708, "minecraft:potted_red_mushroom", 0));
+    public static final Block POTTED_RED_TULIP =
+            register(new Block(709, "minecraft:potted_red_tulip", 0));
+    public static final Block POTTED_SPRUCE_SAPLING =
+            register(new Block(710, "minecraft:potted_spruce_sapling", 0));
+    public static final Block POTTED_TORCHFLOWER =
+            register(new Block(711, "minecraft:potted_torchflower", 0));
+    public static final Block POTTED_WARPED_FUNGUS =
+            register(new Block(712, "minecraft:potted_warped_fungus", 0));
+    public static final Block POTTED_WARPED_ROOTS =
+            register(new Block(713, "minecraft:potted_warped_roots", 0));
+    public static final Block POTTED_WHITE_TULIP =
+            register(new Block(714, "minecraft:potted_white_tulip", 0));
+    public static final Block POTTED_WITHER_ROSE =
+            register(new Block(715, "minecraft:potted_wither_rose", 0));
+    public static final Block POWDER_SNOW =
+            register(new Block(716, "minecraft:powder_snow", 16777215));
+    public static final Block POWDER_SNOW_CAULDRON =
+            register(new Block(717, "minecraft:powder_snow_cauldron", 7368816));
+    public static final Block POWERED_RAIL = register(new Block(718, "minecraft:powered_rail", 0));
+    public static final Block PRISMARINE =
+            register(new Block(719, "minecraft:prismarine", 5013401));
+    public static final Block PRISMARINE_BRICK_SLAB =
+            register(new Block(720, "minecraft:prismarine_brick_slab", 6085589));
+    public static final Block PRISMARINE_BRICK_STAIRS =
+            register(new Block(721, "minecraft:prismarine_brick_stairs", 6085589));
+    public static final Block PRISMARINE_BRICKS =
+            register(new Block(722, "minecraft:prismarine_bricks", 6085589));
+    public static final Block PRISMARINE_SLAB =
+            register(new Block(723, "minecraft:prismarine_slab", 5013401));
+    public static final Block PRISMARINE_STAIRS =
+            register(new Block(724, "minecraft:prismarine_stairs", 5013401));
+    public static final Block PRISMARINE_WALL =
+            register(new Block(725, "minecraft:prismarine_wall", 5013401));
+    public static final Block PUMPKIN = register(new Block(726, "minecraft:pumpkin", 14188339));
+    public static final Block PUMPKIN_STEM =
+            register(new Block(727, "minecraft:pumpkin_stem", 31744));
+    public static final Block PURPLE_BANNER =
+            register(new Block(728, "minecraft:purple_banner", 9402184));
+    public static final Block PURPLE_BED =
+            register(new Block(729, "minecraft:purple_bed", 8339378));
+    public static final Block PURPLE_CANDLE =
+            register(new Block(730, "minecraft:purple_candle", 8339378));
+    public static final Block PURPLE_CANDLE_CAKE =
+            register(new Block(731, "minecraft:purple_candle_cake", 0));
+    public static final Block PURPLE_CARPET =
+            register(new Block(732, "minecraft:purple_carpet", 8339378));
+    public static final Block PURPLE_CONCRETE =
+            register(new Block(733, "minecraft:purple_concrete", 8339378));
+    public static final Block PURPLE_CONCRETE_POWDER =
+            register(new Block(734, "minecraft:purple_concrete_powder", 8339378));
+    public static final Block PURPLE_GLAZED_TERRACOTTA =
+            register(new Block(735, "minecraft:purple_glazed_terracotta", 8339378));
+    public static final Block PURPLE_SHULKER_BOX =
+            register(new Block(736, "minecraft:purple_shulker_box", 8014168));
+    public static final Block PURPLE_STAINED_GLASS =
+            register(new Block(737, "minecraft:purple_stained_glass", 8339378));
+    public static final Block PURPLE_STAINED_GLASS_PANE =
+            register(new Block(738, "minecraft:purple_stained_glass_pane", 0));
+    public static final Block PURPLE_TERRACOTTA =
+            register(new Block(739, "minecraft:purple_terracotta", 8014168));
+    public static final Block PURPLE_WALL_BANNER =
+            register(new Block(740, "minecraft:purple_wall_banner", 9402184));
+    public static final Block PURPLE_WOOL =
+            register(new Block(741, "minecraft:purple_wool", 8339378));
+    public static final Block PURPUR_BLOCK =
+            register(new Block(742, "minecraft:purpur_block", 11685080));
+    public static final Block PURPUR_PILLAR =
+            register(new Block(743, "minecraft:purpur_pillar", 11685080));
+    public static final Block PURPUR_SLAB =
+            register(new Block(744, "minecraft:purpur_slab", 11685080));
+    public static final Block PURPUR_STAIRS =
+            register(new Block(745, "minecraft:purpur_stairs", 11685080));
+    public static final Block QUARTZ_BLOCK =
+            register(new Block(746, "minecraft:quartz_block", 16776437));
+    public static final Block QUARTZ_BRICKS =
+            register(new Block(747, "minecraft:quartz_bricks", 16776437));
+    public static final Block QUARTZ_PILLAR =
+            register(new Block(748, "minecraft:quartz_pillar", 16776437));
+    public static final Block QUARTZ_SLAB =
+            register(new Block(749, "minecraft:quartz_slab", 16776437));
+    public static final Block QUARTZ_STAIRS =
+            register(new Block(750, "minecraft:quartz_stairs", 16776437));
+    public static final Block RAIL = register(new Block(751, "minecraft:rail", 0));
+    public static final Block RAW_COPPER_BLOCK =
+            register(new Block(752, "minecraft:raw_copper_block", 14188339));
+    public static final Block RAW_GOLD_BLOCK =
+            register(new Block(753, "minecraft:raw_gold_block", 16445005));
+    public static final Block RAW_IRON_BLOCK =
+            register(new Block(754, "minecraft:raw_iron_block", 14200723));
+    public static final Block RED_BANNER =
+            register(new Block(755, "minecraft:red_banner", 9402184));
+    public static final Block RED_BED = register(new Block(756, "minecraft:red_bed", 10040115));
+    public static final Block RED_CANDLE =
+            register(new Block(757, "minecraft:red_candle", 10040115));
+    public static final Block RED_CANDLE_CAKE =
+            register(new Block(758, "minecraft:red_candle_cake", 0));
+    public static final Block RED_CARPET =
+            register(new Block(759, "minecraft:red_carpet", 10040115));
+    public static final Block RED_CONCRETE =
+            register(new Block(760, "minecraft:red_concrete", 10040115));
+    public static final Block RED_CONCRETE_POWDER =
+            register(new Block(761, "minecraft:red_concrete_powder", 10040115));
+    public static final Block RED_GLAZED_TERRACOTTA =
+            register(new Block(762, "minecraft:red_glazed_terracotta", 10040115));
+    public static final Block RED_MUSHROOM =
+            register(new Block(763, "minecraft:red_mushroom", 10040115));
+    public static final Block RED_MUSHROOM_BLOCK =
+            register(new Block(764, "minecraft:red_mushroom_block", 10040115));
+    public static final Block RED_NETHER_BRICK_SLAB =
+            register(new Block(765, "minecraft:red_nether_brick_slab", 7340544));
+    public static final Block RED_NETHER_BRICK_STAIRS =
+            register(new Block(766, "minecraft:red_nether_brick_stairs", 7340544));
+    public static final Block RED_NETHER_BRICK_WALL =
+            register(new Block(767, "minecraft:red_nether_brick_wall", 7340544));
+    public static final Block RED_NETHER_BRICKS =
+            register(new Block(768, "minecraft:red_nether_bricks", 7340544));
+    public static final Block RED_SAND = register(new Block(769, "minecraft:red_sand", 14188339));
+    public static final Block RED_SANDSTONE =
+            register(new Block(770, "minecraft:red_sandstone", 14188339));
+    public static final Block RED_SANDSTONE_SLAB =
+            register(new Block(771, "minecraft:red_sandstone_slab", 14188339));
+    public static final Block RED_SANDSTONE_STAIRS =
+            register(new Block(772, "minecraft:red_sandstone_stairs", 14188339));
+    public static final Block RED_SANDSTONE_WALL =
+            register(new Block(773, "minecraft:red_sandstone_wall", 14188339));
+    public static final Block RED_SHULKER_BOX =
+            register(new Block(774, "minecraft:red_shulker_box", 10040115));
+    public static final Block RED_STAINED_GLASS =
+            register(new Block(775, "minecraft:red_stained_glass", 10040115));
+    public static final Block RED_STAINED_GLASS_PANE =
+            register(new Block(776, "minecraft:red_stained_glass_pane", 0));
+    public static final Block RED_TERRACOTTA =
+            register(new Block(777, "minecraft:red_terracotta", 9321518));
+    public static final Block RED_TULIP = register(new Block(778, "minecraft:red_tulip", 31744));
+    public static final Block RED_WALL_BANNER =
+            register(new Block(779, "minecraft:red_wall_banner", 9402184));
+    public static final Block RED_WOOL = register(new Block(780, "minecraft:red_wool", 10040115));
+    public static final Block REDSTONE_BLOCK =
+            register(new Block(781, "minecraft:redstone_block", 16711680));
+    public static final Block REDSTONE_LAMP =
+            register(new Block(782, "minecraft:redstone_lamp", 0));
+    public static final Block REDSTONE_ORE =
+            register(new Block(783, "minecraft:redstone_ore", 7368816));
+    public static final Block REDSTONE_TORCH =
+            register(new Block(784, "minecraft:redstone_torch", 0));
+    public static final Block REDSTONE_WALL_TORCH =
+            register(new Block(785, "minecraft:redstone_wall_torch", 0));
+    public static final Block REDSTONE_WIRE =
+            register(new Block(786, "minecraft:redstone_wire", 0));
+    public static final Block REINFORCED_DEEPSLATE =
+            register(new Block(787, "minecraft:reinforced_deepslate", 6579300));
+    public static final Block REPEATER = register(new Block(788, "minecraft:repeater", 0));
+    public static final Block REPEATING_COMMAND_BLOCK =
+            register(new Block(789, "minecraft:repeating_command_block", 8339378));
+    public static final Block RESPAWN_ANCHOR =
+            register(new Block(790, "minecraft:respawn_anchor", 1644825));
+    public static final Block ROOTED_DIRT =
+            register(new Block(791, "minecraft:rooted_dirt", 9923917));
+    public static final Block ROSE_BUSH = register(new Block(792, "minecraft:rose_bush", 31744));
+    public static final Block SAND = register(new Block(793, "minecraft:sand", 16247203));
+    public static final Block SANDSTONE = register(new Block(794, "minecraft:sandstone", 16247203));
+    public static final Block SANDSTONE_SLAB =
+            register(new Block(795, "minecraft:sandstone_slab", 16247203));
+    public static final Block SANDSTONE_STAIRS =
+            register(new Block(796, "minecraft:sandstone_stairs", 16247203));
+    public static final Block SANDSTONE_WALL =
+            register(new Block(797, "minecraft:sandstone_wall", 16247203));
+    public static final Block SCAFFOLDING =
+            register(new Block(798, "minecraft:scaffolding", 16247203));
+    public static final Block SCULK = register(new Block(799, "minecraft:sculk", 1644825));
+    public static final Block SCULK_CATALYST =
+            register(new Block(800, "minecraft:sculk_catalyst", 1644825));
+    public static final Block SCULK_SENSOR =
+            register(new Block(801, "minecraft:sculk_sensor", 5013401));
+    public static final Block SCULK_SHRIEKER =
+            register(new Block(802, "minecraft:sculk_shrieker", 1644825));
+    public static final Block SCULK_VEIN =
+            register(new Block(803, "minecraft:sculk_vein", 1644825));
+    public static final Block SEA_LANTERN =
+            register(new Block(804, "minecraft:sea_lantern", 16776437));
+    public static final Block SEA_PICKLE =
+            register(new Block(805, "minecraft:sea_pickle", 6717235));
+    public static final Block SEAGRASS = register(new Block(806, "minecraft:seagrass", 4210943));
+    public static final Block SHROOMLIGHT =
+            register(new Block(807, "minecraft:shroomlight", 10040115));
+    public static final Block SHULKER_BOX =
+            register(new Block(808, "minecraft:shulker_box", 8339378));
+    public static final Block SKELETON_SKULL =
+            register(new Block(809, "minecraft:skeleton_skull", 0));
+    public static final Block SKELETON_WALL_SKULL =
+            register(new Block(810, "minecraft:skeleton_wall_skull", 0));
+    public static final Block SLIME_BLOCK =
+            register(new Block(811, "minecraft:slime_block", 8368696));
+    public static final Block SMALL_AMETHYST_BUD =
+            register(new Block(812, "minecraft:small_amethyst_bud", 8339378));
+    public static final Block SMALL_DRIPLEAF =
+            register(new Block(813, "minecraft:small_dripleaf", 31744));
+    public static final Block SMITHING_TABLE =
+            register(new Block(814, "minecraft:smithing_table", 9402184));
+    public static final Block SMOKER = register(new Block(815, "minecraft:smoker", 7368816));
+    public static final Block SMOOTH_BASALT =
+            register(new Block(816, "minecraft:smooth_basalt", 1644825));
+    public static final Block SMOOTH_QUARTZ =
+            register(new Block(817, "minecraft:smooth_quartz", 16776437));
+    public static final Block SMOOTH_QUARTZ_SLAB =
+            register(new Block(818, "minecraft:smooth_quartz_slab", 16776437));
+    public static final Block SMOOTH_QUARTZ_STAIRS =
+            register(new Block(819, "minecraft:smooth_quartz_stairs", 16776437));
+    public static final Block SMOOTH_RED_SANDSTONE =
+            register(new Block(820, "minecraft:smooth_red_sandstone", 14188339));
+    public static final Block SMOOTH_RED_SANDSTONE_SLAB =
+            register(new Block(821, "minecraft:smooth_red_sandstone_slab", 14188339));
+    public static final Block SMOOTH_RED_SANDSTONE_STAIRS =
+            register(new Block(822, "minecraft:smooth_red_sandstone_stairs", 14188339));
+    public static final Block SMOOTH_SANDSTONE =
+            register(new Block(823, "minecraft:smooth_sandstone", 16247203));
+    public static final Block SMOOTH_SANDSTONE_SLAB =
+            register(new Block(824, "minecraft:smooth_sandstone_slab", 16247203));
+    public static final Block SMOOTH_SANDSTONE_STAIRS =
+            register(new Block(825, "minecraft:smooth_sandstone_stairs", 16247203));
+    public static final Block SMOOTH_STONE =
+            register(new Block(826, "minecraft:smooth_stone", 7368816));
+    public static final Block SMOOTH_STONE_SLAB =
+            register(new Block(827, "minecraft:smooth_stone_slab", 7368816));
+    public static final Block SNOW = register(new Block(828, "minecraft:snow", 16777215));
+    public static final Block SNOW_BLOCK =
+            register(new Block(829, "minecraft:snow_block", 16777215));
+    public static final Block SOUL_CAMPFIRE =
+            register(new Block(830, "minecraft:soul_campfire", 8476209));
+    public static final Block SOUL_FIRE = register(new Block(831, "minecraft:soul_fire", 6724056));
+    public static final Block SOUL_LANTERN =
+            register(new Block(832, "minecraft:soul_lantern", 10987431));
+    public static final Block SOUL_SAND = register(new Block(833, "minecraft:soul_sand", 6704179));
+    public static final Block SOUL_SOIL = register(new Block(834, "minecraft:soul_soil", 6704179));
+    public static final Block SOUL_TORCH = register(new Block(835, "minecraft:soul_torch", 0));
+    public static final Block SOUL_WALL_TORCH =
+            register(new Block(836, "minecraft:soul_wall_torch", 0));
+    public static final Block SPAWNER = register(new Block(837, "minecraft:spawner", 7368816));
+    public static final Block SPONGE = register(new Block(838, "minecraft:sponge", 15066419));
+    public static final Block SPORE_BLOSSOM =
+            register(new Block(839, "minecraft:spore_blossom", 31744));
+    public static final Block SPRUCE_BUTTON =
+            register(new Block(840, "minecraft:spruce_button", 0));
+    public static final Block SPRUCE_DOOR =
+            register(new Block(841, "minecraft:spruce_door", 8476209));
+    public static final Block SPRUCE_FENCE =
+            register(new Block(842, "minecraft:spruce_fence", 8476209));
+    public static final Block SPRUCE_FENCE_GATE =
+            register(new Block(843, "minecraft:spruce_fence_gate", 8476209));
+    public static final Block SPRUCE_HANGING_SIGN =
+            register(new Block(844, "minecraft:spruce_hanging_sign", 8476209));
+    public static final Block SPRUCE_LEAVES =
+            register(new Block(845, "minecraft:spruce_leaves", 31744));
+    public static final Block SPRUCE_LOG =
+            register(new Block(846, "minecraft:spruce_log", 8476209));
+    public static final Block SPRUCE_PLANKS =
+            register(new Block(847, "minecraft:spruce_planks", 8476209));
+    public static final Block SPRUCE_PRESSURE_PLATE =
+            register(new Block(848, "minecraft:spruce_pressure_plate", 8476209));
+    public static final Block SPRUCE_SAPLING =
+            register(new Block(849, "minecraft:spruce_sapling", 31744));
+    public static final Block SPRUCE_SIGN =
+            register(new Block(850, "minecraft:spruce_sign", 8476209));
+    public static final Block SPRUCE_SLAB =
+            register(new Block(851, "minecraft:spruce_slab", 8476209));
+    public static final Block SPRUCE_STAIRS =
+            register(new Block(852, "minecraft:spruce_stairs", 8476209));
+    public static final Block SPRUCE_TRAPDOOR =
+            register(new Block(853, "minecraft:spruce_trapdoor", 8476209));
+    public static final Block SPRUCE_WALL_HANGING_SIGN =
+            register(new Block(854, "minecraft:spruce_wall_hanging_sign", 9402184));
+    public static final Block SPRUCE_WALL_SIGN =
+            register(new Block(855, "minecraft:spruce_wall_sign", 8476209));
+    public static final Block SPRUCE_WOOD =
+            register(new Block(856, "minecraft:spruce_wood", 8476209));
+    public static final Block STICKY_PISTON =
+            register(new Block(857, "minecraft:sticky_piston", 7368816));
+    public static final Block STONE = register(new Block(858, "minecraft:stone", 7368816));
+    public static final Block STONE_BRICK_SLAB =
+            register(new Block(859, "minecraft:stone_brick_slab", 7368816));
+    public static final Block STONE_BRICK_STAIRS =
+            register(new Block(860, "minecraft:stone_brick_stairs", 7368816));
+    public static final Block STONE_BRICK_WALL =
+            register(new Block(861, "minecraft:stone_brick_wall", 7368816));
+    public static final Block STONE_BRICKS =
+            register(new Block(862, "minecraft:stone_bricks", 7368816));
+    public static final Block STONE_BUTTON = register(new Block(863, "minecraft:stone_button", 0));
+    public static final Block STONE_PRESSURE_PLATE =
+            register(new Block(864, "minecraft:stone_pressure_plate", 7368816));
+    public static final Block STONE_SLAB =
+            register(new Block(865, "minecraft:stone_slab", 7368816));
+    public static final Block STONE_STAIRS =
+            register(new Block(866, "minecraft:stone_stairs", 7368816));
+    public static final Block STONECUTTER =
+            register(new Block(867, "minecraft:stonecutter", 7368816));
+    public static final Block STRIPPED_ACACIA_LOG =
+            register(new Block(868, "minecraft:stripped_acacia_log", 14188339));
+    public static final Block STRIPPED_ACACIA_WOOD =
+            register(new Block(869, "minecraft:stripped_acacia_wood", 14188339));
+    public static final Block STRIPPED_BAMBOO_BLOCK =
+            register(new Block(870, "minecraft:stripped_bamboo_block", 15066419));
+    public static final Block STRIPPED_BIRCH_LOG =
+            register(new Block(871, "minecraft:stripped_birch_log", 16247203));
+    public static final Block STRIPPED_BIRCH_WOOD =
+            register(new Block(872, "minecraft:stripped_birch_wood", 16247203));
+    public static final Block STRIPPED_CHERRY_LOG =
+            register(new Block(873, "minecraft:stripped_cherry_log", 13742497));
+    public static final Block STRIPPED_CHERRY_WOOD =
+            register(new Block(874, "minecraft:stripped_cherry_wood", 10505550));
+    public static final Block STRIPPED_CRIMSON_HYPHAE =
+            register(new Block(875, "minecraft:stripped_crimson_hyphae", 6035741));
+    public static final Block STRIPPED_CRIMSON_STEM =
+            register(new Block(876, "minecraft:stripped_crimson_stem", 9715553));
+    public static final Block STRIPPED_DARK_OAK_LOG =
+            register(new Block(877, "minecraft:stripped_dark_oak_log", 6704179));
+    public static final Block STRIPPED_DARK_OAK_WOOD =
+            register(new Block(878, "minecraft:stripped_dark_oak_wood", 6704179));
+    public static final Block STRIPPED_JUNGLE_LOG =
+            register(new Block(879, "minecraft:stripped_jungle_log", 9923917));
+    public static final Block STRIPPED_JUNGLE_WOOD =
+            register(new Block(880, "minecraft:stripped_jungle_wood", 9923917));
+    public static final Block STRIPPED_MANGROVE_LOG =
+            register(new Block(881, "minecraft:stripped_mangrove_log", 10040115));
+    public static final Block STRIPPED_MANGROVE_WOOD =
+            register(new Block(882, "minecraft:stripped_mangrove_wood", 10040115));
+    public static final Block STRIPPED_OAK_LOG =
+            register(new Block(883, "minecraft:stripped_oak_log", 9402184));
+    public static final Block STRIPPED_OAK_WOOD =
+            register(new Block(884, "minecraft:stripped_oak_wood", 9402184));
+    public static final Block STRIPPED_SPRUCE_LOG =
+            register(new Block(885, "minecraft:stripped_spruce_log", 8476209));
+    public static final Block STRIPPED_SPRUCE_WOOD =
+            register(new Block(886, "minecraft:stripped_spruce_wood", 8476209));
+    public static final Block STRIPPED_WARPED_HYPHAE =
+            register(new Block(887, "minecraft:stripped_warped_hyphae", 5647422));
+    public static final Block STRIPPED_WARPED_STEM =
+            register(new Block(888, "minecraft:stripped_warped_stem", 3837580));
+    public static final Block STRUCTURE_BLOCK =
+            register(new Block(889, "minecraft:structure_block", 10066329));
+    public static final Block STRUCTURE_VOID =
+            register(new Block(890, "minecraft:structure_void", 0));
+    public static final Block SUGAR_CANE = register(new Block(891, "minecraft:sugar_cane", 31744));
+    public static final Block SUNFLOWER = register(new Block(892, "minecraft:sunflower", 31744));
+    public static final Block SUSPICIOUS_SAND =
+            register(new Block(893, "minecraft:suspicious_sand", 16247203));
+    public static final Block SWEET_BERRY_BUSH =
+            register(new Block(894, "minecraft:sweet_berry_bush", 31744));
+    public static final Block TALL_GRASS = register(new Block(895, "minecraft:tall_grass", 31744));
+    public static final Block TALL_SEAGRASS =
+            register(new Block(896, "minecraft:tall_seagrass", 4210943));
+    public static final Block TARGET = register(new Block(897, "minecraft:target", 16776437));
+    public static final Block TERRACOTTA =
+            register(new Block(898, "minecraft:terracotta", 14188339));
+    public static final Block TINTED_GLASS =
+            register(new Block(899, "minecraft:tinted_glass", 5000268));
+    public static final Block TNT = register(new Block(900, "minecraft:tnt", 16711680));
+    public static final Block TORCH = register(new Block(901, "minecraft:torch", 0));
+    public static final Block TORCHFLOWER =
+            register(new Block(902, "minecraft:torchflower", 31744));
+    public static final Block TORCHFLOWER_CROP =
+            register(new Block(903, "minecraft:torchflower_crop", 31744));
+    public static final Block TRAPPED_CHEST =
+            register(new Block(904, "minecraft:trapped_chest", 9402184));
+    public static final Block TRIPWIRE = register(new Block(905, "minecraft:tripwire", 0));
+    public static final Block TRIPWIRE_HOOK =
+            register(new Block(906, "minecraft:tripwire_hook", 0));
+    public static final Block TUBE_CORAL =
+            register(new Block(907, "minecraft:tube_coral", 3361970));
+    public static final Block TUBE_CORAL_BLOCK =
+            register(new Block(908, "minecraft:tube_coral_block", 3361970));
+    public static final Block TUBE_CORAL_FAN =
+            register(new Block(909, "minecraft:tube_coral_fan", 3361970));
+    public static final Block TUBE_CORAL_WALL_FAN =
+            register(new Block(910, "minecraft:tube_coral_wall_fan", 3361970));
+    public static final Block TUFF = register(new Block(911, "minecraft:tuff", 3746083));
+    public static final Block TURTLE_EGG =
+            register(new Block(912, "minecraft:turtle_egg", 16247203));
+    public static final Block TWISTING_VINES =
+            register(new Block(913, "minecraft:twisting_vines", 5013401));
+    public static final Block TWISTING_VINES_PLANT =
+            register(new Block(914, "minecraft:twisting_vines_plant", 5013401));
+    public static final Block VERDANT_FROGLIGHT =
+            register(new Block(915, "minecraft:verdant_froglight", 8365974));
+    public static final Block VINE = register(new Block(916, "minecraft:vine", 31744));
+    public static final Block VOID_AIR = register(new Block(917, "minecraft:void_air", 0));
+    public static final Block WALL_TORCH = register(new Block(918, "minecraft:wall_torch", 0));
+    public static final Block WARPED_BUTTON =
+            register(new Block(919, "minecraft:warped_button", 0));
+    public static final Block WARPED_DOOR =
+            register(new Block(920, "minecraft:warped_door", 3837580));
+    public static final Block WARPED_FENCE =
+            register(new Block(921, "minecraft:warped_fence", 3837580));
+    public static final Block WARPED_FENCE_GATE =
+            register(new Block(922, "minecraft:warped_fence_gate", 3837580));
+    public static final Block WARPED_FUNGUS =
+            register(new Block(923, "minecraft:warped_fungus", 5013401));
+    public static final Block WARPED_HANGING_SIGN =
+            register(new Block(924, "minecraft:warped_hanging_sign", 3837580));
+    public static final Block WARPED_HYPHAE =
+            register(new Block(925, "minecraft:warped_hyphae", 5647422));
+    public static final Block WARPED_NYLIUM =
+            register(new Block(926, "minecraft:warped_nylium", 1474182));
+    public static final Block WARPED_PLANKS =
+            register(new Block(927, "minecraft:warped_planks", 3837580));
+    public static final Block WARPED_PRESSURE_PLATE =
+            register(new Block(928, "minecraft:warped_pressure_plate", 3837580));
+    public static final Block WARPED_ROOTS =
+            register(new Block(929, "minecraft:warped_roots", 5013401));
+    public static final Block WARPED_SIGN =
+            register(new Block(930, "minecraft:warped_sign", 3837580));
+    public static final Block WARPED_SLAB =
+            register(new Block(931, "minecraft:warped_slab", 3837580));
+    public static final Block WARPED_STAIRS =
+            register(new Block(932, "minecraft:warped_stairs", 3837580));
+    public static final Block WARPED_STEM =
+            register(new Block(933, "minecraft:warped_stem", 3837580));
+    public static final Block WARPED_TRAPDOOR =
+            register(new Block(934, "minecraft:warped_trapdoor", 3837580));
+    public static final Block WARPED_WALL_HANGING_SIGN =
+            register(new Block(935, "minecraft:warped_wall_hanging_sign", 3837580));
+    public static final Block WARPED_WALL_SIGN =
+            register(new Block(936, "minecraft:warped_wall_sign", 3837580));
+    public static final Block WARPED_WART_BLOCK =
+            register(new Block(937, "minecraft:warped_wart_block", 1356933));
+    public static final Block WATER = register(new Block(938, "minecraft:water", 4210943));
+    public static final Block WATER_CAULDRON =
+            register(new Block(939, "minecraft:water_cauldron", 7368816));
+    public static final Block WAXED_COPPER_BLOCK =
+            register(new Block(940, "minecraft:waxed_copper_block", 14188339));
+    public static final Block WAXED_CUT_COPPER =
+            register(new Block(941, "minecraft:waxed_cut_copper", 14188339));
+    public static final Block WAXED_CUT_COPPER_SLAB =
+            register(new Block(942, "minecraft:waxed_cut_copper_slab", 14188339));
+    public static final Block WAXED_CUT_COPPER_STAIRS =
+            register(new Block(943, "minecraft:waxed_cut_copper_stairs", 14188339));
+    public static final Block WAXED_EXPOSED_COPPER =
+            register(new Block(944, "minecraft:waxed_exposed_copper", 8874850));
+    public static final Block WAXED_EXPOSED_CUT_COPPER =
+            register(new Block(945, "minecraft:waxed_exposed_cut_copper", 8874850));
+    public static final Block WAXED_EXPOSED_CUT_COPPER_SLAB =
+            register(new Block(946, "minecraft:waxed_exposed_cut_copper_slab", 8874850));
+    public static final Block WAXED_EXPOSED_CUT_COPPER_STAIRS =
+            register(new Block(947, "minecraft:waxed_exposed_cut_copper_stairs", 8874850));
+    public static final Block WAXED_OXIDIZED_COPPER =
+            register(new Block(948, "minecraft:waxed_oxidized_copper", 1474182));
+    public static final Block WAXED_OXIDIZED_CUT_COPPER =
+            register(new Block(949, "minecraft:waxed_oxidized_cut_copper", 1474182));
+    public static final Block WAXED_OXIDIZED_CUT_COPPER_SLAB =
+            register(new Block(950, "minecraft:waxed_oxidized_cut_copper_slab", 1474182));
+    public static final Block WAXED_OXIDIZED_CUT_COPPER_STAIRS =
+            register(new Block(951, "minecraft:waxed_oxidized_cut_copper_stairs", 1474182));
+    public static final Block WAXED_WEATHERED_COPPER =
+            register(new Block(952, "minecraft:waxed_weathered_copper", 3837580));
+    public static final Block WAXED_WEATHERED_CUT_COPPER =
+            register(new Block(953, "minecraft:waxed_weathered_cut_copper", 3837580));
+    public static final Block WAXED_WEATHERED_CUT_COPPER_SLAB =
+            register(new Block(954, "minecraft:waxed_weathered_cut_copper_slab", 3837580));
+    public static final Block WAXED_WEATHERED_CUT_COPPER_STAIRS =
+            register(new Block(955, "minecraft:waxed_weathered_cut_copper_stairs", 3837580));
+    public static final Block WEATHERED_COPPER =
+            register(new Block(956, "minecraft:weathered_copper", 3837580));
+    public static final Block WEATHERED_CUT_COPPER =
+            register(new Block(957, "minecraft:weathered_cut_copper", 3837580));
+    public static final Block WEATHERED_CUT_COPPER_SLAB =
+            register(new Block(958, "minecraft:weathered_cut_copper_slab", 3837580));
+    public static final Block WEATHERED_CUT_COPPER_STAIRS =
+            register(new Block(959, "minecraft:weathered_cut_copper_stairs", 3837580));
+    public static final Block WEEPING_VINES =
+            register(new Block(960, "minecraft:weeping_vines", 7340544));
+    public static final Block WEEPING_VINES_PLANT =
+            register(new Block(961, "minecraft:weeping_vines_plant", 7340544));
+    public static final Block WET_SPONGE =
+            register(new Block(962, "minecraft:wet_sponge", 15066419));
+    public static final Block WHEAT = register(new Block(963, "minecraft:wheat", 31744));
+    public static final Block WHITE_BANNER =
+            register(new Block(964, "minecraft:white_banner", 9402184));
+    public static final Block WHITE_BED = register(new Block(965, "minecraft:white_bed", 16777215));
+    public static final Block WHITE_CANDLE =
+            register(new Block(966, "minecraft:white_candle", 13092807));
+    public static final Block WHITE_CANDLE_CAKE =
+            register(new Block(967, "minecraft:white_candle_cake", 0));
+    public static final Block WHITE_CARPET =
+            register(new Block(968, "minecraft:white_carpet", 16777215));
+    public static final Block WHITE_CONCRETE =
+            register(new Block(969, "minecraft:white_concrete", 16777215));
+    public static final Block WHITE_CONCRETE_POWDER =
+            register(new Block(970, "minecraft:white_concrete_powder", 16777215));
+    public static final Block WHITE_GLAZED_TERRACOTTA =
+            register(new Block(971, "minecraft:white_glazed_terracotta", 16777215));
+    public static final Block WHITE_SHULKER_BOX =
+            register(new Block(972, "minecraft:white_shulker_box", 16777215));
+    public static final Block WHITE_STAINED_GLASS =
+            register(new Block(973, "minecraft:white_stained_glass", 16777215));
+    public static final Block WHITE_STAINED_GLASS_PANE =
+            register(new Block(974, "minecraft:white_stained_glass_pane", 0));
+    public static final Block WHITE_TERRACOTTA =
+            register(new Block(975, "minecraft:white_terracotta", 13742497));
+    public static final Block WHITE_TULIP =
+            register(new Block(976, "minecraft:white_tulip", 31744));
+    public static final Block WHITE_WALL_BANNER =
+            register(new Block(977, "minecraft:white_wall_banner", 9402184));
+    public static final Block WHITE_WOOL =
+            register(new Block(978, "minecraft:white_wool", 16777215));
+    public static final Block WITHER_ROSE =
+            register(new Block(979, "minecraft:wither_rose", 31744));
+    public static final Block WITHER_SKELETON_SKULL =
+            register(new Block(980, "minecraft:wither_skeleton_skull", 0));
+    public static final Block WITHER_SKELETON_WALL_SKULL =
+            register(new Block(981, "minecraft:wither_skeleton_wall_skull", 0));
+    public static final Block YELLOW_BANNER =
+            register(new Block(982, "minecraft:yellow_banner", 9402184));
+    public static final Block YELLOW_BED =
+            register(new Block(983, "minecraft:yellow_bed", 15066419));
+    public static final Block YELLOW_CANDLE =
+            register(new Block(984, "minecraft:yellow_candle", 15066419));
+    public static final Block YELLOW_CANDLE_CAKE =
+            register(new Block(985, "minecraft:yellow_candle_cake", 0));
+    public static final Block YELLOW_CARPET =
+            register(new Block(986, "minecraft:yellow_carpet", 15066419));
+    public static final Block YELLOW_CONCRETE =
+            register(new Block(987, "minecraft:yellow_concrete", 15066419));
+    public static final Block YELLOW_CONCRETE_POWDER =
+            register(new Block(988, "minecraft:yellow_concrete_powder", 15066419));
+    public static final Block YELLOW_GLAZED_TERRACOTTA =
+            register(new Block(989, "minecraft:yellow_glazed_terracotta", 15066419));
+    public static final Block YELLOW_SHULKER_BOX =
+            register(new Block(990, "minecraft:yellow_shulker_box", 15066419));
+    public static final Block YELLOW_STAINED_GLASS =
+            register(new Block(991, "minecraft:yellow_stained_glass", 15066419));
+    public static final Block YELLOW_STAINED_GLASS_PANE =
+            register(new Block(992, "minecraft:yellow_stained_glass_pane", 0));
+    public static final Block YELLOW_TERRACOTTA =
+            register(new Block(993, "minecraft:yellow_terracotta", 12223780));
+    public static final Block YELLOW_WALL_BANNER =
+            register(new Block(994, "minecraft:yellow_wall_banner", 9402184));
+    public static final Block YELLOW_WOOL =
+            register(new Block(995, "minecraft:yellow_wool", 15066419));
+    public static final Block ZOMBIE_HEAD = register(new Block(996, "minecraft:zombie_head", 0));
+    public static final Block ZOMBIE_WALL_HEAD =
+            register(new Block(997, "minecraft:zombie_wall_head", 0));
+    public static final Block CALIBRATED_SCULK_SENSOR =
+            register(new Block(998, "minecraft:calibrated_sculk_sensor", 12752883));
+    public static final Block PITCHER_CROP =
+            register(new Block(999, "minecraft:pitcher_crop", 13216362));
+    public static final Block PITCHER_PLANT =
+            register(new Block(1000, "minecraft:pitcher_plant", 8418769));
+    public static final Block SNIFFER_EGG =
+            register(new Block(1001, "minecraft:sniffer_egg", 12340794));
+    public static final Block SUSPICIOUS_GRAVEL =
+            register(new Block(1002, "minecraft:suspicious_gravel", 8617854));
+    public static final Block OXIDIZED_COPPER_GRATE =
+            register(new Block(1003, "minecraft:oxidized_copper_grate", 5415813));
+    public static final Block WEATHERED_COPPER_DOOR =
+            register(new Block(1004, "minecraft:weathered_copper_door", 7247469));
+    public static final Block CHISELED_TUFF_BRICKS =
+            register(new Block(1005, "minecraft:chiseled_tuff_bricks", 7238250));
+    public static final Block POLISHED_TUFF =
+            register(new Block(1006, "minecraft:polished_tuff", 6449252));
+    public static final Block OXIDIZED_COPPER_BULB =
+            register(new Block(1007, "minecraft:oxidized_copper_bulb", 4555628));
+    public static final Block WAXED_COPPER_BULB =
+            register(new Block(1008, "minecraft:waxed_copper_bulb", 10114616));
+    public static final Block WAXED_WEATHERED_COPPER_DOOR =
+            register(new Block(1009, "minecraft:waxed_weathered_copper_door", 7247469));
+    public static final Block WAXED_WEATHERED_CHISELED_COPPER =
+            register(new Block(1010, "minecraft:waxed_weathered_chiseled_copper", 6919790));
+    public static final Block WAXED_COPPER_DOOR =
+            register(new Block(1011, "minecraft:waxed_copper_door", 12610898));
+    public static final Block WAXED_EXPOSED_COPPER_TRAPDOOR =
+            register(new Block(1012, "minecraft:waxed_exposed_copper_trapdoor", 10583401));
+    public static final Block COPPER_DOOR =
+            register(new Block(1013, "minecraft:copper_door", 12610898));
+    public static final Block TUFF_BRICK_SLAB =
+            register(new Block(1014, "minecraft:tuff_brick_slab", 7238250));
+    public static final Block WAXED_EXPOSED_COPPER_DOOR =
+            register(new Block(1015, "minecraft:waxed_exposed_copper_door", 8874850));
+    public static final Block EXPOSED_COPPER_GRATE =
+            register(new Block(1016, "minecraft:exposed_copper_grate", 10649192));
+    public static final Block COPPER_BULB =
+            register(new Block(1017, "minecraft:copper_bulb", 10114616));
+    public static final Block WEATHERED_CHISELED_COPPER =
+            register(new Block(1018, "minecraft:weathered_chiseled_copper", 6919790));
+    public static final Block TRIAL_SPAWNER =
+            register(new Block(1019, "minecraft:trial_spawner", 3690850));
+    public static final Block WAXED_OXIDIZED_COPPER_TRAPDOOR =
+            register(new Block(1020, "minecraft:waxed_oxidized_copper_trapdoor", 5415813));
+    public static final Block WAXED_WEATHERED_COPPER_GRATE =
+            register(new Block(1021, "minecraft:waxed_weathered_copper_grate", 6986351));
+    public static final Block EXPOSED_COPPER_TRAPDOOR =
+            register(new Block(1022, "minecraft:exposed_copper_trapdoor", 10583401));
+    public static final Block SHORT_GRASS =
+            register(new Block(1023, "minecraft:short_grass", 31744));
+    public static final Block CHISELED_COPPER =
+            register(new Block(1024, "minecraft:chiseled_copper", 12018761));
+    public static final Block CHISELED_RESIN_BRICKS =
+            register(new Block(1025, "minecraft:chiseled_resin_bricks", 13194521));
+    public static final Block CHISELED_TUFF =
+            register(new Block(1026, "minecraft:chiseled_tuff", 5856855));
+    public static final Block CLOSED_EYEBLOSSOM =
+            register(new Block(1027, "minecraft:closed_eyeblossom", 31744));
+    public static final Block COPPER_GRATE =
+            register(new Block(1028, "minecraft:copper_grate", 12610639));
+    public static final Block COPPER_TRAPDOOR =
+            register(new Block(1029, "minecraft:copper_trapdoor", 12544591));
+    public static final Block CRAFTER = register(new Block(1030, "minecraft:crafter", 7299169));
+    public static final Block CREAKING_HEART =
+            register(new Block(1031, "minecraft:creaking_heart", 4733492));
+    public static final Block EXPOSED_CHISELED_COPPER =
+            register(new Block(1032, "minecraft:exposed_chiseled_copper", 10123108));
+    public static final Block EXPOSED_COPPER_BULB =
+            register(new Block(1033, "minecraft:exposed_copper_bulb", 8743513));
+    public static final Block EXPOSED_COPPER_DOOR =
+            register(new Block(1034, "minecraft:exposed_copper_door", 10779498));
+    public static final Block HEAVY_CORE =
+            register(new Block(1035, "minecraft:heavy_core", 5330269));
+    public static final Block OPEN_EYEBLOSSOM =
+            register(new Block(1036, "minecraft:open_eyeblossom", 31744));
+    public static final Block OXIDIZED_CHISELED_COPPER =
+            register(new Block(1037, "minecraft:oxidized_chiseled_copper", 5480836));
+    public static final Block OXIDIZED_COPPER_DOOR =
+            register(new Block(1038, "minecraft:oxidized_copper_door", 5415044));
+    public static final Block OXIDIZED_COPPER_TRAPDOOR =
+            register(new Block(1039, "minecraft:oxidized_copper_trapdoor", 5546885));
+    public static final Block PALE_HANGING_MOSS =
+            register(new Block(1040, "minecraft:pale_hanging_moss", 6514786));
+    public static final Block PALE_MOSS_BLOCK =
+            register(new Block(1041, "minecraft:pale_moss_block", 7041385));
+    public static final Block PALE_MOSS_CARPET =
+            register(new Block(1042, "minecraft:pale_moss_carpet", 7041385));
+    public static final Block PALE_OAK_BUTTON =
+            register(new Block(1043, "minecraft:pale_oak_button", 0));
+    public static final Block PALE_OAK_DOOR =
+            register(new Block(1044, "minecraft:pale_oak_door", 14998232));
+    public static final Block PALE_OAK_FENCE =
+            register(new Block(1045, "minecraft:pale_oak_fence", 14998232));
+    public static final Block PALE_OAK_FENCE_GATE =
+            register(new Block(1046, "minecraft:pale_oak_fence_gate", 14998232));
+    public static final Block PALE_OAK_HANGING_SIGN =
+            register(new Block(1047, "minecraft:pale_oak_hanging_sign", 14998232));
+    public static final Block PALE_OAK_LEAVES =
+            register(new Block(1048, "minecraft:pale_oak_leaves", 7699059));
+    public static final Block PALE_OAK_LOG =
+            register(new Block(1049, "minecraft:pale_oak_log", 5721419));
+    public static final Block PALE_OAK_PLANKS =
+            register(new Block(1050, "minecraft:pale_oak_planks", 14998232));
+    public static final Block PALE_OAK_PRESSURE_PLATE =
+            register(new Block(1051, "minecraft:pale_oak_pressure_plate", 14998232));
+    public static final Block PALE_OAK_SAPLING =
+            register(new Block(1052, "minecraft:pale_oak_sapling", 7236195));
+    public static final Block PALE_OAK_SIGN =
+            register(new Block(1053, "minecraft:pale_oak_sign", 14998232));
+    public static final Block PALE_OAK_SLAB =
+            register(new Block(1054, "minecraft:pale_oak_slab", 14998232));
+    public static final Block PALE_OAK_STAIRS =
+            register(new Block(1055, "minecraft:pale_oak_stairs", 14998232));
+    public static final Block PALE_OAK_TRAPDOOR =
+            register(new Block(1056, "minecraft:pale_oak_trapdoor", 14998232));
+    public static final Block PALE_OAK_WALL_HANGING_SIGN =
+            register(new Block(1057, "minecraft:pale_oak_wall_hanging_sign", 14998232));
+    public static final Block PALE_OAK_WALL_SIGN =
+            register(new Block(1058, "minecraft:pale_oak_wall_sign", 14998232));
+    public static final Block PALE_OAK_WOOD =
+            register(new Block(1059, "minecraft:pale_oak_wood", 5721419));
+    public static final Block POLISHED_TUFF_SLAB =
+            register(new Block(1060, "minecraft:polished_tuff_slab", 6449252));
+    public static final Block POLISHED_TUFF_STAIRS =
+            register(new Block(1061, "minecraft:polished_tuff_stairs", 6449252));
+    public static final Block POLISHED_TUFF_WALL =
+            register(new Block(1062, "minecraft:polished_tuff_wall", 6449252));
+    public static final Block POTTED_CLOSED_EYEBLOSSOM =
+            register(new Block(1063, "minecraft:potted_closed_eyeblossom", 0));
+    public static final Block POTTED_OPEN_EYEBLOSSOM =
+            register(new Block(1064, "minecraft:potted_open_eyeblossom", 0));
+    public static final Block POTTED_PALE_OAK_SAPLING =
+            register(new Block(1065, "minecraft:potted_pale_oak_sapling", 0));
+    public static final Block RESIN_BLOCK =
+            register(new Block(1066, "minecraft:resin_block", 14246681));
+    public static final Block RESIN_BRICKS =
+            register(new Block(1067, "minecraft:resin_bricks", 13523224));
+    public static final Block RESIN_BRICK_SLAB =
+            register(new Block(1068, "minecraft:resin_brick_slab", 13523224));
+    public static final Block RESIN_BRICK_STAIRS =
+            register(new Block(1069, "minecraft:resin_brick_stairs", 13523224));
+    public static final Block RESIN_BRICK_WALL =
+            register(new Block(1070, "minecraft:resin_brick_wall", 13523224));
+    public static final Block RESIN_CLUMP =
+            register(new Block(1071, "minecraft:resin_clump", 14643227));
+    public static final Block STRIPPED_PALE_OAK_LOG =
+            register(new Block(1072, "minecraft:stripped_pale_oak_log", 16183021));
+    public static final Block STRIPPED_PALE_OAK_WOOD =
+            register(new Block(1073, "minecraft:stripped_pale_oak_wood", 16183021));
+    public static final Block TUFF_BRICKS =
+            register(new Block(1074, "minecraft:tuff_bricks", 6448991));
+    public static final Block TUFF_BRICK_STAIRS =
+            register(new Block(1075, "minecraft:tuff_brick_stairs", 6448991));
+    public static final Block TUFF_BRICK_WALL =
+            register(new Block(1076, "minecraft:tuff_brick_wall", 6448991));
+    public static final Block TUFF_SLAB = register(new Block(1077, "minecraft:tuff_slab", 6448991));
+    public static final Block TUFF_STAIRS =
+            register(new Block(1078, "minecraft:tuff_stairs", 6448991));
+    public static final Block TUFF_WALL = register(new Block(1079, "minecraft:tuff_wall", 6448991));
+    public static final Block VAULT = register(new Block(1080, "minecraft:vault", 3425615));
+    public static final Block WAXED_CHISELED_COPPER =
+            register(new Block(1081, "minecraft:waxed_chiseled_copper", 5480836));
+    public static final Block WAXED_COPPER_GRATE =
+            register(new Block(1082, "minecraft:waxed_copper_grate", 12610639));
+    public static final Block WAXED_COPPER_TRAPDOOR =
+            register(new Block(1083, "minecraft:waxed_copper_trapdoor", 12544591));
+    public static final Block WAXED_EXPOSED_CHISELED_COPPER =
+            register(new Block(1084, "minecraft:waxed_exposed_chiseled_copper", 10123108));
+    public static final Block WAXED_EXPOSED_COPPER_BULB =
+            register(new Block(1085, "minecraft:waxed_exposed_copper_bulb", 8743513));
+    public static final Block WAXED_EXPOSED_COPPER_GRATE =
+            register(new Block(1086, "minecraft:waxed_exposed_copper_grate", 10649192));
+    public static final Block WAXED_OXIDIZED_CHISELED_COPPER =
+            register(new Block(1087, "minecraft:waxed_oxidized_chiseled_copper", 5480836));
+    public static final Block WAXED_OXIDIZED_COPPER_BULB =
+            register(new Block(1088, "minecraft:waxed_oxidized_copper_bulb", 4555628));
+    public static final Block WAXED_OXIDIZED_COPPER_DOOR =
+            register(new Block(1089, "minecraft:waxed_oxidized_copper_door", 5415044));
+    public static final Block WAXED_OXIDIZED_COPPER_GRATE =
+            register(new Block(1090, "minecraft:waxed_oxidized_copper_grate", 5415813));
+    public static final Block WAXED_WEATHERED_COPPER_BULB =
+            register(new Block(1091, "minecraft:waxed_weathered_copper_bulb", 5995875));
+    public static final Block WAXED_WEATHERED_COPPER_TRAPDOOR =
+            register(new Block(1092, "minecraft:waxed_weathered_copper_trapdoor", 7182958));
+    public static final Block WEATHERED_COPPER_BULB =
+            register(new Block(1093, "minecraft:weathered_copper_bulb", 5995875));
+    public static final Block WEATHERED_COPPER_GRATE =
+            register(new Block(1094, "minecraft:weathered_copper_grate", 6986351));
+    public static final Block WEATHERED_COPPER_TRAPDOOR =
+            register(new Block(1095, "minecraft:weathered_copper_trapdoor", 7182958));
+    public static final Block CACTUS_FLOWER =
+            register(new Block(1096, "minecraft:cactus_flower", 13793672));
+    public static final Block BUSH = register(new Block(1097, "minecraft:bush", 7960953));
+    public static final Block FIREFLY_BUSH =
+            register(new Block(1098, "minecraft:firefly_bush", 5722923));
+    public static final Block WILDFLOWERS =
+            register(new Block(1099, "minecraft:wildflowers", 15521400));
+    public static final Block TALL_DRY_GRASS =
+            register(new Block(1100, "minecraft:tall_dry_grass", 12954747));
+    public static final Block TEST_BLOCK =
+            register(new Block(1101, "minecraft:test_block", 9942487));
+    public static final Block SHORT_DRY_GRASS =
+            register(new Block(1102, "minecraft:short_dry_grass", 12427631));
+    public static final Block LEAF_LITTER =
+            register(new Block(1103, "minecraft:leaf_litter", 11053224));
+    public static final Block TEST_INSTANCE_BLOCK =
+            register(new Block(1104, "minecraft:test_instance_block", 8683133));
+    public static final Block DRIED_GHAST =
+            register(new Block(1105, "minecraft:dried_ghast", 10457489));
+    public static final Block IRON_CHAIN = register(new Block(1106, "minecraft:iron_chain", 0));
+    public static final Block COPPER_CHAIN = register(new Block(1107, "minecraft:copper_chain", 0));
+    public static final Block EXPOSED_COPPER_CHAIN =
+            register(new Block(1108, "minecraft:exposed_copper_chain", 0));
+    public static final Block WEATHERED_COPPER_CHAIN =
+            register(new Block(1109, "minecraft:weathered_copper_chain", 0));
+    public static final Block OXIDIZED_COPPER_CHAIN =
+            register(new Block(1110, "minecraft:oxidized_copper_chain", 0));
+    public static final Block WAXED_COPPER_CHAIN =
+            register(new Block(1111, "minecraft:waxed_copper_chain", 0));
+    public static final Block WAXED_EXPOSED_COPPER_CHAIN =
+            register(new Block(1112, "minecraft:waxed_exposed_copper_chain", 0));
+    public static final Block WAXED_WEATHERED_COPPER_CHAIN =
+            register(new Block(1113, "minecraft:waxed_weathered_copper_chain", 0));
+    public static final Block WAXED_OXIDIZED_COPPER_CHAIN =
+            register(new Block(1114, "minecraft:waxed_oxidized_copper_chain", 0));
+    public static final Block COPPER_BARS = register(new Block(1115, "minecraft:copper_bars", 0));
+    public static final Block EXPOSED_COPPER_BARS =
+            register(new Block(1116, "minecraft:exposed_copper_bars", 0));
+    public static final Block WEATHERED_COPPER_BARS =
+            register(new Block(1117, "minecraft:weathered_copper_bars", 0));
+    public static final Block OXIDIZED_COPPER_BARS =
+            register(new Block(1118, "minecraft:oxidized_copper_bars", 0));
+    public static final Block WAXED_COPPER_BARS =
+            register(new Block(1119, "minecraft:waxed_copper_bars", 0));
+    public static final Block WAXED_EXPOSED_COPPER_BARS =
+            register(new Block(1120, "minecraft:waxed_exposed_copper_bars", 0));
+    public static final Block WAXED_WEATHERED_COPPER_BARS =
+            register(new Block(1121, "minecraft:waxed_weathered_copper_bars", 0));
+    public static final Block WAXED_OXIDIZED_COPPER_BARS =
+            register(new Block(1122, "minecraft:waxed_oxidized_copper_bars", 0));
+    public static final Block COPPER_CHEST =
+            register(new Block(1123, "minecraft:copper_chest", 14188339));
+    public static final Block EXPOSED_COPPER_CHEST =
+            register(new Block(1124, "minecraft:exposed_copper_chest", 8874850));
+    public static final Block WEATHERED_COPPER_CHEST =
+            register(new Block(1125, "minecraft:weathered_copper_chest", 3837580));
+    public static final Block OXIDIZED_COPPER_CHEST =
+            register(new Block(1126, "minecraft:oxidized_copper_chest", 1474182));
+    public static final Block WAXED_COPPER_CHEST =
+            register(new Block(1127, "minecraft:waxed_copper_chest", 14188339));
+    public static final Block WAXED_EXPOSED_COPPER_CHEST =
+            register(new Block(1128, "minecraft:waxed_exposed_copper_chest", 8874850));
+    public static final Block WAXED_WEATHERED_COPPER_CHEST =
+            register(new Block(1129, "minecraft:waxed_weathered_copper_chest", 3837580));
+    public static final Block WAXED_OXIDIZED_COPPER_CHEST =
+            register(new Block(1130, "minecraft:waxed_oxidized_copper_chest", 1474182));
+    public static final Block COPPER_GOLEM_STATUE =
+            register(new Block(1131, "minecraft:copper_golem_statue", 14188339));
+    public static final Block EXPOSED_COPPER_GOLEM_STATUE =
+            register(new Block(1132, "minecraft:exposed_copper_golem_statue", 8874850));
+    public static final Block WEATHERED_COPPER_GOLEM_STATUE =
+            register(new Block(1133, "minecraft:weathered_copper_golem_statue", 3837580));
+    public static final Block OXIDIZED_COPPER_GOLEM_STATUE =
+            register(new Block(1134, "minecraft:oxidized_copper_golem_statue", 1474182));
+    public static final Block WAXED_COPPER_GOLEM_STATUE =
+            register(new Block(1135, "minecraft:waxed_copper_golem_statue", 14188339));
+    public static final Block WAXED_EXPOSED_COPPER_GOLEM_STATUE =
+            register(new Block(1136, "minecraft:waxed_exposed_copper_golem_statue", 8874850));
+    public static final Block WAXED_WEATHERED_COPPER_GOLEM_STATUE =
+            register(new Block(1137, "minecraft:waxed_weathered_copper_golem_statue", 3837580));
+    public static final Block WAXED_OXIDIZED_COPPER_GOLEM_STATUE =
+            register(new Block(1138, "minecraft:waxed_oxidized_copper_golem_statue", 1474182));
+    public static final Block EXPOSED_LIGHTNING_ROD =
+            register(new Block(1139, "minecraft:exposed_lightning_rod", 10385511));
+    public static final Block WEATHERED_LIGHTNING_ROD =
+            register(new Block(1140, "minecraft:weathered_lightning_rod", 6393448));
+    public static final Block OXIDIZED_LIGHTNING_ROD =
+            register(new Block(1141, "minecraft:oxidized_lightning_rod", 5151103));
+    public static final Block WAXED_LIGHTNING_ROD =
+            register(new Block(1142, "minecraft:waxed_lightning_rod", 14188339));
+    public static final Block WAXED_EXPOSED_LIGHTNING_ROD =
+            register(new Block(1143, "minecraft:waxed_exposed_lightning_rod", 10385511));
+    public static final Block WAXED_WEATHERED_LIGHTNING_ROD =
+            register(new Block(1144, "minecraft:waxed_weathered_lightning_rod", 6393448));
+    public static final Block WAXED_OXIDIZED_LIGHTNING_ROD =
+            register(new Block(1145, "minecraft:waxed_oxidized_lightning_rod", 5151103));
+    public static final Block COPPER_LANTERN =
+            register(new Block(1146, "minecraft:copper_lantern", 10382412));
+    public static final Block EXPOSED_COPPER_LANTERN =
+            register(new Block(1147, "minecraft:exposed_copper_lantern", 9732969));
+    public static final Block WEATHERED_COPPER_LANTERN =
+            register(new Block(1148, "minecraft:weathered_copper_lantern", 6325860));
+    public static final Block OXIDIZED_COPPER_LANTERN =
+            register(new Block(11349, "minecraft:oxidized_copper_lantern", 5147503));
+    public static final Block WAXED_COPPER_LANTERN =
+            register(new Block(1150, "minecraft:waxed_copper_lantern", 10382412));
+    public static final Block WAXED_EXPOSED_COPPER_LANTERN =
+            register(new Block(1151, "minecraft:waxed_exposed_copper_lantern", 9732969));
+    public static final Block WAXED_WEATHERED_COPPER_LANTERN =
+            register(new Block(1152, "minecraft:waxed_weathered_copper_lantern", 6325860));
+    public static final Block WAXED_OXIDIZED_COPPER_LANTERN =
+            register(new Block(1153, "minecraft:waxed_oxidized_copper_lantern", 5147503));
+    public static final Block COPPER_TORCH = register(new Block(1154, "minecraft:copper_torch", 0));
+    public static final Block COPPER_WALL_TORCH =
+            register(new Block(1155, "minecraft:copper_wall_torch", 0));
+    public static final Block ACACIA_SHELF =
+            register(new Block(1156, "minecraft:acacia_shelf", 14188339));
+    public static final Block BAMBOO_SHELF =
+            register(new Block(1157, "minecraft:bamboo_shelf", 15066419));
+    public static final Block BIRCH_SHELF =
+            register(new Block(1158, "minecraft:birch_shelf", 16247203));
+    public static final Block CHERRY_SHELF =
+            register(new Block(1159, "minecraft:cherry_shelf", 13742497));
+    public static final Block CRIMSON_SHELF =
+            register(new Block(1160, "minecraft:crimson_shelf", 9715553));
+    public static final Block DARK_OAK_SHELF =
+            register(new Block(1161, "minecraft:dark_oak_shelf", 6704179));
+    public static final Block JUNGLE_SHELF =
+            register(new Block(1162, "minecraft:jungle_shelf", 9923917));
+    public static final Block MANGROVE_SHELF =
+            register(new Block(1163, "minecraft:mangrove_shelf", 10040115));
+    public static final Block OAK_SHELF = register(new Block(1164, "minecraft:oak_shelf", 9402184));
+    public static final Block PALE_OAK_SHELF =
+            register(new Block(1165, "minecraft:pale_oak_shelf", 14998232));
+    public static final Block SPRUCE_SHELF =
+            register(new Block(1166, "minecraft:spruce_shelf", 8476209));
+    public static final Block WARPED_SHELF =
+            register(new Block(1167, "minecraft:warped_shelf", 3837580));
+    public static final Block GOLDEN_DANDELION =
+            register(new Block(1168, "minecraft:golden_dandelion", 10841385));
+    public static final Block POTTED_GOLDEN_DANDELION =
+            register(new Block(1169, "minecraft:potted_golden_dandelion", 10841385));
+    public static final Block CINNABAR = register(new Block(1170, "minecraft:cinnabar", 9982799));
+    public static final Block CINNABAR_SLAB =
+            register(new Block(1171, "minecraft:cinnabar_slab", 9982799));
+    public static final Block CINNABAR_STAIRS =
+            register(new Block(1172, "minecraft:cinnabar_stairs", 9982799));
+    public static final Block CINNABAR_WALL =
+            register(new Block(1173, "minecraft:cinnabar_wall", 9982799));
+    public static final Block POLISHED_CINNABAR =
+            register(new Block(1174, "minecraft:polished_cinnabar", 10041911));
+    public static final Block POLISHED_CINNABAR_SLAB =
+            register(new Block(1175, "minecraft:polished_cinnabar_slab", 10041911));
+    public static final Block POLISHED_CINNABAR_STAIRS =
+            register(new Block(1176, "minecraft:polished_cinnabar_stairs", 10041911));
+    public static final Block POLISHED_CINNABAR_WALL =
+            register(new Block(1177, "minecraft:polished_cinnabar_wall", 10041911));
+    public static final Block CINNABAR_BRICKS =
+            register(new Block(1178, "minecraft:cinnabar_bricks", 9779254));
+    public static final Block CINNABAR_BRICK_SLAB =
+            register(new Block(1179, "minecraft:cinnabar_brick_slab", 9779254));
+    public static final Block CINNABAR_BRICK_STAIRS =
+            register(new Block(1180, "minecraft:cinnabar_brick_stairs", 9779254));
+    public static final Block CINNABAR_BRICK_WALL =
+            register(new Block(1181, "minecraft:cinnabar_brick_wall", 9779254));
+    public static final Block CHISELED_CINNABAR =
+            register(new Block(1182, "minecraft:chiseled_cinnabar", 9582391));
+    public static final Block SULFUR = register(new Block(1183, "minecraft:sulfur", 12496742));
+    public static final Block POTENT_SULFUR =
+            register(new Block(1184, "minecraft:potent_sulfur", 13881698));
+    public static final Block SULFUR_SLAB =
+            register(new Block(1185, "minecraft:sulfur_slab", 12496742));
+    public static final Block SULFUR_STAIRS =
+            register(new Block(1186, "minecraft:sulfur_stairs", 12496742));
+    public static final Block SULFUR_WALL =
+            register(new Block(1187, "minecraft:sulfur_wall", 12496742));
+    public static final Block POLISHED_SULFUR =
+            register(new Block(1188, "minecraft:polished_sulfur", 12430171));
+    public static final Block POLISHED_SULFUR_SLAB =
+            register(new Block(1189, "minecraft:polished_sulfur_slab", 12430171));
+    public static final Block POLISHED_SULFUR_STAIRS =
+            register(new Block(1190, "minecraft:polished_sulfur_stairs", 12430171));
+    public static final Block POLISHED_SULFUR_WALL =
+            register(new Block(1191, "minecraft:polished_sulfur_wall", 12430171));
+    public static final Block SULFUR_BRICKS =
+            register(new Block(1192, "minecraft:sulfur_bricks", 12298331));
+    public static final Block SULFUR_BRICK_SLAB =
+            register(new Block(1193, "minecraft:sulfur_brick_slab", 12298331));
+    public static final Block SULFUR_BRICK_STAIRS =
+            register(new Block(1194, "minecraft:sulfur_brick_stairs", 12298331));
+    public static final Block SULFUR_SPIKE =
+            register(new Block(1195, "minecraft:sulfur_spike", 12102495));
+    public static final Block CHISELED_SULFUR =
+            register(new Block(1195, "minecraft:chiseled_sulfur", 12364379));
+    public static final Block SULFUR_BRICK_WALL =
+            register(new Block(1195, "minecraft:sulfur_brick_wall", 12298331));
+
+    // ---- Final Station patch: blocks added in Minecraft 26.3 (colour = Mojang's map colour) ----
+    public static final Block BLACK_CONCRETE_SLAB =
+            register(new Block(1196, "minecraft:black_concrete_slab", 1644825));
+    public static final Block BLACK_CONCRETE_STAIRS =
+            register(new Block(1197, "minecraft:black_concrete_stairs", 1644825));
+    public static final Block BLACK_WOOL_SLAB =
+            register(new Block(1198, "minecraft:black_wool_slab", 1644825));
+    public static final Block BLACK_WOOL_STAIRS =
+            register(new Block(1199, "minecraft:black_wool_stairs", 1644825));
+    public static final Block BLUE_CONCRETE_SLAB =
+            register(new Block(1200, "minecraft:blue_concrete_slab", 3361970));
+    public static final Block BLUE_CONCRETE_STAIRS =
+            register(new Block(1201, "minecraft:blue_concrete_stairs", 3361970));
+    public static final Block BLUE_WOOL_SLAB =
+            register(new Block(1202, "minecraft:blue_wool_slab", 3361970));
+    public static final Block BLUE_WOOL_STAIRS =
+            register(new Block(1203, "minecraft:blue_wool_stairs", 3361970));
+    public static final Block BROWN_CONCRETE_SLAB =
+            register(new Block(1204, "minecraft:brown_concrete_slab", 6704179));
+    public static final Block BROWN_CONCRETE_STAIRS =
+            register(new Block(1205, "minecraft:brown_concrete_stairs", 6704179));
+    public static final Block BROWN_WOOL_SLAB =
+            register(new Block(1206, "minecraft:brown_wool_slab", 6704179));
+    public static final Block BROWN_WOOL_STAIRS =
+            register(new Block(1207, "minecraft:brown_wool_stairs", 6704179));
+    public static final Block CYAN_CONCRETE_SLAB =
+            register(new Block(1208, "minecraft:cyan_concrete_slab", 5013401));
+    public static final Block CYAN_CONCRETE_STAIRS =
+            register(new Block(1209, "minecraft:cyan_concrete_stairs", 5013401));
+    public static final Block CYAN_WOOL_SLAB =
+            register(new Block(1210, "minecraft:cyan_wool_slab", 5013401));
+    public static final Block CYAN_WOOL_STAIRS =
+            register(new Block(1211, "minecraft:cyan_wool_stairs", 5013401));
+    public static final Block GRAY_CONCRETE_SLAB =
+            register(new Block(1212, "minecraft:gray_concrete_slab", 5000268));
+    public static final Block GRAY_CONCRETE_STAIRS =
+            register(new Block(1213, "minecraft:gray_concrete_stairs", 5000268));
+    public static final Block GRAY_WOOL_SLAB =
+            register(new Block(1214, "minecraft:gray_wool_slab", 5000268));
+    public static final Block GRAY_WOOL_STAIRS =
+            register(new Block(1215, "minecraft:gray_wool_stairs", 5000268));
+    public static final Block GREEN_CONCRETE_SLAB =
+            register(new Block(1216, "minecraft:green_concrete_slab", 6717235));
+    public static final Block GREEN_CONCRETE_STAIRS =
+            register(new Block(1217, "minecraft:green_concrete_stairs", 6717235));
+    public static final Block GREEN_WOOL_SLAB =
+            register(new Block(1218, "minecraft:green_wool_slab", 6717235));
+    public static final Block GREEN_WOOL_STAIRS =
+            register(new Block(1219, "minecraft:green_wool_stairs", 6717235));
+    public static final Block LIGHT_BLUE_CONCRETE_SLAB =
+            register(new Block(1220, "minecraft:light_blue_concrete_slab", 6724056));
+    public static final Block LIGHT_BLUE_CONCRETE_STAIRS =
+            register(new Block(1221, "minecraft:light_blue_concrete_stairs", 6724056));
+    public static final Block LIGHT_BLUE_WOOL_SLAB =
+            register(new Block(1222, "minecraft:light_blue_wool_slab", 6724056));
+    public static final Block LIGHT_BLUE_WOOL_STAIRS =
+            register(new Block(1223, "minecraft:light_blue_wool_stairs", 6724056));
+    public static final Block LIGHT_GRAY_CONCRETE_SLAB =
+            register(new Block(1224, "minecraft:light_gray_concrete_slab", 10066329));
+    public static final Block LIGHT_GRAY_CONCRETE_STAIRS =
+            register(new Block(1225, "minecraft:light_gray_concrete_stairs", 10066329));
+    public static final Block LIGHT_GRAY_WOOL_SLAB =
+            register(new Block(1226, "minecraft:light_gray_wool_slab", 10066329));
+    public static final Block LIGHT_GRAY_WOOL_STAIRS =
+            register(new Block(1227, "minecraft:light_gray_wool_stairs", 10066329));
+    public static final Block LIME_CONCRETE_SLAB =
+            register(new Block(1228, "minecraft:lime_concrete_slab", 8375321));
+    public static final Block LIME_CONCRETE_STAIRS =
+            register(new Block(1229, "minecraft:lime_concrete_stairs", 8375321));
+    public static final Block LIME_WOOL_SLAB =
+            register(new Block(1230, "minecraft:lime_wool_slab", 8375321));
+    public static final Block LIME_WOOL_STAIRS =
+            register(new Block(1231, "minecraft:lime_wool_stairs", 8375321));
+    public static final Block MAGENTA_CONCRETE_SLAB =
+            register(new Block(1232, "minecraft:magenta_concrete_slab", 11685080));
+    public static final Block MAGENTA_CONCRETE_STAIRS =
+            register(new Block(1233, "minecraft:magenta_concrete_stairs", 11685080));
+    public static final Block MAGENTA_WOOL_SLAB =
+            register(new Block(1234, "minecraft:magenta_wool_slab", 11685080));
+    public static final Block MAGENTA_WOOL_STAIRS =
+            register(new Block(1235, "minecraft:magenta_wool_stairs", 11685080));
+    public static final Block ORANGE_CONCRETE_SLAB =
+            register(new Block(1236, "minecraft:orange_concrete_slab", 14188339));
+    public static final Block ORANGE_CONCRETE_STAIRS =
+            register(new Block(1237, "minecraft:orange_concrete_stairs", 14188339));
+    public static final Block ORANGE_POPLAR_LEAVES =
+            register(new Block(1238, "minecraft:orange_poplar_leaves", 14188339));
+    public static final Block ORANGE_WOOL_SLAB =
+            register(new Block(1239, "minecraft:orange_wool_slab", 14188339));
+    public static final Block ORANGE_WOOL_STAIRS =
+            register(new Block(1240, "minecraft:orange_wool_stairs", 14188339));
+    public static final Block PINK_CONCRETE_SLAB =
+            register(new Block(1241, "minecraft:pink_concrete_slab", 15892389));
+    public static final Block PINK_CONCRETE_STAIRS =
+            register(new Block(1242, "minecraft:pink_concrete_stairs", 15892389));
+    public static final Block PINK_WOOL_SLAB =
+            register(new Block(1243, "minecraft:pink_wool_slab", 15892389));
+    public static final Block PINK_WOOL_STAIRS =
+            register(new Block(1244, "minecraft:pink_wool_stairs", 15892389));
+    public static final Block POPLAR_BUTTON =
+            register(new Block(1245, "minecraft:poplar_button", 0));
+    public static final Block POPLAR_DOOR =
+            register(new Block(1246, "minecraft:poplar_door", 10066329));
+    public static final Block POPLAR_FENCE =
+            register(new Block(1247, "minecraft:poplar_fence", 10066329));
+    public static final Block POPLAR_FENCE_GATE =
+            register(new Block(1248, "minecraft:poplar_fence_gate", 10066329));
+    public static final Block POPLAR_HANGING_SIGN =
+            register(new Block(1249, "minecraft:poplar_hanging_sign", 10066329));
+    public static final Block POPLAR_LOG =
+            register(new Block(1250, "minecraft:poplar_log", 10066329));
+    public static final Block POPLAR_PLANKS =
+            register(new Block(1251, "minecraft:poplar_planks", 10066329));
+    public static final Block POPLAR_PRESSURE_PLATE =
+            register(new Block(1252, "minecraft:poplar_pressure_plate", 10066329));
+    public static final Block POPLAR_SAPLING =
+            register(new Block(1253, "minecraft:poplar_sapling", 10987431));
+    public static final Block POPLAR_SHELF =
+            register(new Block(1254, "minecraft:poplar_shelf", 10066329));
+    public static final Block POPLAR_SIGN =
+            register(new Block(1255, "minecraft:poplar_sign", 10066329));
+    public static final Block POPLAR_SLAB =
+            register(new Block(1256, "minecraft:poplar_slab", 10066329));
+    public static final Block POPLAR_STAIRS =
+            register(new Block(1257, "minecraft:poplar_stairs", 10066329));
+    public static final Block POPLAR_TRAPDOOR =
+            register(new Block(1258, "minecraft:poplar_trapdoor", 10066329));
+    public static final Block POPLAR_WALL_HANGING_SIGN =
+            register(new Block(1259, "minecraft:poplar_wall_hanging_sign", 10066329));
+    public static final Block POPLAR_WALL_SIGN =
+            register(new Block(1260, "minecraft:poplar_wall_sign", 10066329));
+    public static final Block POPLAR_WOOD =
+            register(new Block(1261, "minecraft:poplar_wood", 8476209));
+    public static final Block POTTED_POPLAR_SAPLING =
+            register(new Block(1262, "minecraft:potted_poplar_sapling", 0));
+    public static final Block PURPLE_CONCRETE_SLAB =
+            register(new Block(1263, "minecraft:purple_concrete_slab", 8339378));
+    public static final Block PURPLE_CONCRETE_STAIRS =
+            register(new Block(1264, "minecraft:purple_concrete_stairs", 8339378));
+    public static final Block PURPLE_WOOL_SLAB =
+            register(new Block(1265, "minecraft:purple_wool_slab", 8339378));
+    public static final Block PURPLE_WOOL_STAIRS =
+            register(new Block(1266, "minecraft:purple_wool_stairs", 8339378));
+    public static final Block RED_CONCRETE_SLAB =
+            register(new Block(1267, "minecraft:red_concrete_slab", 10040115));
+    public static final Block RED_CONCRETE_STAIRS =
+            register(new Block(1268, "minecraft:red_concrete_stairs", 10040115));
+    public static final Block RED_POPLAR_LEAVES =
+            register(new Block(1269, "minecraft:red_poplar_leaves", 10040115));
+    public static final Block RED_SHRUB =
+            register(new Block(1270, "minecraft:red_shrub", 12398641));
+    public static final Block RED_WOOL_SLAB =
+            register(new Block(1271, "minecraft:red_wool_slab", 10040115));
+    public static final Block RED_WOOL_STAIRS =
+            register(new Block(1272, "minecraft:red_wool_stairs", 10040115));
+    public static final Block SHELF_MUSHROOM =
+            register(new Block(1273, "minecraft:shelf_mushroom", 12223780));
+    public static final Block STRAW_BED =
+            register(new Block(1274, "minecraft:straw_bed", 15066419));
+    public static final Block STRIPPED_POPLAR_LOG =
+            register(new Block(1275, "minecraft:stripped_poplar_log", 10066329));
+    public static final Block STRIPPED_POPLAR_WOOD =
+            register(new Block(1276, "minecraft:stripped_poplar_wood", 10066329));
+    public static final Block WHITE_CONCRETE_SLAB =
+            register(new Block(1277, "minecraft:white_concrete_slab", 16777215));
+    public static final Block WHITE_CONCRETE_STAIRS =
+            register(new Block(1278, "minecraft:white_concrete_stairs", 16777215));
+    public static final Block WHITE_WOOL_SLAB =
+            register(new Block(1279, "minecraft:white_wool_slab", 16777215));
+    public static final Block WHITE_WOOL_STAIRS =
+            register(new Block(1280, "minecraft:white_wool_stairs", 16777215));
+    public static final Block YELLOW_CONCRETE_SLAB =
+            register(new Block(1281, "minecraft:yellow_concrete_slab", 15066419));
+    public static final Block YELLOW_CONCRETE_STAIRS =
+            register(new Block(1282, "minecraft:yellow_concrete_stairs", 15066419));
+    public static final Block YELLOW_POPLAR_LEAVES =
+            register(new Block(1283, "minecraft:yellow_poplar_leaves", 15066419));
+    public static final Block YELLOW_WOOL_SLAB =
+            register(new Block(1284, "minecraft:yellow_wool_slab", 15066419));
+    public static final Block YELLOW_WOOL_STAIRS =
+            register(new Block(1285, "minecraft:yellow_wool_stairs", 15066419));
+
+    private static Block register(Block block) {
+        blocks.put(block.getKey(), block);
+        return block;
+    }
+
+    public static void registerDefaults() {
+        blocks.forEach(
+                (id, block) -> {
+                    Pl3xMap.api().getBlockRegistry().register(id, block);
+                    Pl3xMap.api().getBlockRegistry().getIndexMap().put(id, block.getIndex());
+                });
+    }
+}

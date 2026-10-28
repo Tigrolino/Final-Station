@@ -1,0 +1,446 @@
+# Optional hat-placement config for PlaceableDecor (also compatible with PikminDecor 1.0.3+).
+# Includes the Pikmin and named resource-pack hats; use /placeabledecor reload after editing.
+config-version: 2
+defaults:
+  scale: 1.0
+  offset-y: 0.5
+  yaw-offset: 0.0
+  hitbox-width: 0.45
+  hitbox-height: 0.8
+
+# Match material + item-model, with optional exact top-level custom_data string.
+# To add a variant, add its model to the resource pack and declare another entry here.
+variants:
+  blue_bud:
+    material: FLINT
+    item-model: seedling:pikmin/blue_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: blue_bud
+  blue_flower:
+    material: FLINT
+    item-model: seedling:pikmin/blue_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: blue_flower
+  blue_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/blue_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: blue_leaf
+  blue_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/blue_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: blue_spooky
+  purple_bud:
+    material: FLINT
+    item-model: seedling:pikmin/purple_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: purple_bud
+  purple_flower:
+    material: FLINT
+    item-model: seedling:pikmin/purple_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: purple_flower
+  purple_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/purple_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: purple_leaf
+  purple_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/purple_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: purple_spooky
+  red_bud:
+    material: FLINT
+    item-model: seedling:pikmin/red_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: red_bud
+  red_flower:
+    material: FLINT
+    item-model: seedling:pikmin/red_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: red_flower
+  red_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/red_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: red_leaf
+  red_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/red_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: red_spooky
+  white_bud:
+    material: FLINT
+    item-model: seedling:pikmin/white_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: white_bud
+  white_flower:
+    material: FLINT
+    item-model: seedling:pikmin/white_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: white_flower
+  white_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/white_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: white_leaf
+  white_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/white_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: white_spooky
+  yellow_bud:
+    material: FLINT
+    item-model: seedling:pikmin/yellow_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: yellow_bud
+  yellow_flower:
+    material: FLINT
+    item-model: seedling:pikmin/yellow_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: yellow_flower
+  yellow_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/yellow_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: yellow_leaf
+  yellow_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/yellow_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: yellow_spooky
+  hat_normal:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Normal"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_bow:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Bow"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_frog:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Frog"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_blossom:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Blossom"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.783301
+  hat_azure:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Azure"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_spooky:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Spooky"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_swoop:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Swoop"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_vintage:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Vintage"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.783301
+  hat_gust:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Gust"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 1.103554
+  hat_leather:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Leather"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.789551
+  hat_phoenix:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Phoenix"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_white:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "White"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 1.554873
+  hat_starlight:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Starlight"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.845801
+  hat_log:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Log"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_amethyst:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Amethyst"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 1
+  hat_mint:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Mint"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.783301
+  hat_spiral:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Spiral"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.783301
+  hat_ghost:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Ghost"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 1.202665
+  hat_spirit:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Spirit"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.976427
+  hat_mushroom:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Mushroom"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_dusty:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Dusty"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 1.012002
+  hat_cat:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Cat"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_twilight:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Twilight"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_coggs:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Coggs"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_antlers:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Antlers"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_watcher:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Watcher"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.783301
+  hat_void:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Void"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_aqua:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Aqua"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.983915
+  hat_demon:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Demon"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_dragonfruit:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Dragonfruit"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.976108
+  hat_solar:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Solar"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 1.204502
+  hat_jolly:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Jolly"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_destroyed:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Destroyed"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.758392
+  hat_cards:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Cards"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.783301
+  hat_cake:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Cake"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 1.077665
+  hat_jeweled:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Jeweled"
+    scale: 1.0
+    offset-y: 0.5001
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.952665
+  hat_bicorn:
+    material: CARVED_PUMPKIN
+    item-model: minecraft:carved_pumpkin
+    custom-name: "Bicorn"
+    scale: 1.0
+    offset-y: 0.201936
+    yaw-offset: 0.0
+    hitbox-width: 0.9
+    hitbox-height: 0.608186

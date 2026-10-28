@@ -1,0 +1,7 @@
+# /function finalstation:murder/doors/show  -  marks every known door near you: gold = Staff Key, red = sealed
+execute at @e[type=minecraft:interaction,tag=murder.door,tag=murder.decor,distance=..48] run particle minecraft:dust{color:[0.9,0.9,0.9],scale:2.0} ~ ~1 ~ 0.2 0.5 0.2 0 40 force @s
+execute at @e[type=minecraft:interaction,tag=murder.door,tag=!murder.sealed,tag=!murder.public,tag=!murder.decor,distance=..48] run particle minecraft:dust{color:[1.0,0.8,0.1],scale:2.0} ~ ~1 ~ 0.2 0.5 0.2 0 40 force @s
+execute at @e[type=minecraft:interaction,tag=murder.door,tag=murder.public,distance=..48] run particle minecraft:dust{color:[0.2,1.0,0.2],scale:2.0} ~ ~1 ~ 0.2 0.5 0.2 0 40 force @s
+execute at @e[type=minecraft:interaction,tag=murder.door,tag=murder.sealed,distance=..48] run particle minecraft:dust{color:[1.0,0.1,0.1],scale:2.0} ~ ~1 ~ 0.2 0.5 0.2 0 40 force @s
+execute store result score #n murder if entity @e[type=minecraft:interaction,tag=murder.door,distance=..48]
+tellraw @s ["",{"text":"[","color":"gray"},{"text":"🔪","color":"dark_red"},{"text":"] ","color":"gray"},{"score":{"name":"#n","objective":"murder"},"color":"white"},{"text":" doors nearby. ","color":"gray"},{"text":"Gold","color":"gold"},{"text":" = Staff Key, ","color":"gray"},{"text":"green","color":"green"},{"text":" = public, ","color":"gray"},{"text":"red","color":"red"},{"text":" = sealed, ","color":"gray"},{"text":"white","color":"white"},{"text":" = decoration.","color":"gray"}]

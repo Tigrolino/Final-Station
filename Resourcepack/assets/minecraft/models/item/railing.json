@@ -1,0 +1,213 @@
+{
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    32,
+    32
+  ],
+  "textures": {
+    "0": "minecraft:item/railing",
+    "particle": "minecraft:item/railing"
+  },
+  "elements": [
+    {
+      "name": "rail",
+      "from": [
+        -7.713,
+        6.5,
+        5
+      ],
+      "to": [
+        23,
+        9.5,
+        8
+      ],
+      "rotation": {
+        "angle": -35.264,
+        "axis": "y",
+        "origin": [
+          21.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            4,
+            0,
+            5,
+            1
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            2,
+            0,
+            3,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            4,
+            1,
+            5,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            2,
+            0,
+            1,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            4,
+            0,
+            3,
+            14
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        51,
+        8,
+        -77
+      ],
+      "translation": [
+        -1.75,
+        2.25,
+        12.5
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -9,
+        0,
+        -91
+      ],
+      "translation": [
+        0,
+        4.25,
+        13.75
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -150,
+        109,
+        52
+      ],
+      "translation": [
+        8.5,
+        4,
+        3.25
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -83,
+        51,
+        -16
+      ],
+      "translation": [
+        9,
+        5.25,
+        1.75
+      ]
+    },
+    "ground": {
+      "rotation": [
+        -31,
+        -13,
+        -34
+      ],
+      "translation": [
+        -9.75,
+        7,
+        -0.5
+      ]
+    },
+    "gui": {
+      "rotation": [
+        5,
+        -82,
+        -101
+      ],
+      "translation": [
+        -6,
+        1.5,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "head": {
+      "rotation": [
+        3,
+        125,
+        17
+      ],
+      "translation": [
+        9.5,
+        7,
+        -20.5
+      ]
+    },
+    "fixed": {
+      "translation": [
+        -27,
+        0,
+        5
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    },
+    "on_shelf": {
+      "rotation": [
+        8,
+        63,
+        55
+      ],
+      "translation": [
+        9,
+        0,
+        2.75
+      ]
+    }
+  }
+}

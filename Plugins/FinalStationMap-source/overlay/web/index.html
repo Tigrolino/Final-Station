@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+
+    <!-- disable darkreader browser extension on this site -->
+    <meta name="darkreader-lock"/>
+
+    <!-- the page script sets the title again from the language file (ui.title) -->
+    <title>Final Station Map</title>
+
+    <meta name="description" content="Live world map of the Final Station SMP. Explore the world and see who is online."/>
+    <meta name="keywords" content="Minecraft, Final Station, The Final Station, SMP, Map, Live Map, Server Map"/>
+
+    <!-- link preview (Discord, Facebook and others). Discord needs full addresses here,
+         so if the map ever moves to another address or port, change it in these lines. -->
+    <meta property="og:url" content="http://finalstation.modrinth.gg:23197/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="The Final Station"/>
+    <meta property="og:title" content="Final Station Map"/>
+    <meta property="og:description" content="Live world map of the Final Station SMP. Explore the world and see who is online."/>
+    <meta property="og:image" content="http://finalstation.modrinth.gg:23197/images/final-station-banner.jpg"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="1280"/>
+    <meta property="og:image:height" content="720"/>
+    <meta property="og:image:alt" content="The Final Station banner"/>
+
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Final Station Map"/>
+    <meta name="twitter:description" content="Live world map of the Final Station SMP. Explore the world and see who is online."/>
+    <meta name="twitter:image" content="http://finalstation.modrinth.gg:23197/images/final-station-banner.jpg"/>
+
+    <!-- browser support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="theme-color" content="#222222"/>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64" crossOrigin="anonymous"/>
+
+    <!-- modern-normalize -->
+    <link rel="stylesheet" href="modern-normalize.css">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="leaflet.css"/>
+    <script src="leaflet.js"></script>
+
+    <!-- pl3xmap -->
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <script src="pl3xmap.js"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+  </body>
+</html>

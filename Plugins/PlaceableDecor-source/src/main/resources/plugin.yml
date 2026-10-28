@@ -1,0 +1,20 @@
+name: PlaceableDecor
+version: '1.1.0'
+main: com.finalstation.decor.PlaceableDecor
+api-version: '26.3'
+description: Place configurable collectible models using native cushion mechanics.
+author: Tigrolino
+softdepend: [SpawnGuard, PikminDecor]
+commands:
+  placeabledecor:
+    aliases: [pikmindecor]
+    description: Reload variants or inspect loaded decorations and server tick statistics
+    usage: /placeabledecor <reload|status>
+    permission: finalstation.decor.admin
+permissions:
+  finalstation.decor.admin:
+    default: op
+  finalstation.pikmin.admin:
+    default: false
+    children:
+      finalstation.decor.admin: true

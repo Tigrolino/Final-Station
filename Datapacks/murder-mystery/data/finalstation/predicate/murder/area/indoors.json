@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:location_check",
+  "predicate": {
+    "position": {
+      "x": {
+        "min": 85,
+        "max": 168
+      },
+      "y": {
+        "min": -61,
+        "max": -32
+      },
+      "z": {
+        "min": 352,
+        "max": 414
+      }
+    }
+  }
+}

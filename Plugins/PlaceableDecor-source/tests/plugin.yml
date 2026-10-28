@@ -1,0 +1,5 @@
+name: PlaceableDecorChecks
+version: '1.0'
+main: com.finalstation.decor.tests.IntegrationChecks
+api-version: '26.3'
+depend: [PlaceableDecor, SpawnGuard]

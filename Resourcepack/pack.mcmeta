@@ -1,6 +1,16 @@
 {
   "pack": {
-    "description": "Combined Pack: Staff Hats, Custom Paintings & Sonion Rings",
+    "description": [
+      {
+        "text": "The Final Station",
+        "color": "gold",
+        "bold": true
+      },
+      {
+        "text": "\nHats, staffs, paintings & the guide book",
+        "color": "gray"
+      }
+    ],
     "min_format": 69,
     "max_format": 99
   }

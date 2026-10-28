@@ -1,3 +1,9 @@
 * text=auto eol=lf
 *.png binary
 *.zip binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.ogg binary
+*.wav binary
+*.nbt binary

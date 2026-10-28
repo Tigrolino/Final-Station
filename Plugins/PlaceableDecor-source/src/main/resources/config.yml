@@ -1,0 +1,114 @@
+# PlaceableDecor: /placeabledecor reload applies changes to future placements.
+# Existing decorations retain their original item and placement settings.
+# Values below are in blocks, except yaw-offset (degrees).
+config-version: 2
+defaults:
+  scale: 1.0
+  offset-y: 0.5
+  yaw-offset: 0.0
+  hitbox-width: 0.45
+  hitbox-height: 0.8
+
+# Match material + item-model, with optional custom-name and top-level custom_data string.
+# To add a variant, add its model to the resource pack and declare another entry here.
+variants:
+  blue_bud:
+    material: FLINT
+    item-model: seedling:pikmin/blue_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: blue_bud
+  blue_flower:
+    material: FLINT
+    item-model: seedling:pikmin/blue_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: blue_flower
+  blue_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/blue_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: blue_leaf
+  blue_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/blue_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: blue_spooky
+  purple_bud:
+    material: FLINT
+    item-model: seedling:pikmin/purple_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: purple_bud
+  purple_flower:
+    material: FLINT
+    item-model: seedling:pikmin/purple_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: purple_flower
+  purple_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/purple_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: purple_leaf
+  purple_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/purple_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: purple_spooky
+  red_bud:
+    material: FLINT
+    item-model: seedling:pikmin/red_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: red_bud
+  red_flower:
+    material: FLINT
+    item-model: seedling:pikmin/red_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: red_flower
+  red_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/red_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: red_leaf
+  red_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/red_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: red_spooky
+  white_bud:
+    material: FLINT
+    item-model: seedling:pikmin/white_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: white_bud
+  white_flower:
+    material: FLINT
+    item-model: seedling:pikmin/white_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: white_flower
+  white_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/white_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: white_leaf
+  white_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/white_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: white_spooky
+  yellow_bud:
+    material: FLINT
+    item-model: seedling:pikmin/yellow_bud
+    custom-data-key: seedling_pikmin
+    custom-data-value: yellow_bud
+  yellow_flower:
+    material: FLINT
+    item-model: seedling:pikmin/yellow_flower
+    custom-data-key: seedling_pikmin
+    custom-data-value: yellow_flower
+  yellow_leaf:
+    material: FLINT
+    item-model: seedling:pikmin/yellow_leaf
+    custom-data-key: seedling_pikmin
+    custom-data-value: yellow_leaf
+  yellow_spooky:
+    material: FLINT
+    item-model: seedling:pikmin/yellow_spooky
+    custom-data-key: seedling_pikmin
+    custom-data-value: yellow_spooky

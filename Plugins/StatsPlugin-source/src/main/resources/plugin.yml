@@ -1,0 +1,29 @@
+name: StatsPlugin
+version: '1.8'
+main: com.starmaster.statsplugin.StatsPlugin
+api-version: '1.21'
+author: StarMaster
+description: A stats viewer plugin with GUI
+softdepend: [PlaceholderAPI]
+
+commands:
+  stats:
+    description: Open the stats menu, or reload config.yml with /stats reload
+    usage: /stats [reload]
+    aliases: [statistics, playerstats]
+  afk:
+    description: Toggle AFK status immediately, instead of waiting for the configured idle timeout
+    usage: /afk
+  recording:
+    description: Toggle a red [REC] tag next to your name in tab and above your head
+    usage: /recording
+    aliases: [rec]
+  live:
+    description: Toggle a purple [LIVE] tag next to your name in tab and above your head
+    usage: /live
+    aliases: [stream]
+
+permissions:
+  statsplugin.reload:
+    description: Allows reloading config.yml with /stats reload
+    default: op

@@ -1,0 +1,75 @@
+# StatsPlugin settings. Apply changes with /stats reload.
+afk:
+  enabled: true
+
+  timeout-seconds: 60
+
+  now-afk-message: "&7You're now AFK"
+  no-longer-afk-message: "&7You're no longer AFK"
+
+recording:
+  enabled: true
+  now-recording-message: "&cRecording indicator turned on"
+  no-longer-recording-message: "&7Recording indicator turned off"
+
+live:
+  enabled: true
+  now-live-message: "&dLive indicator turned on"
+  no-longer-live-message: "&7Live indicator turned off"
+
+cache:
+  stats-refresh-seconds: 30
+
+  head-cache-clear-hours: 1
+
+leaderboard:
+  items-per-page: 45
+
+main-menu:
+  title: "&6&lServer Statistics"
+
+  size: 27
+
+  items:
+    kills:
+      enabled: true
+      slot: 4
+      material: DIAMOND_SWORD
+      name: "&c&lKills"
+      lore:
+        - "&7Click to view top killers"
+    deaths:
+      enabled: true
+      slot: 9
+      material: SKELETON_SKULL
+      name: "&4&lDeaths"
+      lore:
+        - "&7Click to view most deaths"
+    playtime:
+      enabled: true
+      slot: 11
+      material: CLOCK
+      name: "&a&lPlaytime"
+      lore:
+        - "&7Click to view top playtime"
+    advancements:
+      enabled: true
+      slot: 15
+      material: KNOWLEDGE_BOOK
+      name: "&b&lAdvancements"
+      lore:
+        - "&7Click to view top advancements"
+    distance:
+      enabled: true
+      slot: 17
+      material: MAP
+      name: "&9&lDistance Traveled"
+      lore:
+        - "&7Click to view top travelers"
+    afk-time:
+      enabled: true
+      slot: 22
+      material: WHITE_BED
+      name: "&7&lAFK Time"
+      lore:
+        - "&7Click to view top AFK time"

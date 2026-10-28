@@ -1,0 +1,61 @@
+# SpawnGuard configuration.
+# After changing anything here, run "/spawnguard reload" (operators only) or restart the server.
+
+# Plants in this list never grow or spread, in any world.
+# Add KELP, CAVE_VINES, TWISTING_VINES or WEEPING_VINES if you want those stopped too.
+blocked-growth:
+  - VINE
+
+# Since vines no longer grow on their own: right-clicking a vine with bone meal makes it
+# grow one block. It grows down first; if there is no room below it spreads sideways from
+# the piece you clicked, and after that it climbs up. Uses up one bone meal each time.
+bonemeal-vines: true
+
+# These mobs can never break, pick up or place blocks, in any world.
+# Creeper explosions still hurt players and mobs, they just leave no crater.
+no-block-damage-mobs:
+  - ENDERMAN
+  - CREEPER
+
+region:
+  enabled: true
+  world: world
+
+  # Two opposite corners. The region covers the full height of the world.
+  x1: 6
+  z1: 214
+  x2: 86
+  z2: 294
+
+  # Operators can break and place blocks as usual.
+  # Water, lava, pistons, explosions, fire and mobs are stopped no matter who caused them.
+  ops-bypass: true
+
+  # Show a puff of smoke on the block when a player's action is blocked. No chat message is sent.
+  smoke-effect: true
+
+  # Stop every piston that sits in the region or would move a block into or out of it.
+  block-pistons: true
+
+  # Players cannot hurt each other while either of them is in the region. Applies to operators too.
+  no-pvp: true
+
+  # Players do not lose hunger while they are in the region.
+  no-hunger-drain: true
+
+  # Anvils in the region never chip or break from being used, no matter who uses them.
+  unbreakable-anvils: true
+
+  # These mobs cannot spawn in the region. Spawn eggs and commands still work.
+  blocked-mob-spawns:
+    - PILLAGER
+    - SKELETON
+    - PHANTOM
+    - ENDERMAN
+    - VINDICATOR
+    - WITCH
+    - SPIDER
+    - ZOMBIE
+    - CREEPER
+    - ZOMBIE_VILLAGER
+    - SLIME

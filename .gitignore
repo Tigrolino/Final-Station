@@ -1,12 +1,36 @@
-# Built zips - upload these to GitHub Releases instead
-Releases/**/*.zip
+# Local server copies and working data.
+/Server Copy*/
+/Discord/
+/Worlds/
+/Resources/
+/Releases/
+/test/
+/.cache/
+/Config/
 
-# OS / editor junk
+# Runtime plugins and old sources stay local.
+/Plugins/*
+!/Plugins/README.md
+!/Plugins/FinalStationMap-source/
+!/Plugins/PlaceableDecor-source/
+!/Plugins/SpawnGuard-source/
+!/Plugins/StatsPlugin-source/
+/Datapacks/26.3 Datapacks/
+/Datapacks/all Datapacks/
+
+# Generated builds and local diagnostics.
+**/target/
+**/__pycache__/
+*.pyc
+*.class
+*.jar
+/Plugins/PlaceableDecor-source/PERFORMANCE.md
+/Plugins/PlaceableDecor-source/PROFILE-*.md
+/Plugins/PlaceableDecor-source/tests/*.txt
+
+# Editor and operating-system files.
+.idea/
+.vscode/
 Thumbs.db
 desktop.ini
 .DS_Store
-.vscode/
-.idea/
-
-# Local release zipper
-build.py

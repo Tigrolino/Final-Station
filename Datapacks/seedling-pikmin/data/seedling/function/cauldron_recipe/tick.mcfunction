@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item,tag=!seedling_recipe_checked] at @s if block ~ ~-0.25 ~ minecraft:water_cauldron[level=1..3] if data entity @s Item{id:"minecraft:carrot",components:{"minecraft:custom_name":'{"text":"ihatetheseneedingrecipies"}'}} run function seedling:cauldron_recipe/check_dye

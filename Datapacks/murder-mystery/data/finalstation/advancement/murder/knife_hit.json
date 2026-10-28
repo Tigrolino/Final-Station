@@ -1,0 +1,40 @@
+{
+  "criteria": {
+    "stabbed": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_tags": {
+              "all_of": [
+                "murder.player"
+              ]
+            }
+          }
+        },
+        "damage": {
+          "source_entity": {
+            "entity_type": "minecraft:player",
+            "entity_tags": {
+              "all_of": [
+                "murder.murderer"
+              ]
+            },
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": "{murder_knife:1b}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "finalstation:murder/knife/stabbed"
+  }
+}

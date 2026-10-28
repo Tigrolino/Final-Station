@@ -1,0 +1,23 @@
+# at the lower door block: set open=true/false, keeping the door type, facing and hinge
+$execute if block ~ ~ ~ minecraft:oak_door run function finalstation:murder/doors/type/oak {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:spruce_door run function finalstation:murder/doors/type/spruce {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:birch_door run function finalstation:murder/doors/type/birch {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:jungle_door run function finalstation:murder/doors/type/jungle {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:acacia_door run function finalstation:murder/doors/type/acacia {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:dark_oak_door run function finalstation:murder/doors/type/dark_oak {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:pale_oak_door run function finalstation:murder/doors/type/pale_oak {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:crimson_door run function finalstation:murder/doors/type/crimson {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:warped_door run function finalstation:murder/doors/type/warped {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:mangrove_door run function finalstation:murder/doors/type/mangrove {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:bamboo_door run function finalstation:murder/doors/type/bamboo {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:cherry_door run function finalstation:murder/doors/type/cherry {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:poplar_door run function finalstation:murder/doors/type/poplar {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:copper_door run function finalstation:murder/doors/type/copper {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:exposed_copper_door run function finalstation:murder/doors/type/exposed_copper {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:weathered_copper_door run function finalstation:murder/doors/type/weathered_copper {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:oxidized_copper_door run function finalstation:murder/doors/type/oxidized_copper {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:waxed_copper_door run function finalstation:murder/doors/type/waxed_copper {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:waxed_exposed_copper_door run function finalstation:murder/doors/type/waxed_exposed_copper {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:waxed_weathered_copper_door run function finalstation:murder/doors/type/waxed_weathered_copper {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:waxed_oxidized_copper_door run function finalstation:murder/doors/type/waxed_oxidized_copper {open:"$(open)",act:"$(act)"}
+$execute if block ~ ~ ~ minecraft:iron_door run function finalstation:murder/doors/type/iron {open:"$(open)",act:"$(act)"}
