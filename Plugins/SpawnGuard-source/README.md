@@ -25,7 +25,7 @@ The default region covers X 6 through 86 and Z 214 through 294 in `world`, at al
 ## Build
 
 ```sh
-python Tools/build_plugins.py SpawnGuard --server-dir /path/to/paper
+mvn package
 ```
 
-Run from the repository root. The output is `target/SpawnGuard-1.3.jar` in this project. `mvn package` is also supported.
+Run from this project folder with Java 25 and Maven. The output is `target/SpawnGuard-1.3.jar`.

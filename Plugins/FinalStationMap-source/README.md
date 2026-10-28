@@ -22,10 +22,10 @@ The web metadata contains the public map address. Update `overlay/web/index.html
 ## Build
 
 ```sh
-python Tools/build_plugins.py FinalStationMap --server-dir /path/to/paper
+python build.py --server-dir /path/to/paper
 ```
 
-Run from the repository root with Java 25 and Python 3.10 or later. The build tool downloads checksum-pinned Pl3xMap and cloud-bukkit dependencies, compiles the changed classes, patches the title and applies the web assets. Compiled overlays are not stored in Git.
+Run from this project folder with Java 25 and Python 3.10 or later. The Paper folder must contain its extracted `libraries/` and `versions/` directories. The build downloads checksum-pinned Pl3xMap and cloud-bukkit dependencies, compiles the changed classes, patches the title and applies the web assets.
 
 The output is `target/Pl3xMap-26.3-555-finalstation-3.jar`. `tools/LinkCheck.java` checks references against the target Paper server when updating the port.
 

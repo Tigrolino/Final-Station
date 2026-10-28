@@ -45,7 +45,7 @@ _DEFAULT_:
 ## Build
 
 ```sh
-python Tools/build_plugins.py StatsPlugin --server-dir /path/to/paper --plugin-dir /path/to/paper/plugins
+mvn package
 ```
 
-Run from the repository root. The output is `target/StatisticsViewer-1.8.jar` in this project. Maven builds are supported with `mvn package`. PlaceholderAPI and JetBrains annotations are compile-time dependencies; neither is bundled in the JAR.
+Run from this project folder with Java 25 and Maven. The output is `target/StatisticsViewer-1.8.jar`. PlaceholderAPI and JetBrains annotations are compile-time dependencies; neither is bundled in the JAR.

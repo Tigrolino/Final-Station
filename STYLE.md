@@ -73,8 +73,3 @@ The rules every file in this repo follows. The `.editorconfig` file makes most e
 - Each README covers purpose, requirements, installation, commands, configuration and building.
 - Preserve upstream attribution and licenses in modified third-party projects.
 - Publish JARs and source bundles through GitHub Releases, not Git.
-
-## Repository contents
-
-Track active custom plugin sources, maintained datapacks, the resource pack, Skripts and build tools.
-Server configuration (`Config/`), server snapshots, old plugin versions, Discord assets, worlds, scratch tests, reference resources and release output stay local.

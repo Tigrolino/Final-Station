@@ -7,6 +7,8 @@
 /test/
 /.cache/
 /Config/
+/Docs/
+/Tools/
 
 # Runtime plugins and old sources stay local.
 /Plugins/*

@@ -48,12 +48,12 @@ Distances are in blocks; yaw is in degrees. With display transform `NONE`, a mod
 
 ## Build
 
-From the repository root:
+From this project folder with Java 25 and Maven:
 
 ```sh
-python Tools/build_plugins.py PlaceableDecor --server-dir /path/to/paper
+mvn package
 ```
 
-The JAR is written to `target/`. Maven builds are also supported with `mvn package`. Native cushion access is isolated in `NativeCushions`; check compatibility when changing Minecraft versions.
+The JAR is written to `target/`. Native cushion access is isolated in `NativeCushions`; check compatibility when changing Minecraft versions.
 
 The integration harness in `tests/` is for a disposable server only. It creates test objects and shuts the server down. Visual appearance and sound still need an in-game check with the resource pack.

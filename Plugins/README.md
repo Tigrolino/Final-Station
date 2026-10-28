@@ -9,12 +9,4 @@ These are the maintained plugin sources for The Final Station. All target Paper 
 | [PlaceableDecor](PlaceableDecor-source/README.md) | PlaceableDecor | `PlaceableDecor-1.1.0.jar` |
 | [Final Station Map](FinalStationMap-source/README.md) | Pl3xMap | `Pl3xMap-26.3-555-finalstation-3.jar` |
 
-Source folders do not include version numbers. Runtime JARs, downloaded dependencies, old versions and plugin data are ignored by Git.
-
-Build all projects from the repository root:
-
-```sh
-python Tools/build_plugins.py --server-dir /path/to/paper --plugin-dir /path/to/paper/plugins
-```
-
-See [the build tools](../Tools/README.md) for dependency setup. Release assets are stored under the ignored `Releases/Plugins/` folder and uploaded to GitHub Releases.
+See each project's README for installation, configuration and build instructions.
