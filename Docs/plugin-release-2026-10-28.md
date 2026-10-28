@@ -23,4 +23,4 @@ The attached source ZIP contains build instructions. `SHA256SUMS.txt` covers the
 
 All four plugins compiled with Java 25 and passed a disposable Paper 26.3 startup, command and shutdown check. The map also passed a fresh resource extraction check and checks for the recovered block-property and redstone fixes. This check does not replace in-game multiplayer testing.
 
-This is a draft release. Repository cleanup is staged locally and has not been committed or pushed. The attached source bundle corresponds to these rebuilt assets; the release tag currently targets `main`.
+This is a draft release targeting `main`. The attached source bundle corresponds to the rebuilt assets. The repository uses `main` for maintained sources.
