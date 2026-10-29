@@ -52,7 +52,7 @@ The rules every file in this repo follows. The `.editorconfig` file makes most e
 # ==========================================================
 ```
 
-- Chat prefix for server messages: `&7[&6ðŸš‚&r&7]&r `
+- Chat prefix for server messages: `&7[&6🚂&r&7]&r `
 - Keep things that belong together in one file (e.g. all LuckPerms rank commands in `ranks.sk`)
   instead of making a new tiny file for every command.
 

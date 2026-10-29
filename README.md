@@ -43,7 +43,7 @@ Build instructions are in each plugin's README. Downloads are available under [R
 
 Skript files start with their commands, permissions and dependencies. They cover ranks, worlds, whitelist management, height, announcements and server events. Some require LuckPerms, Multiverse, Geyser or Floodgate.
 
-The resource pack contains custom hats, staffs, railings, paintings, guide-book artwork and Seedling/Pikmin models.
+The resource pack contains custom hats, staffs, paintings, guide-book artwork and Seedling/Pikmin models.
 
 ## Style and credits
 

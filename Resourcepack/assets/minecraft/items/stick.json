@@ -24,13 +24,6 @@
           "type": "minecraft:model",
           "model": "item/voidstaff"
         }
-      },
-      {
-        "when": "Railing",
-        "model": {
-          "type": "minecraft:model",
-          "model": "item/railing"
-        }
       }
     ],
     "fallback": {
