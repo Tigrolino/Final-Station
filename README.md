@@ -19,7 +19,7 @@ Custom plugin sources, datapacks, Skripts and the resource pack for The Final St
 
 | Plugin | Purpose |
 | --- | --- |
-| [SpawnGuard](Plugins/SpawnGuard-source/README.md) | Spawn protection, vine growth and mob block-damage rules |
+| [SpawnGuard](Plugins/SpawnGuard-source/README.md) | Spawn and lead protection, vine growth and mob block-damage rules |
 | [StatsPlugin](Plugins/StatsPlugin-source/README.md) | Statistics menus, leaderboards and player status tags |
 | [PlaceableDecor](Plugins/PlaceableDecor-source/README.md) | Configurable collectible decorations, including Pikmin and hats |
 | [Final Station Map](Plugins/FinalStationMap-source/README.md) | Pl3xMap port and web branding |

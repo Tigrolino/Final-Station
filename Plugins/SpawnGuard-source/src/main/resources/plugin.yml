@@ -1,9 +1,9 @@
 name: SpawnGuard
-version: '1.3'
+version: '1.4'
 main: com.finalstation.spawnguard.SpawnGuard
 api-version: '1.21'
 author: Tigrolino
-description: Stops vines from growing, stops enderman and creeper griefing, and protects the spawn region.
+description: Protects spawn, leads and blocks from mob damage, and controls vine growth.
 
 commands:
   spawnguard:

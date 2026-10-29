@@ -13,8 +13,7 @@ import java.util.Set;
 
 /**
  * Small jobs that WorldGuard used to do on The Final Station: stop vines from growing, stop
- * endermen and creepers from changing blocks, and protect the spawn region. All the rules live in
- * {@link GuardListener}; this class only loads config.yml.
+ * endermen and creepers from changing blocks, protect leads and protect the spawn region.
  */
 public final class SpawnGuard extends JavaPlugin {
 
@@ -25,6 +24,7 @@ public final class SpawnGuard extends JavaPlugin {
         saveDefaultConfig();
         loadSettings();
         getServer().getPluginManager().registerEvents(new GuardListener(this), this);
+        getServer().getPluginManager().registerEvents(new LeashProtection(), this);
     }
 
     Settings settings() {
