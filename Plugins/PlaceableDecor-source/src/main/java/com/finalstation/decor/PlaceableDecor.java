@@ -18,6 +18,8 @@ import org.bukkit.block.data.type.Stairs;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.configuration.InvalidConfigurationException;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Cushion;
 import org.bukkit.entity.Display;
 import org.bukkit.entity.Entity;
@@ -129,20 +131,18 @@ public final class PlaceableDecor extends JavaPlugin implements Listener {
             return;
         }
         saveDefaultConfig();
-        if (!getConfig().contains("config-version", true)) {
-            if (getConfig().getDouble("defaults.yaw-offset", 180) == 180)
-                getConfig().set("defaults.yaw-offset", 0.0);
-            getConfig().set("config-version", 2);
-            saveConfig();
-        }
         try {
             nativeCushions = new NativeCushions();
             loadVariants();
-        } catch (ReflectiveOperationException | IllegalArgumentException e) {
+        } catch (ReflectiveOperationException
+                | IOException
+                | InvalidConfigurationException
+                | IllegalArgumentException e) {
             getLogger()
                     .log(
                             Level.SEVERE,
-                            "Cannot initialize PlaceableDecor; no items have been changed.",
+                            "Cannot initialize PlaceableDecor; config.yml and placed items are"
+                                    + " unchanged.",
                             e);
             getServer().getPluginManager().disablePlugin(this);
             return;
@@ -172,11 +172,18 @@ public final class PlaceableDecor extends JavaPlugin implements Listener {
                                 + " decor variants; native Paper 26.3 cushion placement enabled.");
     }
 
-    private void loadVariants() {
-        ConfigurationSection section = getConfig().getConfigurationSection("variants");
+    private void loadVariants() throws IOException, InvalidConfigurationException {
+        YamlConfiguration config = new YamlConfiguration();
+        config.load(getDataFolder().toPath().resolve("config.yml").toFile());
+        // Apply legacy orientation in memory without rewriting the user's configuration.
+        if (!config.contains("config-version")
+                && config.getDouble("defaults.yaw-offset", 180) == 180) {
+            config.set("defaults.yaw-offset", 0.0);
+        }
+        ConfigurationSection section = config.getConfigurationSection("variants");
         if (section == null || section.getKeys(false).isEmpty())
             throw new IllegalArgumentException("No variants configured");
-        ConfigurationSection defaults = getConfig().getConfigurationSection("defaults");
+        ConfigurationSection defaults = config.getConfigurationSection("defaults");
         List<Variant> loaded = new ArrayList<>();
         var matchers = new HashSet<String>();
         for (String id : section.getKeys(false)) {
@@ -627,10 +634,9 @@ public final class PlaceableDecor extends JavaPlugin implements Listener {
         }
         if (args.length != 1 || !args[0].equalsIgnoreCase("reload")) return false;
         try {
-            reloadConfig();
             loadVariants();
             sender.sendMessage("§aLoaded " + variants.size() + " decor variants.");
-        } catch (IllegalArgumentException e) {
+        } catch (IOException | InvalidConfigurationException | IllegalArgumentException e) {
             sender.sendMessage(
                     "§cInvalid config: " + e.getMessage() + ". Previous variants remain active.");
         }

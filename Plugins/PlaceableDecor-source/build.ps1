@@ -18,7 +18,7 @@ $sources = @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'src/main/java'
 & javac --release 25 -encoding UTF-8 -classpath ($dependencies -join [IO.Path]::PathSeparator) -d $classes @sources
 if ($LASTEXITCODE -ne 0) { throw 'Java compilation failed' }
 Copy-Item -Path (Join-Path $PSScriptRoot 'src/main/resources/*') -Destination $classes -Force
-$output = Join-Path $PSScriptRoot 'target/PlaceableDecor-1.1.0.jar'
+$output = Join-Path $PSScriptRoot 'target/PlaceableDecor-1.1.1.jar'
 & jar --create --file $output -C $classes .
 if ($LASTEXITCODE -ne 0) { throw 'JAR packaging failed' }
 Write-Output $output
